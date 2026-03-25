@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+    --navy: #0f1a2e;
+    --navy-light: #1a2940;
+    --navy-mid: #243650;
+    --slate: #3d4f65;
+    --amber: #c8923c;
+    --amber-light: #d4a85c;
+    --amber-glow: rgba(200, 146, 60, 0.12);
+    --amber-border: rgba(200, 146, 60, 0.25);
+    --cream: #f8f5f0;
+    --cream-dark: #ede8e0;
+    --warm-white: #faf9f7;
+    --text: #1a1a1a;
+    --text-secondary: #5a6472;
+    --text-light: #8a919b;
+    --border: #ddd6cb;
+    --border-light: #e8e2d8;
+    --serif: 'DM Serif Display', 'Noto Serif KR', Georgia, serif;
+    --sans: 'Noto Sans KR', -apple-system, 'Malgun Gothic', sans-serif;
+    --mono: 'IBM Plex Mono', 'Consolas', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: var(--sans);
+    font-weight: 400;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 24px;
+    line-height: 1.85;
+    color: var(--text);
+    background: var(--warm-white);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ── Typography ── */
+a { color: var(--amber); text-decoration: none; transition: color 0.2s; }
+a:hover { color: #a87830; }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -0.01em; }
+h1 { font-size: 1.75em; margin: 0.8em 0 0.4em; color: var(--navy); }
+h2 { font-size: 1.35em; margin: 1.6em 0 0.5em; color: var(--navy); padding-bottom: 6px; border-bottom: 1px solid var(--border-light); }
+h3 { font-size: 1.15em; margin: 1.3em 0 0.4em; color: var(--navy-light); }
+h4, h5, h6 { font-family: var(--sans); font-size: 0.95em; font-weight: 600; margin: 1em 0 0.3em; color: var(--slate); text-transform: uppercase; letter-spacing: 0.04em; }
+
+p { margin: 0.6em 0; }
+strong { font-weight: 600; color: var(--navy); }
+ul, ol { margin: 0.5em 0 0.8em 1.6em; }
+li { margin: 0.2em 0; }
+hr { border: none; height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); margin: 2.5em 0; }
+
+/* ── Tables ── */
+.table-wrap { overflow-x: auto; margin: 1.2em 0; border-radius: 6px; border: 1px solid var(--border-light); }
+table { width: 100%; border-collapse: collapse; font-size: 0.88em; display: table; }
+thead th {
+    background: var(--navy);
+    color: var(--cream);
+    font-weight: 500;
+    padding: 10px 14px;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 0.92em;
+    letter-spacing: 0.02em;
+    border: none;
+}
+thead th:first-child { border-radius: 5px 0 0 0; }
+thead th:last-child { border-radius: 0 5px 0 0; }
+tbody td {
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--border-light);
+    vertical-align: top;
+}
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:nth-child(even) { background: rgba(248, 245, 240, 0.5); }
+tbody tr:hover { background: var(--amber-glow); }
+/* markdown tables without thead */
+table:not(:has(thead)) th {
+    background: var(--navy);
+    color: var(--cream);
+    font-weight: 500;
+    padding: 10px 14px;
+    border: none;
+}
+table:not(:has(thead)) td {
+    padding: 9px 14px;
+    border: none;
+    border-bottom: 1px solid var(--border-light);
+}
+
+/* ── Blockquotes ── */
+blockquote {
+    position: relative;
+    margin: 1.4em 0;
+    padding: 16px 20px 16px 24px;
+    background: var(--cream);
+    border-left: 3px solid var(--amber);
+    border-radius: 0 6px 6px 0;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* ── Code ── */
+code {
+    font-family: var(--mono);
+    font-size: 0.85em;
+    background: var(--cream);
+    padding: 2px 7px;
+    border-radius: 4px;
+    border: 1px solid var(--border-light);
+}
+pre {
+    background: var(--navy);
+    color: var(--cream);
+    padding: 20px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.2em 0;
+    font-size: 0.88em;
+    line-height: 1.6;
+}
+pre code { background: none; border: none; padding: 0; color: inherit; }
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+    font-size: 0.82em;
+    color: var(--text-light);
+    padding: 20px 0;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+}
+.breadcrumb a { color: var(--text-light); }
+.breadcrumb a:hover { color: var(--amber); }
+.breadcrumb span { color: var(--text-secondary); }
+
+/* ── Site Header (Main Index) ── */
+.site-header {
+    text-align: center;
+    padding: 56px 0 40px;
+    margin-bottom: 36px;
+    position: relative;
+}
+.site-header::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--amber);
+    margin: 24px auto 0;
+}
+.site-header h1 {
+    font-family: var(--serif);
+    font-size: 2.4em;
+    color: var(--navy);
+    border: none;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+.site-header p {
+    font-size: 0.92em;
+    color: var(--text-light);
+    margin-top: 8px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* ── Search ── */
+.search-box { margin-bottom: 20px; position: relative; }
+.search-box::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--text-light);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.search-box::after {
+    content: '';
+    position: absolute;
+    left: 29px;
+    top: 58%;
+    width: 2px;
+    height: 7px;
+    background: var(--text-light);
+    transform: rotate(-45deg);
+    pointer-events: none;
+}
+.search-box input {
+    width: 100%;
+    padding: 14px 16px 14px 46px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.95em;
+    font-family: var(--sans);
+    outline: none;
+    background: #fff;
+    color: var(--text);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.search-box input::placeholder { color: var(--text-light); font-weight: 300; }
+.search-box input:focus {
+    border-color: var(--amber);
+    box-shadow: 0 0 0 3px var(--amber-glow);
+}
+
+/* ── Chosung Filter ── */
+.chosung-bar {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 14px 16px;
+    background: var(--cream);
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+}
+.chosung-bar button {
+    padding: 5px 9px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.84em;
+    font-family: var(--sans);
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: all 0.15s;
+    min-width: 32px;
+    text-align: center;
+}
+.chosung-bar button:hover {
+    background: rgba(200, 146, 60, 0.08);
+    color: var(--amber);
+}
+.chosung-bar button.active {
+    background: var(--navy);
+    color: var(--cream);
+    border-color: var(--navy);
+}
+
+.filter-count {
+    font-size: 0.82em;
+    color: var(--text-light);
+    margin-bottom: 16px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+
+/* ── Company Grid ── */
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+}
+.company-card {
+    display: block;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+.company-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--amber);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.company-card:hover {
+    border-color: var(--amber-border);
+    box-shadow: 0 4px 16px rgba(15, 26, 46, 0.06);
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+.company-card:hover::before { opacity: 1; }
+.company-card .name {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 1em;
+    color: var(--navy);
+}
+.company-card .date {
+    font-size: 0.78em;
+    color: var(--text-light);
+    margin-top: 6px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+/* ── Report Header ── */
+.report-header {
+    padding: 32px 0 20px;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--border-light);
+}
+.report-header h1 {
+    font-family: var(--serif);
+    font-size: 1.8em;
+    color: var(--navy);
+    border: none;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+.report-header .meta {
+    font-size: 0.85em;
+    color: var(--text-light);
+    margin-top: 6px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+
+/* ── Report Nav ── */
+.report-nav {
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+    margin: 0 0 32px;
+    padding: 0;
+    background: var(--cream);
+    border-radius: 0 0 8px 8px;
+    border: 1px solid var(--border-light);
+    border-top: none;
+    overflow: hidden;
+}
+.report-nav a {
+    flex: 1;
+    min-width: fit-content;
+    padding: 12px 16px;
+    font-size: 0.82em;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-align: center;
+    transition: all 0.15s;
+    position: relative;
+    letter-spacing: 0.01em;
+}
+.report-nav a:hover {
+    background: rgba(200, 146, 60, 0.06);
+    color: var(--navy);
+    text-decoration: none;
+}
+.report-nav a.active {
+    background: var(--navy);
+    color: var(--cream);
+}
+
+/* ── Report Content ── */
+.report-content { padding: 8px 0 24px; }
+.report-content h1 { font-size: 1.5em; margin-top: 1em; }
+.report-content h1:first-child { margin-top: 0.4em; }
+.report-content > table { display: block; overflow-x: auto; }
+
+/* ── Company Index Report List ── */
+.report-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.report-list li {
+    margin: 0;
+    border-bottom: 1px solid var(--border-light);
+}
+.report-list li:last-child { border-bottom: none; }
+.report-list a {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    color: var(--navy);
+    font-weight: 500;
+    transition: all 0.15s;
+}
+.report-list a::after {
+    content: '\2192';
+    margin-left: auto;
+    color: var(--text-light);
+    transition: all 0.2s;
+    font-size: 1.1em;
+}
+.report-list a:hover {
+    background: var(--amber-glow);
+    text-decoration: none;
+    padding-left: 24px;
+}
+.report-list a:hover::after { color: var(--amber); transform: translateX(3px); }
+
+/* ── Footer ── */
+.footer {
+    margin-top: 64px;
+    padding: 24px 0;
+    border-top: 1px solid var(--border-light);
+    text-align: center;
+    font-size: 0.78em;
+    color: var(--text-light);
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+    body { padding: 0 14px; }
+    .site-header { padding: 36px 0 28px; }
+    .site-header h1 { font-size: 1.8em; }
+    .company-grid { grid-template-columns: 1fr; gap: 10px; }
+    .report-nav { border-radius: 8px; border-top: 1px solid var(--border-light); margin-top: 16px; }
+    .report-nav a { padding: 10px 12px; font-size: 0.78em; }
+    .report-header { padding: 20px 0 16px; }
+    .report-header h1 { font-size: 1.4em; }
+    table { font-size: 0.82em; }
+    thead th, tbody td { padding: 7px 10px; }
+    .chosung-bar { padding: 10px 12px; gap: 3px; }
+    .chosung-bar button { padding: 4px 7px; font-size: 0.8em; min-width: 28px; }
+    .search-box input { padding: 12px 14px 12px 42px; }
+}
+
+@media (max-width: 400px) {
+    .report-nav { flex-direction: column; gap: 0; }
+    .report-nav a { text-align: left; border-bottom: 1px solid var(--border-light); }
+    .report-nav a:last-child { border-bottom: none; }
+}
