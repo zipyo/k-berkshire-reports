@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
 :root {
     --navy: #0f1a2e;
     --navy-light: #1a2940;
@@ -15,7 +17,7 @@
     --text-light: #8a919b;
     --border: #ddd6cb;
     --border-light: #e8e2d8;
-    --serif: 'DM Serif Display', Georgia, serif;
+    --serif: 'DM Serif Display', 'Noto Serif KR', Georgia, serif;
     --sans: 'Noto Sans KR', -apple-system, 'Malgun Gothic', sans-serif;
     --mono: 'IBM Plex Mono', 'Consolas', monospace;
 }
@@ -38,7 +40,7 @@ body {
 a { color: var(--amber); text-decoration: none; transition: color 0.2s; }
 a:hover { color: #a87830; }
 
-h1, h2, h3 { font-family: var(--sans); font-weight: 600; letter-spacing: -0.01em; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -0.01em; }
 h1 { font-size: 1.75em; margin: 0.8em 0 0.4em; color: var(--navy); }
 h2 { font-size: 1.35em; margin: 1.6em 0 0.5em; color: var(--navy); padding-bottom: 6px; border-bottom: 1px solid var(--border-light); }
 h3 { font-size: 1.15em; margin: 1.3em 0 0.4em; color: var(--navy-light); }
@@ -160,7 +162,7 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
     font-size: 0.92em;
     color: var(--text-light);
     margin-top: 8px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -202,7 +204,7 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
     color: var(--text);
     transition: border-color 0.2s, box-shadow 0.2s;
 }
-.search-box input::placeholder { color: var(--text-light); font-weight: 400; }
+.search-box input::placeholder { color: var(--text-light); font-weight: 300; }
 .search-box input:focus {
     border-color: var(--amber);
     box-shadow: 0 0 0 3px var(--amber-glow);
@@ -247,7 +249,7 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
     font-size: 0.82em;
     color: var(--text-light);
     margin-bottom: 16px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.03em;
 }
 
@@ -295,7 +297,7 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
     font-size: 0.78em;
     color: var(--text-light);
     margin-top: 6px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.02em;
 }
 .dart-year {
@@ -316,6 +318,7 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
     border-bottom: 1px solid var(--border-light);
 }
 .report-header h1 {
+    font-family: var(--serif);
     font-size: 1.8em;
     color: var(--navy);
     border: none;
@@ -326,7 +329,7 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
     font-size: 0.85em;
     color: var(--text-light);
     margin-top: 6px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.03em;
 }
 
@@ -412,7 +415,7 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
     text-align: center;
     font-size: 0.78em;
     color: var(--text-light);
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
