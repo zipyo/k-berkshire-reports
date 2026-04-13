@@ -22,25 +22,22 @@
     </div>
 
     <nav class="report-nav">
+        <a href="financial.html" class="active">재무데이터</a>
         <a href="event-research.html">정보원 리서치</a>
         <a href="fisher.html">피셔 분석</a>
         <a href="lynch.html">린치 분석</a>
         <a href="buffett.html">버핏 분석</a>
         <a href="munger.html">멍거 분석</a>
         <a href="dialogue.html">버핏-멍거 토론</a>
-        <a href="financial.html" class="active">재무데이터</a>
     </nav>
 
     <main class="report-content">
-        <div class="financial-data"><h2 id="_1">기업 정보</h2>
-<ul>
-<li>기업명: SK가스</li>
+        <div class="financial-data"><div class="fin-meta"><ul>
 <li>종목코드: 018670</li>
 <li>시장: KOSPI</li>
 <li>금액 단위: 억원</li>
-</ul>
-<h2 id="_2">주요지표</h2>
-<p><em>단위 : 억원, %, 배, 천주</em></p>
+</ul></div>
+<div class="fin-tabs"><div class="fin-tab-bar"><button class="fin-tab-btn active" data-target="fin-tab-0">주요지표</button><button class="fin-tab-btn" data-target="fin-tab-1">손익계산서</button><button class="fin-tab-btn" data-target="fin-tab-2">재무상태표</button><button class="fin-tab-btn" data-target="fin-tab-3">현금흐름표</button><button class="fin-tab-btn" data-target="fin-tab-4">주주 현황</button></div><div class="fin-tab-content" id="fin-tab-0"><p><em>단위 : 억원, %, 배, 천주</em></p>
 <h3 id="_3">연간</h3>
 <table>
 <thead>
@@ -488,8 +485,7 @@
 <td>-</td>
 </tr>
 </tbody>
-</table>
-<details class="fin-section"><summary>손익계산서</summary><div><table>
+</table></div><div class="fin-tab-content" id="fin-tab-1" style="display:none"><table>
 <thead>
 <tr>
 <th>계정</th>
@@ -881,7 +877,7 @@
 <td>-</td>
 </tr>
 </tbody>
-</table></div></details><details class="fin-section"><summary>재무상태표</summary><div><table>
+</table></div><div class="fin-tab-content" id="fin-tab-2" style="display:none"><table>
 <thead>
 <tr>
 <th>계정</th>
@@ -1194,7 +1190,7 @@
 <td>-</td>
 </tr>
 </tbody>
-</table></div></details><details class="fin-section"><summary>현금흐름표</summary><div><table>
+</table></div><div class="fin-tab-content" id="fin-tab-3" style="display:none"><table>
 <thead>
 <tr>
 <th>계정</th>
@@ -1752,8 +1748,7 @@
 <td>4,048</td>
 </tr>
 </tbody>
-</table></div></details><h2 id="_8">주주 현황</h2>
-<table>
+</table></div><div class="fin-tab-content" id="fin-tab-4" style="display:none"><table>
 <thead>
 <tr>
 <th>주주명</th>
@@ -1785,7 +1780,7 @@
 </table>
 <ul>
 <li><strong>외국인 지분율</strong>: 6.95%</li>
-</ul></div>
+</ul></div></div><script>document.querySelectorAll(".fin-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".fin-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".fin-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script></div>
     </main>
 
     <div class="footer">k-berkshire</div>
