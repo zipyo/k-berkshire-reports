@@ -37,554 +37,243 @@
 
     <main class="report-content">
         <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
-<table>
-<thead>
-<tr>
-<th>사업부문</th>
-<th>매출 (억원)</th>
-<th>비중</th>
-<th>수출비중</th>
-<th>2Y CAGR</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DX 부문</td>
-<td>1,879,673</td>
-<td>56.3%</td>
-<td>–</td>
-<td>5.2%</td>
-</tr>
-<tr>
-<td>DS 부문</td>
-<td>1,301,282</td>
-<td>39.0%</td>
-<td>–</td>
-<td>39.8%</td>
-</tr>
-<tr>
-<td>SDC</td>
-<td>298,417</td>
-<td>8.9%</td>
-<td>–</td>
-<td>−1.8%</td>
-</tr>
-<tr>
-<td>Harman</td>
-<td>157,833</td>
-<td>4.7%</td>
-<td>–</td>
-<td>4.7%</td>
-</tr>
-<tr>
-<td>기타(내부거래 제거)</td>
-<td>△301,146</td>
-<td>△8.9%</td>
-<td>–</td>
-<td>–</td>
-</tr>
-<tr>
-<td><strong>합계</strong></td>
-<td><strong>3,336,059</strong></td>
-<td><strong>100.0%</strong></td>
-<td><strong>91.7%†</strong></td>
-<td><strong>13.5%</strong></td>
-</tr>
-</tbody>
-</table>
-<p>† 별도 기준 수출비중. 부문별 미공시.</p>
+<div class="bm-summary"><div class="summary-item"><span class="value">3,336,059억원</span></div><div class="summary-item"><span class="value">수출비중 92%</span></div><div class="summary-item"><span class="value">메모리</span></div><div class="summary-item"><span class="value">스마트폰</span></div><div class="summary-item"><span class="value">TV</span></div><div class="summary-item"><span class="value">OLED 글로벌 1위 종합 전자기업</span></div><div class="summary-item"><span class="value">기말 순현금 +1,181,835억원</span></div></div>
+<div class="chart-container chart-pie"><pre class="mermaid">
+pie showData
+    &quot;DX 1,879,673억&quot; : 56.3
+    &quot;DS 1,301,282억&quot; : 39.0
+    &quot;SDC 298,417억&quot; : 8.9
+    &quot;Harman 157,833억&quot; : 4.7
+</pre></div>
 <hr>
-<h3 id="2">섹션 2. 밸류체인</h3><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">DX 부문</button><button class="vc-tab-btn" data-target="vc-tab-1">DS 부문</button><button class="vc-tab-btn" data-target="vc-tab-2">SDC</button><button class="vc-tab-btn" data-target="vc-tab-3">Harman</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="bm-summary"><div class="summary-item"><span class="value">후방 (공급)</strong> — 총 매입액 745,693억원</p>
+<h3 id="2">섹션 2. 밸류체인</h3><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">DX 부문</button><button class="vc-tab-btn" data-target="vc-tab-1">DS 부문</button><button class="vc-tab-btn" data-target="vc-tab-2">SDC</button><button class="vc-tab-btn" data-target="vc-tab-3">Harman</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 1,879,673억원 · 56.3% · 2Y CAGR +5.2%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;Qualcomm, MediaTek&lt;br/&gt;모바일AP 솔루션&quot;]
+    R2[&quot;CSOT, SDP 등&lt;br/&gt;디스플레이 패널&quot;]
+    R3[&quot;삼성전기, 엠씨넥스&lt;br/&gt;Camera Module&quot;]
+
+    P1[&quot;베트남·인도·구미&lt;br/&gt;스마트폰 214,259천대&lt;br/&gt;가동률 79.3%&quot;]
+    P2[&quot;멕시코·헝가리·베트남&lt;br/&gt;TV·모니터 44,361천대&lt;br/&gt;가동률 78.8%&quot;]
+
+    C1[&quot;통신사업자&lt;br/&gt;Deutsche Telekom 등&quot;]
+    C2[&quot;Retailer·B2B&lt;br/&gt;Alphabet, Apple 등&quot;]
+
+    M1[&quot;미주 26%&lt;br/&gt;중국 28%&lt;br/&gt;유럽 12%&lt;br/&gt;아시아·아프리카 18%&lt;br/&gt;국내 8%&quot;]
+
+    R1 -- &quot;모바일AP&quot; --&gt; P1
+    R3 -- &quot;Camera Module&quot; --&gt; P1
+    R2 -- &quot;디스플레이 패널&quot; --&gt; P2
+    P1 -- &quot;스마트폰·태블릿&quot; --&gt; C1 &amp; C2
+    P2 -- &quot;TV·모니터·가전&quot; --&gt; C2
+    C1 &amp; C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3 supply
+    class P1,P2 core
+    class C1,C2 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">TV 20년 연속 글로벌 1위(점유율 29.1%), 스마트폰 15년 연속 글로벌 1위(점유율 19.2%). 판매경로: 특직판 54%, 소매 22%, 도매 15%. 주요 5대 매출처 비중 약 15%. DS·SDC로부터 반도체·OLED 패널 내부 조달(내부거래 △301,146억). 지역별 매출은 별도 기준.</div></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><div class="segment-tag">매출 1,301,282억원 · 39.0% · 2Y CAGR +39.8%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;솔브레인, 동우화인켐&lt;br/&gt;Chemical&quot;]
+    R2[&quot;SILTRONIC, SK실트론&lt;br/&gt;Wafer&quot;]
+
+    P1[&quot;화성·평택·중국 시안&lt;br/&gt;메모리 DRAM·NAND&lt;br/&gt;가동률 100%&quot;]
+    P2[&quot;화성·평택&lt;br/&gt;System LSI·Foundry&quot;]
+
+    C1[&quot;데이터센터·AI&lt;br/&gt;Alphabet, NVIDIA 등&quot;]
+    C2[&quot;모바일·PC&lt;br/&gt;Apple, Qualcomm 등&quot;]
+    C3[&quot;Foundry 위탁생산&lt;br/&gt;Tesla 165억$ 수주 등&quot;]
+
+    R1 -- &quot;Chemical&quot; --&gt; P1
+    R2 -- &quot;Wafer&quot; --&gt; P1 &amp; P2
+    P1 -- &quot;DRAM·NAND·HBM&quot; --&gt; C1 &amp; C2
+    P2 -- &quot;모바일AP·이미지센서&quot; --&gt; C2
+    P2 -- &quot;위탁생산&quot; --&gt; C3
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2,C3 demand
+</pre></div>
+<div class="bm-note">DRAM 글로벌 1위(점유율 34.0%, 전년 41.5%에서 하락). 시설투자 47.5조원(전사 52.7조 중 90%). 2nm GAA 공정 양산 개시, HBM4 양산 준비. Foundry 5대 업체 과점 구조. 메모리 24시간 3교대·365일 가동.</div></div><div class="vc-tab-content" id="vc-tab-2" data-tab-defer><div class="segment-tag">매출 298,417억원 · 8.9% · 2Y CAGR −1.8%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;비에이치, SI FLEX&lt;br/&gt;FPCA&quot;]
+    R2[&quot;Apple, LENS&lt;br/&gt;Cover Glass&quot;]
+
+    P1[&quot;천안·아산&lt;br/&gt;중소형 OLED&lt;br/&gt;1,851천개 8G환산&quot;]
+    P2[&quot;아산&lt;br/&gt;QD-OLED&lt;br/&gt;TV·모니터용&quot;]
+
+    C1[&quot;내부 DX부문&lt;br/&gt;Galaxy 스마트폰·폴더블&quot;]
+    C2[&quot;외부 고객&lt;br/&gt;Apple 등&quot;]
+    C3[&quot;TV·모니터&lt;br/&gt;내부 및 외부&quot;]
+
+    R1 -- &quot;FPCA&quot; --&gt; P1
+    R2 -- &quot;Cover Glass&quot; --&gt; P1
+    P1 -- &quot;스마트폰용 OLED&quot; --&gt; C1 &amp; C2
+    P2 -- &quot;QD-OLED&quot; --&gt; C3
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2,C3 demand
+</pre></div>
+<div class="bm-note">중소형 OLED 글로벌 1위(점유율 42.8%, 전년 50.1%에서 하락). 가동률 100%(24시간 3교대·365일). 수직계열화: DX부문 Galaxy 시리즈에 내부 공급. 8.6세대 IT OLED 신규 라인 준비 중(태블릿·노트북용). 2007년 세계 최초 OLED 상용화.</div></div><div class="vc-tab-content" id="vc-tab-3" data-tab-defer><div class="segment-tag">매출 157,833억원 · 4.7% · 2Y CAGR +4.7%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;NVIDIA, Intel&lt;br/&gt;SOC&quot;]
+    R2[&quot;WNC&lt;br/&gt;통신 모듈&quot;]
+
+    P1[&quot;멕시코·헝가리·중국&lt;br/&gt;디지털 콕핏&lt;br/&gt;5,897천개&quot;]
+    P2[&quot;미국·네덜란드&lt;br/&gt;컨슈머 오디오&quot;]
+
+    C1[&quot;자동차 OEM&lt;br/&gt;글로벌 완성차 업체&quot;]
+    C2[&quot;소비자&lt;br/&gt;포터블·사운드바 등&quot;]
+
+    R1 -- &quot;SOC&quot; --&gt; P1
+    R2 -- &quot;통신 모듈&quot; --&gt; P1
+    P1 -- &quot;디지털 콕핏·카오디오&quot; --&gt; C1
+    P2 -- &quot;스피커·헤드폰&quot; --&gt; C2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2 demand
+</pre></div>
+<div class="bm-note">디지털 콕핏 글로벌 점유율 12.8%. 가동률 75.4%. 2025년 3분기 Sound United 인수(JBL, Denon, Marantz 등 브랜드 확보). SDV(Software Defined Vehicle) 전환 대응 중. 삼성전자 IT 기술(디스플레이·통신) 접목하여 차별화 추진.</div>
+<hr></div></div><script>document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script><h3 id="3-2025">섹션 3. 현금 배분 (2025)</h3>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    A[&quot;영업CF&lt;br/&gt;&lt;b&gt;853,151억&lt;/b&gt;&quot;]
+    B[&quot;CapEx&lt;br/&gt;&lt;b&gt;−521,532억&lt;/b&gt;&quot;]
+    C[&quot;FCF&lt;br/&gt;&lt;b&gt;331,619억&lt;/b&gt;&quot;]
+    D[&quot;배당&lt;br/&gt;&lt;b&gt;−98,972억&lt;/b&gt;&quot;]
+    E[&quot;자사주 순&lt;br/&gt;&lt;b&gt;−81,893억&lt;/b&gt;&quot;]
+    F[&quot;금융자산 순&lt;br/&gt;&lt;b&gt;−163,590억&lt;/b&gt;&quot;]
+    G[&quot;기타재무&lt;br/&gt;&lt;b&gt;46,085억&lt;/b&gt;&quot;]
+    H[&quot;환율효과&lt;br/&gt;&lt;b&gt;8,259억&lt;/b&gt;&quot;]
+    I[&quot;현금 순증&lt;br/&gt;&lt;b&gt;41,508억&lt;/b&gt;&quot;]
+
+    A --&gt; B --&gt; C
+    C --&gt; D &amp; E &amp; F &amp; G &amp; H
+    D &amp; E &amp; F &amp; G &amp; H --&gt; I
+
+    classDef inflow fill:#c8923c,stroke:#a87830,color:#fff
+    classDef outflow fill:#5d7a8c,stroke:#4a6577,color:#f0f4f7
+    classDef key fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef result fill:#3d4f65,stroke:#2d3e52,color:#e8e2d8
+
+    class A inflow
+    class B outflow
+    class C key
+    class D,E,F outflow
+    class G,H inflow
+    class I result
+</pre></div>
+<div class="bm-note">검증 (2025): FCF 331,619 + 배당 −98,972 + 자사주순 −81,893 + 금융자산순 −163,590 + 기타재무 46,085 + 환율 8,259 = <strong>41,508</strong> ✓<br>
+기말 순현금: 1,181,835억원</div>
 <table>
 <thead>
 <tr>
-<th>항목</th>
-<th>비중</th>
-<th>주요 공급업체</th>
+<th>구분</th>
+<th>2025</th>
+<th>2024</th>
+<th>2023</th>
+<th>2022</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>모바일AP 솔루션</td>
-<td>18.5%</td>
-<td>Qualcomm, MediaTek</td>
+<td>영업CF</td>
+<td>853,151</td>
+<td>729,826</td>
+<td>441,374</td>
+<td>621,813</td>
 </tr>
 <tr>
-<td>디스플레이 패널</td>
-<td>10.7%</td>
-<td>CSOT, SDP 등</td>
+<td>CapEx</td>
+<td>−521,532</td>
+<td>−537,417</td>
+<td>−605,342</td>
+<td>−531,267</td>
 </tr>
 <tr>
-<td>Camera Module</td>
-<td>7.9%</td>
-<td>삼성전기, 엠씨넥스 등</td>
+<td><strong>FCF</strong></td>
+<td><strong>331,619</strong></td>
+<td><strong>192,409</strong></td>
+<td><strong>−163,968</strong></td>
+<td><strong>90,546</strong></td>
 </tr>
 <tr>
-<td>기타</td>
-<td>62.9%</td>
-<td>–</td>
+<td>배당</td>
+<td>−98,972</td>
+<td>−108,887</td>
+<td>−98,645</td>
+<td>−98,144</td>
 </tr>
-</tbody>
-</table>
-<p><strong>핵심 활동</span></div></div>
-<table>
-<thead>
 <tr>
-<th>항목</th>
-<th>내용</th>
+<td>자사주 순</td>
+<td>−81,893</td>
+<td>−18,118</td>
+<td>0</td>
+<td>0</td>
 </tr>
-</thead>
-<tbody>
 <tr>
-<td>생산 거점</td>
-<td>한국(수원·구미·광주), 베트남(SEV·SEVT·SEHC), 인도(SIEL), 브라질(SEDA), 멕시코, 헝가리(SEH), 폴란드(SEPM)</td>
+<td>금융자산 순</td>
+<td>−163,590</td>
+<td>−316,400</td>
+<td>436,114</td>
+<td>215,239</td>
 </tr>
 <tr>
-<td>생산 방식</td>
-<td>Set 제품 조립·생산</td>
+<td>기타재무</td>
+<td>46,085</td>
+<td>49,033</td>
+<td>12,572</td>
+<td>−95,756</td>
 </tr>
 <tr>
-<td>가동률</td>
-<td>TV·모니터 78.8%, 스마트폰 79.3%</td>
+<td>환율효과</td>
+<td>8,259</td>
+<td>48,210</td>
+<td>7,928</td>
+<td>−5,392</td>
 </tr>
 <tr>
-<td>R&amp;D 비중</td>
-<td>전사 11.3% (37.8조원, 연결 기준)</td>
-</tr>
-<tr>
-<td>핵심 인증</td>
-<td>ISO 14001·45001, Google·Qualcomm·Nokia·Ericsson·Huawei 상호 특허 라이선스</td>
-</tr>
-</tbody>
-</table>
-<p><strong>전방 (수요)</strong></p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>비중</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>채널-특직판(B2B·온라인)</td>
-<td>54%†</td>
-</tr>
-<tr>
-<td>채널-소매</td>
-<td>22%†</td>
-</tr>
-<tr>
-<td>채널-도매</td>
-<td>15%†</td>
-</tr>
-<tr>
-<td>채널-기타</td>
-<td>9%†</td>
-</tr>
-<tr>
-<td>지역-중국</td>
-<td>27.6%‡</td>
-</tr>
-<tr>
-<td>지역-미주</td>
-<td>26.1%‡</td>
-</tr>
-<tr>
-<td>지역-아시아·아프리카</td>
-<td>17.6%‡</td>
-</tr>
-<tr>
-<td>지역-유럽</td>
-<td>12.0%‡</td>
-</tr>
-<tr>
-<td>지역-국내</td>
-<td>8.3%‡</td>
-</tr>
-<tr>
-<td>지역-기타</td>
-<td>8.3%‡</td>
-</tr>
-<tr>
-<td>TV M/S (금액)</td>
-<td>29.1% — 20년 연속 세계 1위</td>
-</tr>
-<tr>
-<td>스마트폰 M/S (수량)</td>
-<td>19.2%</td>
-</tr>
-<tr>
-<td>주요 고객 유형</td>
-<td>B2C 소비자, 통신사업자, B2B 기업</td>
-</tr>
-<tr>
-<td>상위 5대 매출처 비중</td>
-<td>약 15% (Alphabet, Apple, Deutsche Telekom 등)</td>
-</tr>
-<tr>
-<td>대금회수</td>
-<td>약정여신·개별계약</td>
-</tr>
-</tbody>
-</table>
-<p>† 전사 기준 ‡ 별도 기준 전사</p>
-<hr></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><p><strong>후방 (공급)</strong> — 총 매입액 174,432억원</p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>비중</th>
-<th>주요 공급업체</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Chemical</td>
-<td>17.1%</td>
-<td>솔브레인, 동우화인켐 등</td>
-</tr>
-<tr>
-<td>Wafer</td>
-<td>12.4%</td>
-<td>SILTRONIC, SK실트론 등</td>
-</tr>
-<tr>
-<td>기타</td>
-<td>70.5%</td>
-<td>–</td>
-</tr>
-</tbody>
-</table>
-<p><strong>핵심 활동</strong></p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>내용</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>생산 거점</td>
-<td>한국(화성·평택·기흥), 중국(SCS-Xian), 미국(SAS-Texas)</td>
-</tr>
-<tr>
-<td>생산 방식</td>
-<td>FAB 공정, 24시간 3교대</td>
-</tr>
-<tr>
-<td>가동률</td>
-<td>메모리 100%</td>
-</tr>
-<tr>
-<td>시설투자</td>
-<td>47.5조원 (2025)</td>
-</tr>
-<tr>
-<td>핵심 기술</td>
-<td>업계 최초 24Gb GDDR7, 10나노급 6세대 DRAM, 2nm GAA Foundry</td>
-</tr>
-</tbody>
-</table>
-<p><strong>전방 (수요)</strong></p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>비중</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DRAM M/S (금액)</td>
-<td>34.0%</td>
-</tr>
-<tr>
-<td>주요 고객 유형</td>
-<td>서버·데이터센터, PC·모바일 OEM, 파운드리 고객(fabless)</td>
-</tr>
-<tr>
-<td>주요 매출처</td>
-<td>Alphabet, Apple 등</td>
-</tr>
-<tr>
-<td>Foundry 수주</td>
-<td>Tesla 165억달러 (~2033)</td>
-</tr>
-<tr>
-<td>대금회수</td>
-<td>B2B 개별계약</td>
-</tr>
-</tbody>
-</table>
-<hr></div><div class="vc-tab-content" id="vc-tab-2" data-tab-defer><p><strong>후방 (공급)</strong> — 총 매입액 130,592억원</p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>비중</th>
-<th>주요 공급업체</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>FPCA (구동회로)</td>
-<td>20.3%</td>
-<td>비에이치, SI FLEX 등</td>
-</tr>
-<tr>
-<td>Cover Glass (강화유리)</td>
-<td>15.3%</td>
-<td>Apple, LENS 등</td>
-</tr>
-<tr>
-<td>기타</td>
-<td>64.4%</td>
-<td>–</td>
-</tr>
-</tbody>
-</table>
-<p><strong>핵심 활동</strong></p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>내용</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>생산 거점</td>
-<td>한국(천안·아산), 베트남(SDV)</td>
-</tr>
-<tr>
-<td>생산 방식</td>
-<td>OLED FAB 공정, 24시간 3교대</td>
-</tr>
-<tr>
-<td>가동률</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>시설투자</td>
-<td>2.8조원 (2025)</td>
-</tr>
-<tr>
-<td>핵심 기술</td>
-<td>세계 최초 OLED 상용화(2007), 8.6G IT OLED 라인 구축 중, 2-Folding Display</td>
-</tr>
-</tbody>
-</table>
-<p><strong>전방 (수요)</strong></p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>비중</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>스마트폰 패널 M/S (금액)</td>
-<td>42.8%</td>
-</tr>
-<tr>
-<td>주요 고객 유형</td>
-<td>삼성 DX(내부), Apple 등 글로벌 스마트폰 OEM</td>
-</tr>
-<tr>
-<td>확대 중 응용처</td>
-<td>IT(태블릿·노트북), Auto, 워치, QD-OLED TV·모니터</td>
-</tr>
-<tr>
-<td>대금회수</td>
-<td>B2B 개별계약</td>
-</tr>
-</tbody>
-</table>
-<hr></div><div class="vc-tab-content" id="vc-tab-3" data-tab-defer><p><strong>후방 (공급)</strong> — 총 매입액 78,986억원</p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>비중</th>
-<th>주요 공급업체</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SOC (System-On-Chip)</td>
-<td>10.1%</td>
-<td>NVIDIA, Intel 등</td>
-</tr>
-<tr>
-<td>통신 모듈</td>
-<td>8.1%</td>
-<td>WNC(Wistron NeWeb) 등</td>
-</tr>
-<tr>
-<td>기타</td>
-<td>81.8%</td>
-<td>–</td>
-</tr>
-</tbody>
-</table>
-<p><strong>핵심 활동</strong></p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>내용</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>생산 거점</td>
-<td>멕시코, 헝가리, 중국, 미국(Novi, MI)</td>
-</tr>
-<tr>
-<td>생산 방식</td>
-<td>전장부품 조립·생산</td>
-</tr>
-<tr>
-<td>가동률</td>
-<td>75.4%</td>
-</tr>
-<tr>
-<td>핵심 사업</td>
-<td>디지털 콕핏, 카오디오, 컨슈머 오디오</td>
-</tr>
-<tr>
-<td>M&amp;A</td>
-<td>Sound United 인수 (2025 3Q) — B&amp;W, Denon, Marantz 브랜드 확보</td>
-</tr>
-</tbody>
-</table>
-<p><strong>전방 (수요)</strong></p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>비중</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>디지털 콕핏 M/S (금액)</td>
-<td>12.8%</td>
-</tr>
-<tr>
-<td>주요 고객 유형</td>
-<td>자동차 OEM(전장), B2C(라이프스타일 오디오)</td>
-</tr>
-<tr>
-<td>브랜드 포트폴리오</td>
-<td>JBL, Harman Kardon, AKG, Mark Levinson, B&amp;W, Denon, Marantz</td>
-</tr>
-<tr>
-<td>대금회수</td>
-<td>B2B 개별계약</td>
-</tr>
-</tbody>
-</table>
-<hr></div></div><script>document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script><h3 id="3">섹션 3. 현금 배분</h3>
-<table>
-<thead>
-<tr>
-<th>항목 (억원)</th>
-<th style="text-align: right;">2022</th>
-<th style="text-align: right;">2023</th>
-<th style="text-align: right;">2024</th>
-<th style="text-align: right;">2025</th>
-<th>비고</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>영업CF</strong></td>
-<td style="text-align: right;">621,813</td>
-<td style="text-align: right;">441,374</td>
-<td style="text-align: right;">729,826</td>
-<td style="text-align: right;">853,151</td>
-<td></td>
-</tr>
-<tr>
-<td>(−) CapEx</td>
-<td style="text-align: right;">−531,267</td>
-<td style="text-align: right;">−605,342</td>
-<td style="text-align: right;">−537,417</td>
-<td style="text-align: right;">−521,532</td>
-<td>유형+무형</td>
-</tr>
-<tr>
-<td><strong>= FCF</strong></td>
-<td style="text-align: right;"><strong>90,546</strong></td>
-<td style="text-align: right;"><strong>−163,968</strong></td>
-<td style="text-align: right;"><strong>192,409</strong></td>
-<td style="text-align: right;"><strong>331,619</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>(−) 배당</td>
-<td style="text-align: right;">−98,144</td>
-<td style="text-align: right;">−98,645</td>
-<td style="text-align: right;">−108,887</td>
-<td style="text-align: right;">−98,972</td>
-<td></td>
-</tr>
-<tr>
-<td>(+/−) 자사주 순</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">−18,118</td>
-<td style="text-align: right;">−81,893</td>
-<td>전량 취득(처분 0)</td>
-</tr>
-<tr>
-<td>(+/−) 금융자산 순</td>
-<td style="text-align: right;">215,239</td>
-<td style="text-align: right;">436,114</td>
-<td style="text-align: right;">−316,400</td>
-<td style="text-align: right;">−163,590</td>
-<td>투자CF + CapEx</td>
-</tr>
-<tr>
-<td>(+/−) 기타재무</td>
-<td style="text-align: right;">−95,756</td>
-<td style="text-align: right;">12,714</td>
-<td style="text-align: right;">49,033</td>
-<td style="text-align: right;">46,085</td>
-<td>차입 순변동·리스·사채 상환 등</td>
-</tr>
-<tr>
-<td>(+/−) 환율효과</td>
-<td style="text-align: right;">−5,392</td>
-<td style="text-align: right;">7,786</td>
-<td style="text-align: right;">48,210</td>
-<td style="text-align: right;">8,259</td>
-<td>2023: 기타CF −142 포함</td>
-</tr>
-<tr>
-<td><strong>= 현금 순증</strong></td>
-<td style="text-align: right;"><strong>106,493</strong></td>
-<td style="text-align: right;"><strong>194,001</strong></td>
-<td style="text-align: right;"><strong>−153,753</strong></td>
-<td style="text-align: right;"><strong>41,508</strong></td>
-<td></td>
+<td><strong>현금 순증</strong></td>
+<td><strong>41,508</strong></td>
+<td><strong>−153,753</strong></td>
+<td><strong>194,001</strong></td>
+<td><strong>106,493</strong></td>
 </tr>
 <tr>
 <td>기말 순현금</td>
-<td style="text-align: right;">1,176,966</td>
-<td style="text-align: right;">886,339</td>
-<td style="text-align: right;">1,050,784</td>
-<td style="text-align: right;">1,181,835</td>
-<td>현금+유동금융+장기금융−차입금 전체†</td>
+<td>1,181,835</td>
+<td>1,050,784</td>
+<td>886,339</td>
+<td>1,176,966</td>
 </tr>
 </tbody>
-</table>
-<p>† 차입금 전체 = 단기차입금 + 유동성장기부채 + 사채 + 장기차입금 + 비유동금융부채(리스부채 등)</p>
-<div class="bm-note">검증 (2025): FCF 331,619 + 배당 −98,972 + 자사주순 −81,893 + 금융자산순 −163,590 + 기타재무 46,085 + 환율 8,259 = <strong>41,508</strong> ✓ (기말 578,564 − 기초 537,056 = 41,508)</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#3b82f6",pie2:"#f59e0b",pie3:"#10b981",pie4:"#ef4444",pie5:"#8b5cf6",pie6:"#06b6d4",pie7:"#f97316",pie8:"#ec4899"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
+</table></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#3b82f6",pie2:"#f59e0b",pie3:"#10b981",pie4:"#ef4444",pie5:"#8b5cf6",pie6:"#06b6d4",pie7:"#f97316",pie8:"#ec4899"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
     </main>
 
     <div class="footer">k-berkshire</div>
