@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비즈니스 모델 - KBI메탈 | k-berkshire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="../index.html">홈</a> &nbsp;&rsaquo;&nbsp;
+        <a href="index.html">KBI메탈</a> &nbsp;&rsaquo;&nbsp;
+        <span>비즈니스 모델</span>
+    </div>
+
+    <div class="report-header">
+        <h1>KBI메탈</h1>
+        <div class="meta">비즈니스 모델 &mdash; 2026-03-27</div>
+    </div>
+
+    <nav class="report-nav">
+        <a href="financial.html">재무데이터</a>
+        <a href="business-model.html" class="active">비즈니스 모델</a>
+        <a href="event-research.html">정보원 리서치</a>
+        <a href="fisher.html">피셔 분석</a>
+        <a href="lynch.html">린치 분석</a>
+        <a href="buffett.html">버핏 분석</a>
+        <a href="munger.html">멍거 분석</a>
+        <a href="dialogue.html">버핏-멍거 토론</a>
+    </nav>
+
+    <main class="report-content">
+        <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
+<div class="bm-summary"><div class="summary-item"><span class="value">9,883억원</span></div><div class="summary-item"><span class="value">수출비중 19%</span></div><div class="summary-item"><span class="value">동롯드(JCR) 국내 점유율 40% 기반 전선 밸류체인 수직계열화</span></div><div class="summary-item"><span class="value">기말 순현금 −1,198억원</span></div></div>
+<div class="chart-container"><pre class="mermaid">
+pie showData
+    &quot;메탈(동ROD) 6,908억&quot; : 69.9
+    &quot;전선 2,585억&quot; : 26.1
+    &quot;전장 391억&quot; : 4.0
+</pre></div>
+<hr>
+<h3 id="2">섹션 2. 밸류체인</h3><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">전장사업부</button><button class="vc-tab-btn" data-target="vc-tab-1">메탈사업부</button><button class="vc-tab-btn" data-target="vc-tab-2">전선사업부</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 391억원 · 4% · 2Y CAGR +9.1%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;포항제철(POSCO)&lt;br/&gt;전기규소강판&lt;br/&gt;매입비중 30%&quot;]
+    R2[&quot;국내외 협력사&lt;br/&gt;동선·전장품부품&lt;br/&gt;매입비중 70%&quot;]
+
+    P1[&quot;달성공장(대구)&lt;br/&gt;자성철심(CORE)&lt;br/&gt;생산능력 2,040백만PUNCH&quot;]
+    P2[&quot;달성공장(대구)&lt;br/&gt;전장품(모터·알터네이터)&lt;br/&gt;생산능력 4,407천EA&quot;]
+
+    C1[&quot;자동차부품사&lt;br/&gt;보그워너PDS·이래에이엠에스&quot;]
+    C2[&quot;중장비·상용차사&lt;br/&gt;두산인프라코어·타타대우·자일대우버스&quot;]
+
+    R1 -- &quot;전기규소강판&quot; --&gt; P1
+    R2 -- &quot;동선·전장품부품&quot; --&gt; P2
+    P1 -- &quot;CORE&quot; --&gt; C1
+    P2 -- &quot;전장품&quot; --&gt; C2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2 demand
+</pre></div>
+<div class="bm-note">가동률 CORE 26.6% · 전장품 38.2% · 100% 주문생산(소량다품종) · 수출비중 14% · R&amp;D 실적 없음</div>
+<hr></div><div class="vc-tab-content" id="vc-tab-1" style="display:none"><div class="segment-tag">매출 6,908억원 · 70% · 2Y CAGR +4.7%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;국내 동스크랩&lt;br/&gt;재생동(폐동선)&lt;br/&gt;매입비중 40%&quot;]
+    R2[&quot;수입 동스크랩&lt;br/&gt;해외 폐동선&lt;br/&gt;매입비중 57%&quot;]
+    R3[&quot;국내 전기동&lt;br/&gt;LS니꼬동제련 등&lt;br/&gt;매입비중 3%&quot;]
+    R4[&quot;LS니꼬동제련&lt;br/&gt;SSCR 외주가공&lt;br/&gt;자체설비 매각(2018)&quot;]
+
+    P1[&quot;음성공장(충북)&lt;br/&gt;동롯드(SJCR)&lt;br/&gt;72,000TON/년 · 가동률 64%&quot;]
+
+    C1[&quot;중소전선업체(내수)&lt;br/&gt;KBI코스모링크·고려전선&lt;br/&gt;서울전선·원일전선·대신전선 등&quot;]
+    C2[&quot;수출상·해외바이어&lt;br/&gt;동남아 직수출&lt;br/&gt;수출비중 12%&quot;]
+
+    R1 -- &quot;동스크랩&quot; --&gt; P1
+    R2 -- &quot;동스크랩(수입)&quot; --&gt; P1
+    R3 -- &quot;전기동&quot; --&gt; P1
+    P1 -- &quot;동롯드(SJCR)&quot; --&gt; C1
+    P1 -- &quot;동롯드(SJCR)&quot; --&gt; C2
+    R4 -- &quot;동롯드(SSCR)&quot; --&gt; C2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4 supply
+    class P1 core
+    class C1,C2 demand
+</pre></div>
+<div class="bm-note">JCR 국내 시장점유율 약 40% · 원재료비 비중 90%+ · LME 연동 가격구조(원재료·판매 연동) · 동선물·통화선도(USD) 헷지 상시 운용</div>
+<hr></div><div class="vc-tab-content" id="vc-tab-2" style="display:none"><div class="segment-tag">매출 2,585억원 · 26% · 2Y CAGR +14.4%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;메탈사업부(자체)&lt;br/&gt;동롯드(Cu)&lt;br/&gt;수직계열화&quot;]
+    R2[&quot;국내 공급사&lt;br/&gt;AL·PE·PVC&lt;br/&gt;보조 원재료&quot;]
+
+    P1[&quot;옥천공장(충북)&lt;br/&gt;고압·저압 전선(MV·LV)&lt;br/&gt;12,100TON/년 · 가동률 35%&quot;]
+    P2[&quot;빈푹공장(베트남)&lt;br/&gt;LV·TIW 전선&lt;br/&gt;6,000TON/년 · 가동률 53%&quot;]
+
+    C1[&quot;한국전력공사·전기공사사&lt;br/&gt;고압케이블(공공·입찰)&quot;]
+    C2[&quot;건설사·아이마켓코리아&lt;br/&gt;저압선(민수·유통)&quot;]
+    C3[&quot;EVN(베트남전력청)&lt;br/&gt;건설사·전기공사업체&quot;]
+    C4[&quot;해외 직수출&lt;br/&gt;고압케이블·LV(전선부 수출비중 38%)&quot;]
+
+    R1 -- &quot;동롯드(Cu)&quot; --&gt; P1
+    R1 -- &quot;동롯드(Cu)&quot; --&gt; P2
+    R2 -- &quot;AL·PE·PVC&quot; --&gt; P1
+    P1 -- &quot;고압전선&quot; --&gt; C1
+    P1 -- &quot;고압전선&quot; --&gt; C4
+    P1 -- &quot;저압전선&quot; --&gt; C2
+    P2 -- &quot;LV·TIW&quot; --&gt; C3
+    P2 -- &quot;LV·TIW&quot; --&gt; C4
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2,C3,C4 demand
+</pre></div>
+<div class="bm-note">케이비아이 코스모링크 2025년 12월 종속편입(지분 50.16%) · 고압케이블 수출 급성장(제38기 278억→제40기 897억) · 국내 LS·대한·가온 3사 시장 80% 점유(중소업체 경쟁) · 원재료 Cu 비중 75%~95%(LME 연동)</div>
+<hr></div></div><script>document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script><h3 id="3-2025">섹션 3. 현금 배분 (2025)</h3>
+<div class="bm-note">재무데이터(현금흐름표) 미제공 — 영업CF·CapEx·배당 등 세부 수치 확인 불가 · 현금 순증 +16억원(기말 현금 225억, 기초 209억) · 기말 순현금 −1,198억원(현금 225억 − 이자부차입금 1,223억 − 전환사채 200억)</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:true,theme:"default",themeVariables:{fontSize:"14px",fontFamily:"Noto Sans KR,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#b8862d",pie5:"#3d4f65",pie6:"#8a6d3b",pie7:"#4a6a8a",pie8:"#7a6530"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:25,rankSpacing:55,padding:12}});</script>
+    </main>
+
+    <div class="footer">k-berkshire</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비즈니스 모델 - HRS | k-berkshire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="../index.html">홈</a> &nbsp;&rsaquo;&nbsp;
+        <a href="index.html">HRS</a> &nbsp;&rsaquo;&nbsp;
+        <span>비즈니스 모델</span>
+    </div>
+
+    <div class="report-header">
+        <h1>HRS</h1>
+        <div class="meta">비즈니스 모델 &mdash; 2026-03-18</div>
+    </div>
+
+    <nav class="report-nav">
+        <a href="financial.html">재무데이터</a>
+        <a href="business-model.html" class="active">비즈니스 모델</a>
+        <a href="event-research.html">정보원 리서치</a>
+        <a href="fisher.html">피셔 분석</a>
+        <a href="lynch.html">린치 분석</a>
+        <a href="buffett.html">버핏 분석</a>
+        <a href="munger.html">멍거 분석</a>
+        <a href="dialogue.html">버핏-멍거 토론</a>
+    </nav>
+
+    <main class="report-content">
+        <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
+<div class="bm-summary"><div class="summary-item"><span class="value">789억원</span></div><div class="summary-item"><span class="value">수출비중 16%</span></div><div class="summary-item"><span class="value">실리콘고무 소재 전문기업(컴파운드 76%)</span></div><div class="summary-item"><span class="value">기말 순현금 +401억원</span></div></div>
+<hr>
+<h3 id="2">섹션 2. 밸류체인</h3>
+<h4 id="_1">실리콘고무제품</h4>
+<div class="segment-tag">매출 789억원 · 비중 100% · 2Y CAGR +0.5%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;미국·유럽 공급사&lt;br/&gt;폴리실록산 원료&quot;]
+    R2[&quot;일본·중국 공급사&lt;br/&gt;실리카·가황제&quot;]
+
+    P1[&quot;평택공장&lt;br/&gt;컴파운드·방화제품&lt;br/&gt;설비 11,510MT&quot;]
+    P2[&quot;아산공장·중국법인&lt;br/&gt;가공제품&lt;br/&gt;설비 436MT&quot;]
+
+    C1[&quot;전기전자·자동차&lt;br/&gt;실수요 제조사&quot;]
+    C2[&quot;원자력·건물&lt;br/&gt;방화 시공사&quot;]
+    C3[&quot;생활·의료&lt;br/&gt;도소매·유통&quot;]
+
+    M1[&quot;국내 84%&lt;br/&gt;수출 16%&quot;]
+
+    R1 -- &quot;폴리실록산&quot; --&gt; P1
+    R2 -- &quot;실리카·가황제&quot; --&gt; P1
+    P1 -- &quot;컴파운드 중간재&quot; --&gt; P2
+    P1 -- &quot;컴파운드제품&quot; --&gt; C1 &amp; C3
+    P1 -- &quot;방화제품&quot; --&gt; C2
+    P2 -- &quot;가공제품&quot; --&gt; C1
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">보충 정보: 가동률 — 컴파운드 68.2% / 가공 52.8% / 방화 18.3%(저가동). R&amp;D 매출의 1.6%(127억원), 정부과제 다수 수행 중. 실록산 원료 전량 수입(수직계열화 없음). 300종 이상 커스텀 그레이드, 1~3일 초단기 납품 체계로 납기 경쟁우위. 연결기준 내부거래 18억원(평택→아산/중국 중간재 공급). 서탄산업단지 부지(50,546㎡, 총 295억원) 26.02 취득 완료 — 중장기 증설 기반.</div>
+<hr>
+<h3 id="3-2025">섹션 3. 현금 배분 (2025)</h3>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    A[&quot;영업CF&lt;br/&gt;&lt;b&gt;114억&lt;/b&gt;&quot;]
+    B[&quot;CapEx&lt;br/&gt;&lt;b&gt;−33억&lt;/b&gt;&quot;]
+    C[&quot;FCF&lt;br/&gt;&lt;b&gt;81억&lt;/b&gt;&quot;]
+    D[&quot;배당&lt;br/&gt;&lt;b&gt;−48억&lt;/b&gt;&quot;]
+    E[&quot;금융자산 순&lt;br/&gt;&lt;b&gt;−14억&lt;/b&gt;&quot;]
+    F[&quot;차입·이자·리스&lt;br/&gt;&lt;b&gt;±0억&lt;/b&gt;&quot;]
+    G[&quot;환율효과&lt;br/&gt;&lt;b&gt;−17억&lt;/b&gt;&quot;]
+    H[&quot;현금 순증&lt;br/&gt;&lt;b&gt;+2억&lt;/b&gt;&quot;]
+
+    A --&gt; B --&gt; C
+    C --&gt; D &amp; E &amp; F &amp; G
+    D &amp; E &amp; F &amp; G --&gt; H
+
+    classDef inflow fill:#c8923c,stroke:#a87830,color:#fff
+    classDef outflow fill:#5d7a8c,stroke:#4a6577,color:#f0f4f7
+    classDef key fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef result fill:#3d4f65,stroke:#2d3e52,color:#e8e2d8
+
+    class A inflow
+    class B,D,E,F,G outflow
+    class C key
+    class H result
+</pre></div>
+<div class="bm-note">검증 (2025): FCF 81 + 배당 −48 + 자사주순 0 + 금융자산순 −14 + 기타재무 0 + 환율 −17 = <strong>+2</strong> ✓<br>
+※ 현금흐름표 미제공 — 자본총계 변화(+70억)·BS 항목에서 역산한 추정치. CapEx: PPE 취득 합산(32.8억). 배당: 포괄이익 118억 − 자본증가 70억 역산. 금융자산순: FVPL 증가 12억 + 투자부동산 계약금 2억. 환율: 포괄이익−당기순이익 차이(-17억). 실제 현금흐름표 제공 시 재계산 요망.<br>
+기말 순현금: +401억원 (현금 337억 + FVPL 81억 + 기타금융 0.5억 − 차입금 17.4억)</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:true,theme:"default",themeVariables:{fontSize:"14px",fontFamily:"Noto Sans KR,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#b8862d",pie5:"#3d4f65",pie6:"#8a6d3b",pie7:"#4a6a8a",pie8:"#7a6530"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:25,rankSpacing:55,padding:12}});</script>
+    </main>
+
+    <div class="footer">k-berkshire</div>
+</body>
+</html>

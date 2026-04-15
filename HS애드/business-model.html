@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비즈니스 모델 - HS애드 | k-berkshire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="../index.html">홈</a> &nbsp;&rsaquo;&nbsp;
+        <a href="index.html">HS애드</a> &nbsp;&rsaquo;&nbsp;
+        <span>비즈니스 모델</span>
+    </div>
+
+    <div class="report-header">
+        <h1>HS애드</h1>
+        <div class="meta">비즈니스 모델 &mdash; 2026-03-16</div>
+    </div>
+
+    <nav class="report-nav">
+        <a href="financial.html">재무데이터</a>
+        <a href="business-model.html" class="active">비즈니스 모델</a>
+        <a href="event-research.html">정보원 리서치</a>
+        <a href="fisher.html">피셔 분석</a>
+        <a href="lynch.html">린치 분석</a>
+        <a href="buffett.html">버핏 분석</a>
+        <a href="munger.html">멍거 분석</a>
+        <a href="dialogue.html">버핏-멍거 토론</a>
+    </nav>
+
+    <main class="report-content">
+        <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
+<div class="bm-summary"><div class="summary-item"><span class="value">4,839억원</span></div><div class="summary-item"><span class="value">수출비중 32%</span></div><div class="summary-item"><span class="value">LG그룹 전속 종합광고대행사(기획</span></div><div class="summary-item"><span class="value">제작</span></div><div class="summary-item"><span class="value">미디어)</span></div><div class="summary-item"><span class="value">기말 순현금 데이터 미제공</span></div></div>
+<hr>
+<h3 id="2">섹션 2. 밸류체인</h3>
+<h4 id="_1">광고업</h4>
+<div class="segment-tag">매출 4,839억원 · 100% · 2Y CAGR −6% (2023년 5,483억 → 2025년 4,839억)</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;협력업체&lt;br/&gt;외주제작·촬영&lt;br/&gt;외주비 2,486억&quot;]
+    R2[&quot;매체사&lt;br/&gt;TV·라디오·신문&lt;br/&gt;디지털 플랫폼&quot;]
+
+    P1[&quot;에이치에스애드 서울&lt;br/&gt;광고기획·제작·미디어&lt;br/&gt;매출총이익 1,383억&quot;]
+    P2[&quot;해외법인 10개국&lt;br/&gt;미주·유럽·중동&lt;br/&gt;아시아·중남미 1,533억&quot;]
+
+    C1[&quot;LG그룹 계열&lt;br/&gt;LG전자·LG·LGU+&lt;br/&gt;LG에너지솔루션&quot;]
+    C2[&quot;기타 광고주&lt;br/&gt;삼성전자·농심·BGF리테일&lt;br/&gt;공공기관·관광공사&quot;]
+    M1[&quot;국내 68%&lt;br/&gt;해외 32%&quot;]
+
+    R1 -- &quot;외주제작&quot; --&gt; P1
+    R2 -- &quot;매체집행&quot; --&gt; P1
+    R1 -- &quot;외주제작&quot; --&gt; P2
+    R2 -- &quot;매체집행&quot; --&gt; P2
+    P1 -- &quot;광고캠페인&quot; --&gt; C1
+    P1 -- &quot;광고캠페인&quot; --&gt; C2
+    P2 -- &quot;글로벌캠페인&quot; --&gt; C1
+    C1 &amp; C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">외주비율 61%(외주비 2,486억 / 제작매출 4,047억). 제작 매출총이익률 38% vs 대행수수료 100%(순액기재). 해외법인 10개사(뉴욕·런던·프랑크푸르트·두바이·방콕 등) + 27개 지점·지사. DASH.AI(생성형 AI 통합 마케팅 플랫폼) 국내 광고업계 최초 상용화. 부채비율 139.6%(전기 172.6%).</div>
+<hr>
+<h3 id="3-2025">섹션 3. 현금 배분 (2025)</h3>
+<div class="bm-note">현금흐름표 데이터가 제공되지 않아 다이어그램을 생성할 수 없습니다. 영업CF·CapEx·배당·재무CF 항목이 포함된 현금흐름표를 추가로 제공해 주시면 섹션 3을 완성할 수 있습니다.</p>
+<p>참고 가능 수치: 영업이익 275억 · 당기순이익 174억 · 부채 2,959억 · 자본 2,120억 (현금흐름표 항목 아님)</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:true,theme:"default",themeVariables:{fontSize:"14px",fontFamily:"Noto Sans KR,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#b8862d",pie5:"#3d4f65",pie6:"#8a6d3b",pie7:"#4a6a8a",pie8:"#7a6530"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:25,rankSpacing:55,padding:12}});</script>
+    </main>
+
+    <div class="footer">k-berkshire</div>
+</body>
+</html>
