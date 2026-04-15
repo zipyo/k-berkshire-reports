@@ -16,7 +16,7 @@
     --border: #ddd6cb;
     --border-light: #e8e2d8;
     --serif: 'DM Serif Display', Georgia, serif;
-    --sans: 'Noto Sans KR', -apple-system, 'Malgun Gothic', sans-serif;
+    --sans: 'Pretendard Variable', 'Pretendard', -apple-system, 'Malgun Gothic', sans-serif;
     --mono: 'IBM Plex Mono', 'Consolas', monospace;
 }
 
@@ -25,6 +25,7 @@
 body {
     font-family: var(--sans);
     font-weight: 400;
+    font-variant-numeric: tabular-nums;
     max-width: 920px;
     margin: 0 auto;
     padding: 0 24px;
@@ -63,6 +64,9 @@ thead th {
     font-size: 0.92em;
     letter-spacing: 0.02em;
     border: none;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 thead th:first-child { border-radius: 5px 0 0 0; }
 thead th:last-child { border-radius: 0 5px 0 0; }
@@ -370,6 +374,11 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
 .report-content h1 { font-size: 1.5em; margin-top: 1em; }
 .report-content h1:first-child { margin-top: 0.4em; }
 .report-content > table { display: block; overflow-x: auto; }
+.report-content h2 + h3 { margin-top: 0.8em; }
+.report-content h3 + p { margin-top: 0.3em; }
+.report-content p + p { margin-top: 0.8em; }
+.report-content h2 { margin-top: 2.2em; }
+.report-content h3 { margin-top: 1.8em; }
 
 /* ── Company Index Report List ── */
 .report-list {
@@ -427,7 +436,9 @@ pre.mermaid { background: transparent; color: inherit; padding: 0; margin: 0; }
     margin: 1.2em 0;
     box-shadow: 0 1px 4px rgba(15, 26, 46, 0.04);
     overflow-x: auto;
+    min-width: 0;
 }
+.bm-content .chart-container .mermaid svg { min-width: 700px; }
 .bm-content .chart-container + .chart-container { margin-top: 16px; }
 .bm-summary {
     display: flex;
@@ -439,9 +450,9 @@ pre.mermaid { background: transparent; color: inherit; padding: 0; margin: 0; }
     border-radius: 8px;
     margin: 1em 0;
 }
-.bm-summary .summary-item { font-size: 0.88em; }
-.bm-summary .summary-item .label { color: var(--amber-light); font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 2px; }
-.bm-summary .summary-item .value { font-weight: 600; font-size: 1.05em; }
+.bm-summary .summary-item { font-size: 0.88em; display: flex; align-items: center; gap: 8px; }
+.bm-summary .summary-item + .summary-item::before { content: ''; width: 1px; height: 16px; background: rgba(248,245,240,0.25); margin-right: 16px; }
+.bm-summary .summary-item .value { font-weight: 500; font-size: 0.95em; }
 .bm-content .segment-tag {
     display: inline-block;
     font-size: 0.78em;
