@@ -386,7 +386,27 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
 .report-content h2 { margin-top: 2.2em; }
 .report-content h3 { margin-top: 1.8em; }
 
-/* ── Company Index Report List ── */
+/* ── Company Index Report Groups ── */
+.report-groups { margin-top: 8px; }
+.report-group { margin-bottom: 20px; }
+.report-group:last-child { margin-bottom: 0; }
+.group-label {
+    font-size: 0.75em;
+    font-weight: 600;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0 4px 6px;
+    margin: 0;
+    border: none;
+}
+.report-group .report-list {
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* ── Report List ── */
 .report-list {
     list-style: none;
     margin: 0;
@@ -459,6 +479,8 @@ pre.mermaid { background: transparent; color: inherit; padding: 0; margin: 0; }
     min-width: 0;
 }
 .bm-content .chart-container .mermaid svg { min-width: 700px; }
+.bm-content .chart-pie { max-width: 480px; }
+.bm-content .chart-pie .mermaid svg { min-width: auto; }
 .bm-content .chart-container + .chart-container { margin-top: 16px; }
 .bm-summary {
     display: flex;
@@ -528,6 +550,7 @@ pre.mermaid { background: transparent; color: inherit; padding: 0; margin: 0; }
     border-top: none;
     border-radius: 0 0 8px 8px;
 }
+[data-tab-defer] { max-height: 0; overflow: hidden; }
 
 /* ── Tabs: 개별 오버라이드 ── */
 .vc-tabs { margin: 1.2em 0; }
