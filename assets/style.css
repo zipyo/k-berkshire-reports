@@ -550,7 +550,7 @@ pre.mermaid { background: transparent; color: inherit; padding: 0; margin: 0; }
     border-top: none;
     border-radius: 0 0 8px 8px;
 }
-[data-tab-defer] { max-height: 0; overflow: hidden; }
+[data-tab-defer] { visibility: hidden; position: absolute; left: -9999px; }
 
 /* ── Tabs: 개별 오버라이드 ── */
 .vc-tabs { margin: 1.2em 0; }
