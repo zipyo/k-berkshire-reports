@@ -24,6 +24,7 @@
 
     <nav class="report-nav">
         <a href="financial.html" class="active">재무데이터</a>
+        <span class="nav-sep"></span>
         <a href="event-research.html">정보원 리서치</a>
         <a href="fisher.html">피셔 분석</a>
         <a href="lynch.html">린치 분석</a>
@@ -38,9 +39,7 @@
 <li>시장: KOSPI</li>
 <li>금액 단위: 억원</li>
 </ul></div>
-<div class="fin-tabs"><div class="fin-tab-bar"><button class="fin-tab-btn active" data-target="fin-tab-0">주요지표</button><button class="fin-tab-btn" data-target="fin-tab-1">손익계산서</button><button class="fin-tab-btn" data-target="fin-tab-2">재무상태표</button><button class="fin-tab-btn" data-target="fin-tab-3">현금흐름표</button><button class="fin-tab-btn" data-target="fin-tab-4">주주 현황</button></div><div class="fin-tab-content" id="fin-tab-0"><p><em>단위 : 억원, %, 배, 천주</em></p>
-<h3 id="_3">연간</h3>
-<table>
+<div class="fin-tabs"><div class="fin-tab-bar"><button class="fin-tab-btn active" data-target="fin-tab-0">주요지표 (연간)</button><button class="fin-tab-btn" data-target="fin-tab-1">주요지표 (분기)</button><button class="fin-tab-btn" data-target="fin-tab-2">손익계산서</button><button class="fin-tab-btn" data-target="fin-tab-3">재무상태표</button><button class="fin-tab-btn" data-target="fin-tab-4">현금흐름표</button></div><div class="fin-tab-content" id="fin-tab-0"><table>
 <thead>
 <tr>
 <th>지표</th>
@@ -279,9 +278,7 @@
 <td>1.2%</td>
 </tr>
 </tbody>
-</table>
-<h3 id="_4">분기</h3>
-<table>
+</table></div><div class="fin-tab-content" id="fin-tab-1" style="display:none"><table>
 <thead>
 <tr>
 <th>지표</th>
@@ -486,7 +483,7 @@
 <td>0.8%</td>
 </tr>
 </tbody>
-</table></div><div class="fin-tab-content" id="fin-tab-1" style="display:none"><table>
+</table></div><div class="fin-tab-content" id="fin-tab-2" style="display:none"><table>
 <thead>
 <tr>
 <th>계정</th>
@@ -860,7 +857,7 @@
 <td>121</td>
 </tr>
 </tbody>
-</table></div><div class="fin-tab-content" id="fin-tab-2" style="display:none"><table>
+</table></div><div class="fin-tab-content" id="fin-tab-3" style="display:none"><table>
 <thead>
 <tr>
 <th>계정</th>
@@ -1208,7 +1205,7 @@
 <td>242</td>
 </tr>
 </tbody>
-</table></div><div class="fin-tab-content" id="fin-tab-3" style="display:none"><table>
+</table></div><div class="fin-tab-content" id="fin-tab-4" style="display:none"><table>
 <thead>
 <tr>
 <th>계정</th>
@@ -1696,51 +1693,7 @@
 <td>49,770</td>
 </tr>
 </tbody>
-</table></div><div class="fin-tab-content" id="fin-tab-4" style="display:none"><table>
-<thead>
-<tr>
-<th>주주명</th>
-<th>보통주</th>
-<th>지분율</th>
-<th>최종변동일</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>에스케이스퀘어(외 7인)</td>
-<td>146,115,505</td>
-<td>20.50%</td>
-<td>2026/01/29</td>
-</tr>
-<tr>
-<td>국민연금공단</td>
-<td>53,477,083</td>
-<td>7.50%</td>
-<td>2024/09/23</td>
-</tr>
-<tr>
-<td>BlackRock Fund Advisors(외 14인)</td>
-<td>36,463,376</td>
-<td>5.12%</td>
-<td>2026/02/10</td>
-</tr>
-<tr>
-<td>Capital Research and Management Company(외 3인)</td>
-<td>36,128,787</td>
-<td>5.07%</td>
-<td>2026/01/30</td>
-</tr>
-<tr>
-<td>자사주</td>
-<td>21,791,280</td>
-<td>3.06%</td>
-<td>2026/02/23</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><strong>외국인 지분율</strong>: 53.51%</li>
-</ul></div></div><script>document.querySelectorAll(".fin-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".fin-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".fin-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script></div>
+</table></div></div><script>document.querySelectorAll(".fin-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".fin-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".fin-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script></div>
     </main>
 
     <div class="footer">k-berkshire</div>

@@ -368,6 +368,12 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
     background: var(--navy);
     color: var(--cream);
 }
+.report-nav .nav-sep {
+    width: 1px;
+    align-self: stretch;
+    background: var(--border);
+    margin: 6px 0;
+}
 
 /* ── Report Content ── */
 .report-content { padding: 8px 0 24px; }
@@ -412,6 +418,20 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
     padding-left: 24px;
 }
 .report-list a:hover::after { color: var(--amber); transform: translateX(3px); }
+
+/* ── Shareholder Section (Company Index) ── */
+.shareholder-section {
+    margin: 1.5em 0;
+    padding: 16px 20px;
+    background: var(--cream);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+.shareholder-section h2 { font-size: 1.1em; margin: 0 0 0.5em; padding: 0; border: none; }
+.shareholder-section table { font-size: 0.88em; }
+.shareholder-section ul { margin: 0.3em 0 0 1.2em; }
+.shareholder-section li { font-size: 0.9em; color: var(--text-secondary); }
 
 /* ── Footer ── */
 .footer {

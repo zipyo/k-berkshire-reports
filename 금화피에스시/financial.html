@@ -24,6 +24,7 @@
 
     <nav class="report-nav">
         <a href="financial.html" class="active">재무데이터</a>
+        <span class="nav-sep"></span>
         <a href="event-research.html">정보원 리서치</a>
         <a href="fisher.html">피셔 분석</a>
         <a href="lynch.html">린치 분석</a>
@@ -38,9 +39,7 @@
 <li>시장: KOSDAQ</li>
 <li>금액 단위: 억원</li>
 </ul></div>
-<div class="fin-tabs"><div class="fin-tab-bar"><button class="fin-tab-btn active" data-target="fin-tab-0">주요지표</button><button class="fin-tab-btn" data-target="fin-tab-1">손익계산서</button><button class="fin-tab-btn" data-target="fin-tab-2">재무상태표</button><button class="fin-tab-btn" data-target="fin-tab-3">현금흐름표</button><button class="fin-tab-btn" data-target="fin-tab-4">주주 현황</button></div><div class="fin-tab-content" id="fin-tab-0"><p><em>단위 : 억원, %, 배, 천주</em></p>
-<h3 id="_3">연간</h3>
-<table>
+<div class="fin-tabs"><div class="fin-tab-bar"><button class="fin-tab-btn active" data-target="fin-tab-0">주요지표 (연간)</button><button class="fin-tab-btn" data-target="fin-tab-1">주요지표 (분기)</button><button class="fin-tab-btn" data-target="fin-tab-2">손익계산서</button><button class="fin-tab-btn" data-target="fin-tab-3">재무상태표</button><button class="fin-tab-btn" data-target="fin-tab-4">현금흐름표</button></div><div class="fin-tab-content" id="fin-tab-0"><table>
 <thead>
 <tr>
 <th>지표</th>
@@ -279,9 +278,7 @@
 <td>4.1%</td>
 </tr>
 </tbody>
-</table>
-<h3 id="_4">분기</h3>
-<table>
+</table></div><div class="fin-tab-content" id="fin-tab-1" style="display:none"><table>
 <thead>
 <tr>
 <th>지표</th>
@@ -486,7 +483,7 @@
 <td>5.7%</td>
 </tr>
 </tbody>
-</table></div><div class="fin-tab-content" id="fin-tab-1" style="display:none"><table>
+</table></div><div class="fin-tab-content" id="fin-tab-2" style="display:none"><table>
 <thead>
 <tr>
 <th>계정</th>
@@ -905,7 +902,7 @@
 <td>-0</td>
 </tr>
 </tbody>
-</table></div><div class="fin-tab-content" id="fin-tab-2" style="display:none"><table>
+</table></div><div class="fin-tab-content" id="fin-tab-3" style="display:none"><table>
 <thead>
 <tr>
 <th>계정</th>
@@ -1197,7 +1194,7 @@
 <td>5</td>
 </tr>
 </tbody>
-</table></div><div class="fin-tab-content" id="fin-tab-3" style="display:none"><table>
+</table></div><div class="fin-tab-content" id="fin-tab-4" style="display:none"><table>
 <thead>
 <tr>
 <th>계정</th>
@@ -1699,45 +1696,7 @@
 <td>505</td>
 </tr>
 </tbody>
-</table></div><div class="fin-tab-content" id="fin-tab-4" style="display:none"><table>
-<thead>
-<tr>
-<th>주주명</th>
-<th>보통주</th>
-<th>지분율</th>
-<th>최종변동일</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>김성기(외 13인)</td>
-<td>2,250,558</td>
-<td>37.51%</td>
-<td>2022/06/22</td>
-</tr>
-<tr>
-<td>Teton Capital Partners LP</td>
-<td>797,897</td>
-<td>13.30%</td>
-<td>2017/08/17</td>
-</tr>
-<tr>
-<td>홍석도(외 3인)</td>
-<td>723,900</td>
-<td>12.07%</td>
-<td>2020/10/13</td>
-</tr>
-<tr>
-<td>자사주</td>
-<td>94,210</td>
-<td>1.57%</td>
-<td>2021/03/22</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><strong>외국인 지분율</strong>: 21.55%</li>
-</ul></div></div><script>document.querySelectorAll(".fin-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".fin-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".fin-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script></div>
+</table></div></div><script>document.querySelectorAll(".fin-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".fin-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".fin-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script></div>
     </main>
 
     <div class="footer">k-berkshire</div>
