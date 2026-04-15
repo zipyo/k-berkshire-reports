@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비즈니스 모델 - BGF리테일 | k-berkshire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="../index.html">홈</a> &nbsp;&rsaquo;&nbsp;
+        <a href="index.html">BGF리테일</a> &nbsp;&rsaquo;&nbsp;
+        <span>비즈니스 모델</span>
+    </div>
+
+    <div class="report-header">
+        <h1>BGF리테일</h1>
+        <div class="meta">비즈니스 모델 &mdash; 2026-03-27</div>
+    </div>
+
+    <nav class="report-nav">
+        <a href="financial.html">재무데이터</a>
+        <a href="business-model.html" class="active">비즈니스 모델</a>
+        <a href="event-research.html">정보원 리서치</a>
+        <a href="fisher.html">피셔 분석</a>
+        <a href="lynch.html">린치 분석</a>
+        <a href="buffett.html">버핏 분석</a>
+        <a href="munger.html">멍거 분석</a>
+        <a href="dialogue.html">버핏-멍거 토론</a>
+    </nav>
+
+    <main class="report-content">
+        <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
+<div class="bm-summary"><div class="summary-item"><span class="value">90,612억원</span></div><div class="summary-item"><span class="value">수출비중 미미</span></div><div class="summary-item"><span class="value">CU 브랜드 편의점 점포수 1위(35%)</span></div><div class="summary-item"><span class="value">기말 순현금 +9,716억원</span></div></div>
+<div class="chart-container"><pre class="mermaid">
+pie showData
+    &quot;편의점 88,581억&quot; : 91.7
+    &quot;물류 3,631억&quot; : 3.8
+    &quot;식품 제조/유통 2,033억&quot; : 2.1
+    &quot;광고·택배·기타 2,317억&quot; : 2.4
+</pre></div>
+<hr>
+<h3 id="2">섹션 2. 밸류체인</h3><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">편의점 (BGF리테일)</button><button class="vc-tab-btn" data-target="vc-tab-1">물류 (BGF로지스)</button><button class="vc-tab-btn" data-target="vc-tab-2">식품 제조/유통 (BGF푸드)</button></div><div class="vc-tab-content" id="vc-tab-0"><blockquote class="bm-note">
+<p>매출 88,581억원 · 91.7% · 2Y CAGR +4.4%</p>
+</blockquote>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;NB 상품 공급업체&lt;br/&gt;담배 37%·가공식품 44%&lt;br/&gt;음료·유제품·비식품&quot;]
+    R2[&quot;BGF푸드 (자체 생산)&lt;br/&gt;간편식·도시락·밀키트&lt;br/&gt;진천 Central Kitchen&quot;]
+
+    P1[&quot;BGF로지스 (자체)&lt;br/&gt;전국 물류센터&lt;br/&gt;진천CDC 자동화&quot;]
+    P2[&quot;CU 가맹점·직영점&lt;br/&gt;18,711개점&lt;br/&gt;점유율 35%&quot;]
+
+    C1[&quot;일반 소비자&lt;br/&gt;1~2인 가구·24시간&lt;br/&gt;근거리 소량 구매&quot;]
+    C2[&quot;해외 파트너사&lt;br/&gt;몽골·말레이시아&lt;br/&gt;카자흐스탄·하와이&quot;]
+
+    R1 -- &quot;NB 상품&quot; --&gt; P1
+    R2 -- &quot;간편식·PB&quot; --&gt; P1
+    P1 -- &quot;전국 배송&quot; --&gt; P2
+    P2 -- &quot;소매 판매&quot; --&gt; C1
+    P2 -- &quot;브랜드·노하우&quot; --&gt; C2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2 demand
+</pre></div>
+<blockquote class="bm-note">
+<p>수직계열화: BGF로지스(물류) + BGF푸드(식품 제조) 내재화. 해외 진출은 마스터프랜차이즈 방식(로열티 수취, 투자 리스크 없음). 부산 신규 물류센터 ~1,895억원 투자 중(2026년 완공 예정). 영업이익 2,220억원(영업이익률 2.5%). 상위 2개사(CU·GS25) 과점 구조.</p>
+</blockquote></div><div class="vc-tab-content" id="vc-tab-1" style="display:none"><blockquote class="bm-note">
+<p>매출 3,631억원 · 3.8% · 2Y CAGR +8.4%</p>
+</blockquote>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;화물운송사&lt;br/&gt;인력운용사&quot;]
+
+    P1[&quot;BGF로지스&lt;br/&gt;전국 물류센터&lt;br/&gt;진천CDC 자동화&quot;]
+
+    C1[&quot;CU 가맹점&lt;br/&gt;18,711개점&quot;]
+    C2[&quot;외부 고객사&lt;br/&gt;3PL 서비스&quot;]
+
+    R1 -- &quot;운송·인력 용역&quot; --&gt; P1
+    P1 -- &quot;상품 배송&quot; --&gt; C1
+    P1 -- &quot;3PL&quot; --&gt; C2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1 supply
+    class P1 core
+    class C1,C2 demand
+</pre></div>
+<blockquote class="bm-note">
+<p>매출 99.9%가 물류 용역. CU 전용 물류 기반 위에 외부 3PL·보세·수출입 물류 대행으로 확장 중. 영업이익 179억원(영업이익률 4.9%).</p>
+</blockquote></div><div class="vc-tab-content" id="vc-tab-2" style="display:none"><blockquote class="bm-note">
+<p>매출 2,033억원 · 2.1% · 2Y CAGR +11.2%</p>
+</blockquote>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;국내외 원료 공급업체&lt;br/&gt;원료육·김치·식재료&quot;]
+    R2[&quot;해외 소싱처&lt;br/&gt;음료·공산품·주류&quot;]
+
+    P1[&quot;진천 Central Kitchen&lt;br/&gt;간편식 제조 3개 센터&lt;br/&gt;CK 가공&quot;]
+
+    C1[&quot;CU 편의점&lt;br/&gt;간편식·도시락&quot;]
+    C2[&quot;외부 식품제조업체&lt;br/&gt;CK 제품 납품&quot;]
+
+    R1 -- &quot;원재료&quot; --&gt; P1
+    R2 -- &quot;해외 소싱 상품&quot; --&gt; C1
+    P1 -- &quot;간편식·PB&quot; --&gt; C1
+    P1 -- &quot;CK 제품&quot; --&gt; C2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1 core
+    class C1,C2 demand
+</pre></div>
+<blockquote class="bm-note">
+<p>2024년 진천 제2공장 증축으로 생산능력 확대. 간편식 매출비중 80.4%로 집중도 상승. CK사업(양념육 등)은 외부 식품제조업체에 납품. 영업이익 15억원(영업이익률 0.7%).</p>
+</blockquote>
+<hr></div></div><script>document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script><h3 id="3-2025">섹션 3. 현금 배분 (2025)</h3>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    A[&quot;영업CF&lt;br/&gt;&lt;b&gt;7,708억&lt;/b&gt;&quot;]
+    B[&quot;CapEx&lt;br/&gt;&lt;b&gt;−2,721억&lt;/b&gt;&quot;]
+    C[&quot;FCF&lt;br/&gt;&lt;b&gt;4,987억&lt;/b&gt;&quot;]
+    D[&quot;배당&lt;br/&gt;&lt;b&gt;−708억&lt;/b&gt;&quot;]
+    E[&quot;금융자산 순&lt;br/&gt;&lt;b&gt;+5억&lt;/b&gt;&quot;]
+    F[&quot;리스·차입 상환&lt;br/&gt;&lt;b&gt;−3,386억&lt;/b&gt;&quot;]
+    G[&quot;환율효과&lt;br/&gt;&lt;b&gt;−5억&lt;/b&gt;&quot;]
+    H[&quot;현금 순증&lt;br/&gt;&lt;b&gt;+893억&lt;/b&gt;&quot;]
+
+    A --&gt; B --&gt; C
+    C --&gt; D &amp; E &amp; F &amp; G
+    D &amp; E &amp; F &amp; G --&gt; H
+
+    classDef inflow fill:#c8923c,stroke:#a87830,color:#fff
+    classDef outflow fill:#5d7a8c,stroke:#4a6577,color:#f0f4f7
+    classDef key fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef result fill:#3d4f65,stroke:#2d3e52,color:#e8e2d8
+
+    class A inflow
+    class B,D,F,G outflow
+    class C key
+    class E inflow
+    class H result
+</pre></div>
+<blockquote class="bm-note">
+<p>검증 (2025): FCF 4,987 + 배당 −708 + 금융자산순 +5 + 리스·차입 −3,386 + 환율 −5 = <strong>+893</strong> ✓<br>
+기말 순현금: 9,716억원 (현금 4,140 + 유동금융자산 2,274 + 장기금융자산 3,302 − 차입금 0)</p>
+</blockquote></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:true,theme:"base",themeVariables:{primaryColor:"#f0ebe4",primaryBorderColor:"#c8923c",primaryTextColor:"#0f1a2e",lineColor:"#b8a08a",secondaryColor:"#e8e2d8",tertiaryColor:"#fff",fontSize:"13px",fontFamily:"Noto Sans KR,sans-serif",pieSectionTextSize:"14px",pieTitleTextSize:"0px",pieSectionTextColor:"#fff",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#b8862d",pie5:"#3d4f65",pie6:"#8a6d3b",pie7:"#4a6a8a",pie8:"#7a6530"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:25,rankSpacing:55,padding:12}});</script>
+    </main>
+
+    <div class="footer">k-berkshire</div>
+</body>
+</html>
