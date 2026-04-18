@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사업모델 - 아이디피 | k-berkshire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="../index.html">홈</a> &nbsp;&rsaquo;&nbsp;
+        <a href="index.html">아이디피</a> &nbsp;&rsaquo;&nbsp;
+        <span>사업모델</span>
+    </div>
+
+    <div class="report-header">
+        <h1>아이디피</h1>
+        <div class="meta">사업모델 &mdash; 2026-03-18</div>
+    </div>
+
+    <nav class="report-nav">
+        <a href="financial.html">재무</a>
+        <a href="business-model.html" class="active">사업모델</a>
+        <a href="event-research.html">개요</a>
+        <span class="nav-sep"></span>
+        <a href="fisher.html">피셔</a>
+        <a href="lynch.html">린치</a>
+        <a href="buffett.html">버핏</a>
+        <a href="munger.html">멍거</a>
+        <span class="nav-sep"></span>
+        <a href="dialogue.html">버핏-멍거 토론</a>
+    </nav>
+
+    <main class="report-content">
+        <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
+<div class="bm-summary"><div class="summary-item"><span class="value">491억원</span></div><div class="summary-item"><span class="value">수출비중 75%</span></div><div class="summary-item"><span class="value">데스크탑 카드프린터 + 소모품(리본) 전문기업, 무차입</span></div><div class="summary-item"><span class="value">순현금 구조</span></div><div class="summary-item"><span class="value">기말 순현금 +434억원</span></div></div>
+<div class="chart-container chart-pie"><pre class="mermaid">
+pie showData
+    &quot;소모품 200억&quot; : 49.30
+    &quot;카드프린터 163억&quot; : 40.04
+    &quot;기타(옵션 등) 33억&quot; : 8.23
+    &quot;상품 9억&quot; : 2.23
+    &quot;용역 1억&quot; : 0.20
+</pre></div>
+<hr>
+<h3 id="2">섹션 2. 밸류체인</h3>
+<h4 id="_1">카드프린터 &amp; 소모품</h4>
+<div class="segment-tag">매출 491억원 · 100% · 2Y CAGR +8.4% (카드프린터 +7.9%, 소모품 +12.2%)</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;빅솔론&lt;br/&gt;원재료 2억&quot;]
+    R2[&quot;국내외 염료기업&lt;br/&gt;리본 반제품&quot;]
+    R3[&quot;헤드·전자부품&lt;br/&gt;공급사&lt;br/&gt;64억&quot;]
+    R4[&quot;에버린트&lt;br/&gt;외주조립 25억&quot;]
+
+    P1[&quot;충주공장 (외주생산)&lt;br/&gt;카드프린터&lt;br/&gt;36,000대/년 · 가동률 99.6%&quot;]
+    P2[&quot;리본 조립·포장&lt;br/&gt;720,000롤/년&lt;br/&gt;RF Tag 정품인증&quot;]
+    P3[&quot;R&amp;D 본사&lt;br/&gt;구로공장&lt;br/&gt;연구개발비 31억 (7.7%)&quot;]
+
+    C1[&quot;대리점·해외법인&lt;br/&gt;미국·일본·두바이&quot;]
+    C2[&quot;정부·공공&lt;br/&gt;도로교통공단 면허증&lt;br/&gt;930만장/년&quot;]
+    C3[&quot;금융·기업·교육·소매&lt;br/&gt;B2B 프로젝트&quot;]
+
+    M1[&quot;수출 75%&lt;br/&gt;(미국·중국·영국·UAE)&lt;br/&gt;내수 25%&quot;]
+
+    R3 -- &quot;헤드·전자부품&quot; --&gt; P1
+    R4 -- &quot;조립 외주&quot; --&gt; P1
+    R2 -- &quot;염료 반제품&quot; --&gt; P2
+    R1 -- &quot;부품&quot; --&gt; P1
+    P3 -- &quot;설계·펌웨어&quot; --&gt; P1 &amp; P2
+    P1 -- &quot;SMART 시리즈 프린터&quot; --&gt; C1
+    P2 -- &quot;정품 리본·필름&quot; --&gt; C1
+    C1 --&gt; C2 &amp; C3
+    C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4 supply
+    class P1,P2,P3 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">보충: 2023년 시장점유율 5.8% (주니치 조사) → 2025년 자체 추정 8~10%. 글로벌 경쟁사: 인트러스트·제브라·HID(美), 에볼리스(佛), 매직카드(英). 순간 직접가열식 라미네이션 특허(한국·미국·유럽) 기반 에너지 50% 절감. 소모품은 RF Tag 정품인증 lock-in으로 프린터 판매 후 5~7년간 안정적 매출 창출. 특허 28건 보유(한국 26, EU 1, USA 1). After-Market 비중 49%, 선도업체 50~60% 수준으로 성장 여력.</div>
+<hr>
+<h3 id="3-2025">섹션 3. 현금 배분 (2025)</h3>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    A[&quot;영업CF&lt;br/&gt;&lt;b&gt;107억&lt;/b&gt;&quot;]
+    B[&quot;CapEx&lt;br/&gt;&lt;b&gt;−17억&lt;/b&gt;&quot;]
+    C[&quot;FCF&lt;br/&gt;&lt;b&gt;90억&lt;/b&gt;&quot;]
+    D[&quot;배당&lt;br/&gt;&lt;b&gt;−21억&lt;/b&gt;&quot;]
+    S[&quot;자사주 순&lt;br/&gt;&lt;b&gt;−23억&lt;/b&gt;&quot;]
+    E[&quot;금융자산 순&lt;br/&gt;&lt;b&gt;+16억&lt;/b&gt;&quot;]
+    F[&quot;기타재무&lt;br/&gt;&lt;b&gt;−2억&lt;/b&gt;&quot;]
+    G[&quot;환율효과&lt;br/&gt;&lt;b&gt;−4억&lt;/b&gt;&quot;]
+    H[&quot;현금 순증&lt;br/&gt;&lt;b&gt;+57억&lt;/b&gt;&quot;]
+
+    A --&gt; B --&gt; C
+    C --&gt; D &amp; S &amp; E &amp; F &amp; G
+    D &amp; S &amp; E &amp; F &amp; G --&gt; H
+
+    classDef inflow fill:#c8923c,stroke:#a87830,color:#fff
+    classDef outflow fill:#5d7a8c,stroke:#4a6577,color:#f0f4f7
+    classDef key fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef result fill:#3d4f65,stroke:#2d3e52,color:#e8e2d8
+
+    class A inflow
+    class B outflow
+    class C key
+    class D,S,F,G outflow
+    class E inflow
+    class H result
+</pre></div>
+<div class="bm-note">검증 (2025): FCF 90 + 배당 −21 + 자사주순 −23 + 금융자산순 +16 + 기타재무 −2 + 환율 −4 = <strong>+56</strong> ✓ (실제 현금증가 57, 반올림 오차 ±1)<br>
+기말 순현금: 434억원 (현금 116 + 유동금융자산 260 + 장기금융자산 58 − 차입금 0)</div>
+<h4 id="_2">현금 배분 이력</h4>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>2025</th>
+<th>2024</th>
+<th>2023</th>
+<th>2022</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>영업CF</td>
+<td>107</td>
+<td>145</td>
+<td>74</td>
+<td>21</td>
+</tr>
+<tr>
+<td>CapEx</td>
+<td>−17</td>
+<td>−17</td>
+<td>−4</td>
+<td>−7</td>
+</tr>
+<tr>
+<td><strong>FCF</strong></td>
+<td><strong>90</strong></td>
+<td><strong>128</strong></td>
+<td><strong>70</strong></td>
+<td><strong>14</strong></td>
+</tr>
+<tr>
+<td>배당</td>
+<td>−21</td>
+<td>−16</td>
+<td>−20</td>
+<td>−10</td>
+</tr>
+<tr>
+<td>자사주 순</td>
+<td>−23</td>
+<td>−26</td>
+<td>−5</td>
+<td>0</td>
+</tr>
+<tr>
+<td>금융자산 순</td>
+<td>+16</td>
+<td>−118</td>
+<td>+1</td>
+<td>−1</td>
+</tr>
+<tr>
+<td>기타재무</td>
+<td>−2</td>
+<td>−1</td>
+<td>−11</td>
+<td>+8</td>
+</tr>
+<tr>
+<td>환율효과</td>
+<td>−4</td>
+<td>+2</td>
+<td>−1</td>
+<td>−1</td>
+</tr>
+<tr>
+<td><strong>현금 순증</strong></td>
+<td><strong>+57</strong></td>
+<td><strong>−31</strong></td>
+<td><strong>+35</strong></td>
+<td><strong>+10</strong></td>
+</tr>
+<tr>
+<td>기말 순현금</td>
+<td>434</td>
+<td>383</td>
+<td>295</td>
+<td>251</td>
+</tr>
+</tbody>
+</table></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#3b82f6",pie2:"#f59e0b",pie3:"#10b981",pie4:"#ef4444",pie5:"#8b5cf6",pie6:"#06b6d4",pie7:"#f97316",pie8:"#ec4899"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
+    </main>
+
+    <div class="footer">k-berkshire</div>
+</body>
+</html>

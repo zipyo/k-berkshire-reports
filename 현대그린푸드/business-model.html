@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사업모델 - 현대그린푸드 | k-berkshire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="../index.html">홈</a> &nbsp;&rsaquo;&nbsp;
+        <a href="index.html">현대그린푸드</a> &nbsp;&rsaquo;&nbsp;
+        <span>사업모델</span>
+    </div>
+
+    <div class="report-header">
+        <h1>현대그린푸드</h1>
+        <div class="meta">사업모델 &mdash; 2026-03-18</div>
+    </div>
+
+    <nav class="report-nav">
+        <a href="financial.html">재무</a>
+        <a href="business-model.html" class="active">사업모델</a>
+        <a href="event-research.html">개요</a>
+        <span class="nav-sep"></span>
+        <a href="fisher.html">피셔</a>
+        <a href="lynch.html">린치</a>
+        <a href="buffett.html">버핏</a>
+        <a href="munger.html">멍거</a>
+        <span class="nav-sep"></span>
+        <a href="dialogue.html">버핏-멍거 토론</a>
+    </nav>
+
+    <main class="report-content">
+        <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 23,296억원</span></div><div class="summary-item"><span class="value">수출비중 5.9%</span></div><div class="summary-item"><span class="value">국내 최대 종합 푸드서비스</span></div><div class="summary-item"><span class="value">식자재 유통 (단체급식 + B2B 식자재 + 백화점 식품관 + 외식/케어푸드)</span></div><div class="summary-item"><span class="value">기말 순현금 2,048억원</span></div></div>
+<div class="chart-container chart-pie"><pre class="mermaid">
+pie showData
+    &quot;푸드서비스 11,128억&quot; : 47.8
+    &quot;식재 5,895억&quot; : 25.3
+    &quot;기타(외식·그리팅) 3,196억&quot; : 13.7
+    &quot;유통 3,077억&quot; : 13.2
+</pre></div>
+<hr>
+<h3 id="2">섹션 2. 밸류체인</h3><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">푸드서비스</button><button class="vc-tab-btn" data-target="vc-tab-1">식재</button><button class="vc-tab-btn" data-target="vc-tab-2">유통</button><button class="vc-tab-btn" data-target="vc-tab-3">기타(외식·그리팅)</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 11,128억원 · 47.8% · 2Y CAGR +15.4%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;현대서산농장&lt;br/&gt;충청미 49,218원/20kg&quot;]
+    R2[&quot;국제푸드&lt;br/&gt;오징어채&quot;]
+    R3[&quot;미소찬&lt;br/&gt;돈육&quot;]
+    R4[&quot;참가득F·왕인식품&lt;br/&gt;포기김치&quot;]
+
+    P1[&quot;스마트푸드센터(성남)&lt;br/&gt;급식 식재 가공&quot;]
+    P2[&quot;푸드서비스영업점&lt;br/&gt;전국 위탁 운영&quot;]
+    P3[&quot;해외법인&lt;br/&gt;중국(산동·북경·상해)&lt;br/&gt;멕시코·미국·UAE&quot;]
+
+    C1[&quot;국내 단체급식&lt;br/&gt;기업·병원·기관&quot;]
+    C2[&quot;해외 단체급식&lt;br/&gt;UAE·사우디·이라크&lt;br/&gt;중국·멕시코·미국&quot;]
+    M1[&quot;내수 89.3%&lt;br/&gt;수출 10.7%&quot;]
+
+    R1 &amp; R2 &amp; R3 &amp; R4 -- &quot;식자재&quot; --&gt; P1
+    P1 -- &quot;가공식재&quot; --&gt; P2
+    P1 -- &quot;레시피·메뉴&quot; --&gt; P3
+    P2 -- &quot;위탁급식&quot; --&gt; C1
+    P3 -- &quot;위탁급식&quot; --&gt; C2
+    C1 &amp; C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4 supply
+    class P1,P2,P3 core
+    class C1,C2 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">HACCP 전공정 관리 · 1만개 레시피 · 중동·중국·멕시코·미국 해외 사업장 운영 · 매출 118,650백만원 수출 중 사우디·UAE·이라크 비중 높음 · 영업이익률 4.2%(영업이익 465억)</div></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><div class="segment-tag">매출 5,895억원 · 25.3% · 2Y CAGR +6.8%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;전국 지정농장&lt;br/&gt;1차 농산물&quot;]
+    R2[&quot;제조사 직거래&lt;br/&gt;가공식품&quot;]
+    R3[&quot;해외 직수입&lt;br/&gt;수입 식자재&quot;]
+    R4[&quot;자체 PB 개발&quot;]
+
+    P1[&quot;경인·경인2·호남&lt;br/&gt;영남·이천·동탄&lt;br/&gt;물류센터 6개&quot;]
+    P2[&quot;가공센터&lt;br/&gt;통합 HACCP 인증&quot;]
+
+    C1[&quot;외식업체&lt;br/&gt;프랜차이즈&quot;]
+    C2[&quot;중소형 케터링&lt;br/&gt;도소매상&quot;]
+    C3[&quot;식품제조사&lt;br/&gt;생식품·가공식품 공급&quot;]
+
+    R1 &amp; R2 &amp; R3 &amp; R4 -- &quot;식자재&quot; --&gt; P2
+    P2 -- &quot;전처리 가공품&quot; --&gt; P1
+    P1 -- &quot;냉장·냉동 배송&quot; --&gt; C1 &amp; C2 &amp; C3
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4 supply
+    class P1,P2 core
+    class C1,C2,C3 demand
+</pre></div>
+<div class="bm-note">국내 식자재 유통시장 약 62조, 연평균 4.7% 성장 · GPS·온도 추적 배송 · 산지 직거래로 유통단계 축소 · 영업이익률 8.5%(영업이익 504억, 최대 수익 부문)</div></div><div class="vc-tab-content" id="vc-tab-2" data-tab-defer><div class="segment-tag">매출 3,077억원 · 13.2% · 2Y CAGR +8.2%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;통합구매시스템&lt;br/&gt;리테일+식재 통합 소싱&quot;]
+    R2[&quot;산지 직거래&lt;br/&gt;생식품&quot;]
+
+    P1[&quot;수지·영남 물류센터&lt;br/&gt;상품 입출고&quot;]
+
+    C1[&quot;현대백화점 식품관&lt;br/&gt;위탁 운영&quot;]
+    C2[&quot;할인마트&lt;br/&gt;도매 공급&quot;]
+    C3[&quot;온라인몰·홈쇼핑&lt;br/&gt;소매 직판&quot;]
+
+    R1 &amp; R2 -- &quot;공산품·생식품&quot; --&gt; P1
+    P1 -- &quot;상품 공급&quot; --&gt; C1 &amp; C2 &amp; C3
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1 core
+    class C1,C2,C3 demand
+</pre></div>
+<div class="bm-note">식육판매장 전점 HACCP 지정(유통업계 최초) · 재포장 취급자 인증 · 영업이익률 3.1%(영업이익 94억) · 2025년 국내 오프라인 유통 +0.4% 저성장 구간</div></div><div class="vc-tab-content" id="vc-tab-3" data-tab-defer><div class="segment-tag">매출 3,196억원 · 13.7% · 2Y CAGR +22.8%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;건강 식재료·자체 소스&lt;br/&gt;1,000여개 레시피&quot;]
+    R2[&quot;All Cold-Chain&lt;br/&gt;원재료 조달&quot;]
+
+    P1[&quot;스마트푸드센터&lt;br/&gt;HMR·케어푸드 제조&quot;]
+    P2[&quot;외식 브랜드 점포&lt;br/&gt;국내·해외&quot;]
+    P3[&quot;비노에이치&lt;br/&gt;도소매업&quot;]
+
+    C1[&quot;그리팅&lt;br/&gt;건강식단 D2C&quot;]
+    C2[&quot;외식 고객&lt;br/&gt;소매&quot;]
+    C3[&quot;케어푸드&lt;br/&gt;고령층·1인 가구&quot;]
+
+    R1 &amp; R2 --&gt; P1
+    P1 -- &quot;HMR·밀키트·케어푸드&quot; --&gt; C1 &amp; C3
+    P2 -- &quot;외식 서비스&quot; --&gt; C2
+    P3 --&gt; C2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2,P3 core
+    class C1,C2,C3 demand
+</pre></div>
+<div class="bm-note">국내 케어푸드 시장 2025년 3조 전망 · 1인 가구 36.1% · 2024년 외식 손상차손 후 2025년 흑자전환(영업이익 5억) · 멕시코 식품 제조 66억 투자(~2026)</div>
+<hr></div></div><script>document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script><h3 id="3-2024">섹션 3. 현금 배분 (2024)</h3>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    A[&quot;영업CF&lt;br/&gt;&lt;b&gt;1,319억&lt;/b&gt;&quot;]
+    B[&quot;CapEx&lt;br/&gt;&lt;b&gt;−268억&lt;/b&gt;&quot;]
+    C[&quot;FCF&lt;br/&gt;&lt;b&gt;1,051억&lt;/b&gt;&quot;]
+    D[&quot;배당&lt;br/&gt;&lt;b&gt;−110억&lt;/b&gt;&quot;]
+    D2[&quot;자사주 순&lt;br/&gt;&lt;b&gt;−70억&lt;/b&gt;&quot;]
+    E[&quot;금융자산 순&lt;br/&gt;&lt;b&gt;−582억&lt;/b&gt;&quot;]
+    F[&quot;차입·이자·리스&lt;br/&gt;&lt;b&gt;−78억&lt;/b&gt;&quot;]
+    G[&quot;환율효과&lt;br/&gt;&lt;b&gt;+6억&lt;/b&gt;&quot;]
+    H[&quot;현금 순증&lt;br/&gt;&lt;b&gt;+217억&lt;/b&gt;&quot;]
+
+    A --&gt; B --&gt; C
+    C --&gt; D &amp; D2 &amp; E &amp; F &amp; G
+    D &amp; D2 &amp; E &amp; F &amp; G --&gt; H
+
+    classDef inflow fill:#c8923c,stroke:#a87830,color:#fff
+    classDef outflow fill:#5d7a8c,stroke:#4a6577,color:#f0f4f7
+    classDef key fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef result fill:#3d4f65,stroke:#2d3e52,color:#e8e2d8
+
+    class A inflow
+    class B,D,D2,E,F outflow
+    class G inflow
+    class C key
+    class H result
+</pre></div>
+<div class="bm-note">검증 (2024): FCF 1,051 + 배당 −110 + 자사주순 −70 + 금융자산순 −582 + 기타재무 −78 + 환율 +6 = <strong>+217</strong> ✓<br>
+기말 순현금: 2,048억원</div>
+<h4 id="_5">현금 배분 이력</h4>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>2025/09 (9M)</th>
+<th>2024</th>
+<th>2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>영업CF</td>
+<td>1,071</td>
+<td>1,319</td>
+<td>1,016</td>
+</tr>
+<tr>
+<td>CapEx</td>
+<td>−211</td>
+<td>−268</td>
+<td>−422</td>
+</tr>
+<tr>
+<td><strong>FCF</strong></td>
+<td><strong>860</strong></td>
+<td><strong>1,051</strong></td>
+<td><strong>594</strong></td>
+</tr>
+<tr>
+<td>배당</td>
+<td>−111</td>
+<td>−110</td>
+<td>0</td>
+</tr>
+<tr>
+<td>자사주 순</td>
+<td>−86</td>
+<td>−70</td>
+<td>−3</td>
+</tr>
+<tr>
+<td>금융자산 순</td>
+<td>−284</td>
+<td>−582</td>
+<td>−297</td>
+</tr>
+<tr>
+<td>기타재무</td>
+<td>+215</td>
+<td>−78</td>
+<td>−300</td>
+</tr>
+<tr>
+<td>환율효과</td>
+<td>+3</td>
+<td>+6</td>
+<td>−4</td>
+</tr>
+<tr>
+<td><strong>현금 순증</strong></td>
+<td><strong>+597</strong></td>
+<td><strong>+217</strong></td>
+<td><strong>−10</strong></td>
+</tr>
+<tr>
+<td>기말 순현금</td>
+<td>2,590</td>
+<td>2,048</td>
+<td>1,275</td>
+</tr>
+</tbody>
+</table></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#3b82f6",pie2:"#f59e0b",pie3:"#10b981",pie4:"#ef4444",pie5:"#8b5cf6",pie6:"#06b6d4",pie7:"#f97316",pie8:"#ec4899"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
+    </main>
+
+    <div class="footer">k-berkshire</div>
+</body>
+</html>
