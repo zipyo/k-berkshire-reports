@@ -22,8 +22,9 @@
         <div class="meta">버핏 &mdash; 2026-03-18</div>
     </div>
 
-    <nav class="report-nav">
-        <a href="financial.html">재무</a>
+    <div class="report-nav-wrap">
+        <nav class="report-nav">
+            <a href="financial.html">재무</a>
         <a href="event-research.html">개요</a>
         <span class="nav-sep"></span>
         <a href="fisher.html">피셔</a>
@@ -32,7 +33,8 @@
         <a href="munger.html">멍거</a>
         <span class="nav-sep"></span>
         <a href="dialogue.html">버핏-멍거 토론</a>
-    </nav>
+        </nav>
+    </div>
 
     <main class="report-content">
         <h2 id="1-circle-of-competence">1. Circle of Competence</h2>
@@ -419,6 +421,22 @@ UHP 배관설비 국내 점유율 60~70%, CCSS 국내 점유율 ~40%. 기계설�
 - <a href="https://www.econovill.com/news/articleView.html?idxno=723662">에코노빌 - CAPEX 키우는 반도체 3사</a></p>
     </main>
 
-    <div class="footer">k-berkshire</div>
+    <nav class="report-pager"><a class="pager-link pager-prev" href="lynch.html"><span class="pager-label">&larr; 이전</span><span class="pager-title">린치</span></a><a class="pager-link pager-next" href="munger.html"><span class="pager-label">다음 &rarr;</span><span class="pager-title">멍거</span></a></nav>
+
+    <footer class="footer">
+        <div class="footer-brand">k-berkshire</div>
+        <div class="footer-tag">레전드 투자자 AI 페르소나 기업분석</div>
+        <div class="footer-links">
+            <a href="https://github.com/zipyo/k-berkshire" target="_blank" rel="noopener">소스</a>
+        </div>
+    </footer>
+    <script>
+    (function(){
+        var active = document.querySelector('.report-nav a.active');
+        if (active && active.scrollIntoView) {
+            active.scrollIntoView({inline: 'center', block: 'nearest'});
+        }
+    })();
+    </script>
 </body>
 </html>

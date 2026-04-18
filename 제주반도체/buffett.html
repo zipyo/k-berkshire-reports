@@ -22,8 +22,9 @@
         <div class="meta">버핏 &mdash; 2026-03-27</div>
     </div>
 
-    <nav class="report-nav">
-        <a href="financial.html">재무</a>
+    <div class="report-nav-wrap">
+        <nav class="report-nav">
+            <a href="financial.html">재무</a>
         <a href="event-research.html">개요</a>
         <span class="nav-sep"></span>
         <a href="fisher.html">피셔</a>
@@ -32,7 +33,8 @@
         <a href="munger.html">멍거</a>
         <span class="nav-sep"></span>
         <a href="dialogue.html">버핏-멍거 토론</a>
-    </nav>
+        </nav>
+    </div>
 
     <main class="report-content">
         <h2 id="1-circle-of-competence">1. Circle of Competence</h2>
@@ -394,6 +396,22 @@
 <p>제주반도체는 7피트까지는 아니지만, 확실히 1피트짜리 투자도 아니다. 사업의 방향성은 좋으나, OE 변동성이 너무 크고 해자가 너무 좁아서 확신을 갖기 어렵다. 보수적 내재가치(910억) 이하에서만 진입을 고려할 만하며, 그때조차 CXMT의 경쟁 영향과 LPDDR4X 양산 성과를 지켜본 뒤가 바람직하다.</p>
     </main>
 
-    <div class="footer">k-berkshire</div>
+    <nav class="report-pager"><a class="pager-link pager-prev" href="lynch.html"><span class="pager-label">&larr; 이전</span><span class="pager-title">린치</span></a><a class="pager-link pager-next" href="munger.html"><span class="pager-label">다음 &rarr;</span><span class="pager-title">멍거</span></a></nav>
+
+    <footer class="footer">
+        <div class="footer-brand">k-berkshire</div>
+        <div class="footer-tag">레전드 투자자 AI 페르소나 기업분석</div>
+        <div class="footer-links">
+            <a href="https://github.com/zipyo/k-berkshire" target="_blank" rel="noopener">소스</a>
+        </div>
+    </footer>
+    <script>
+    (function(){
+        var active = document.querySelector('.report-nav a.active');
+        if (active && active.scrollIntoView) {
+            active.scrollIntoView({inline: 'center', block: 'nearest'});
+        }
+    })();
+    </script>
 </body>
 </html>

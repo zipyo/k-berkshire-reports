@@ -22,8 +22,9 @@
         <div class="meta">린치 &mdash; 2026-03-27</div>
     </div>
 
-    <nav class="report-nav">
-        <a href="financial.html">재무</a>
+    <div class="report-nav-wrap">
+        <nav class="report-nav">
+            <a href="financial.html">재무</a>
         <a href="event-research.html">개요</a>
         <span class="nav-sep"></span>
         <a href="fisher.html">피셔</a>
@@ -32,7 +33,8 @@
         <a href="munger.html">멍거</a>
         <span class="nav-sep"></span>
         <a href="dialogue.html">버핏-멍거 토론</a>
-    </nav>
+        </nav>
+    </div>
 
     <main class="report-content">
         <h2 id="1">1. 카테고리 판정</h2>
@@ -705,6 +707,22 @@ Fast Grower에 대한 린치의 핵심 도구는 PEG Ratio이다. 네오위즈�
 - <a href="https://www.businesspost.co.kr/BP?command=article_view&amp;num=409538">BNK투자 네오위즈 P의 거짓 장기 흥행 전망</a></p>
     </main>
 
-    <div class="footer">k-berkshire</div>
+    <nav class="report-pager"><a class="pager-link pager-prev" href="fisher.html"><span class="pager-label">&larr; 이전</span><span class="pager-title">피셔</span></a><a class="pager-link pager-next" href="buffett.html"><span class="pager-label">다음 &rarr;</span><span class="pager-title">버핏</span></a></nav>
+
+    <footer class="footer">
+        <div class="footer-brand">k-berkshire</div>
+        <div class="footer-tag">레전드 투자자 AI 페르소나 기업분석</div>
+        <div class="footer-links">
+            <a href="https://github.com/zipyo/k-berkshire" target="_blank" rel="noopener">소스</a>
+        </div>
+    </footer>
+    <script>
+    (function(){
+        var active = document.querySelector('.report-nav a.active');
+        if (active && active.scrollIntoView) {
+            active.scrollIntoView({inline: 'center', block: 'nearest'});
+        }
+    })();
+    </script>
 </body>
 </html>

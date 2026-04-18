@@ -22,8 +22,9 @@
         <div class="meta">사업모델 &mdash; 2026-03-18</div>
     </div>
 
-    <nav class="report-nav">
-        <a href="financial.html">재무</a>
+    <div class="report-nav-wrap">
+        <nav class="report-nav">
+            <a href="financial.html">재무</a>
         <a href="business-model.html" class="active">사업모델</a>
         <a href="event-research.html">개요</a>
         <span class="nav-sep"></span>
@@ -33,7 +34,8 @@
         <a href="munger.html">멍거</a>
         <span class="nav-sep"></span>
         <a href="dialogue.html">버핏-멍거 토론</a>
-    </nav>
+        </nav>
+    </div>
 
     <main class="report-content">
         <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
@@ -160,7 +162,7 @@ flowchart LR
     class C1,C2,C3 demand
 </pre></div>
 <div class="bm-note">국내 케어푸드 시장 2025년 3조 전망 · 1인 가구 36.1% · 2024년 외식 손상차손 후 2025년 흑자전환(영업이익 5억) · 멕시코 식품 제조 66억 투자(~2026)</div>
-<hr></div></div><script>document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script><h3 id="3-2024">섹션 3. 현금 배분 (2024)</h3>
+<hr></div></div><script>(function(){document.querySelectorAll(".vc-tab-content[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer");});document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});})();</script><h3 id="3-2024">섹션 3. 현금 배분 (2024)</h3>
 <div class="chart-container"><pre class="mermaid">
 flowchart LR
     A[&quot;영업CF&lt;br/&gt;&lt;b&gt;1,319억&lt;/b&gt;&quot;]
@@ -265,6 +267,22 @@ flowchart LR
 </table></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#3b82f6",pie2:"#f59e0b",pie3:"#10b981",pie4:"#ef4444",pie5:"#8b5cf6",pie6:"#06b6d4",pie7:"#f97316",pie8:"#ec4899"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
     </main>
 
-    <div class="footer">k-berkshire</div>
+    <nav class="report-pager"><a class="pager-link pager-prev" href="financial.html"><span class="pager-label">&larr; 이전</span><span class="pager-title">재무</span></a><a class="pager-link pager-next" href="event-research.html"><span class="pager-label">다음 &rarr;</span><span class="pager-title">개요</span></a></nav>
+
+    <footer class="footer">
+        <div class="footer-brand">k-berkshire</div>
+        <div class="footer-tag">레전드 투자자 AI 페르소나 기업분석</div>
+        <div class="footer-links">
+            <a href="https://github.com/zipyo/k-berkshire" target="_blank" rel="noopener">소스</a>
+        </div>
+    </footer>
+    <script>
+    (function(){
+        var active = document.querySelector('.report-nav a.active');
+        if (active && active.scrollIntoView) {
+            active.scrollIntoView({inline: 'center', block: 'nearest'});
+        }
+    })();
+    </script>
 </body>
 </html>

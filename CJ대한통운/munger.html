@@ -22,8 +22,9 @@
         <div class="meta">멍거 &mdash; 2026-03-18</div>
     </div>
 
-    <nav class="report-nav">
-        <a href="financial.html">재무</a>
+    <div class="report-nav-wrap">
+        <nav class="report-nav">
+            <a href="financial.html">재무</a>
         <a href="business-model.html">사업모델</a>
         <a href="event-research.html">개요</a>
         <span class="nav-sep"></span>
@@ -33,7 +34,8 @@
         <a href="munger.html" class="active">멍거</a>
         <span class="nav-sep"></span>
         <a href="dialogue.html">버핏-멍거 토론</a>
-    </nav>
+        </nav>
+    </div>
 
     <main class="report-content">
         <h2 id="1">1. 사업 품질 판정</h2>
@@ -386,6 +388,22 @@ CJ대한통운의 핵심 사업(택배)에서 경쟁 우위가 <strong>구조적
 <p>이 기업은 분석에 상당한 고통이 따랐다. 택배·CL·글로벌·건설 4개 부문의 개별 경제성을 따로 평가해야 하고, 쿠팡이라는 변수의 장기적 영향을 예측해야 하며, 글로벌 운임 사이클까지 고려해야 한다. 이만큼 복잡한 분석을 거쳐도 "가치가 소리치지 않는다." CL(계약물류) 부문 단독이라면 Good 품질 사업으로 평가할 수 있으나, 택배·글로벌·건설을 함께 사야 하는 구조에서는 전체가 Fair를 넘기 어렵다. 내재가치 추정 범위(보수적 ~2.0조, 스트레스 ~1.2조)는 확신을 갖고 투자하기에 충분히 명확하지 않다. 더 단순하고 명확한 기회를 찾는 것이 현명하다.</p>
     </main>
 
-    <div class="footer">k-berkshire</div>
+    <nav class="report-pager"><a class="pager-link pager-prev" href="buffett.html"><span class="pager-label">&larr; 이전</span><span class="pager-title">버핏</span></a><a class="pager-link pager-next" href="dialogue.html"><span class="pager-label">다음 &rarr;</span><span class="pager-title">버핏-멍거 토론</span></a></nav>
+
+    <footer class="footer">
+        <div class="footer-brand">k-berkshire</div>
+        <div class="footer-tag">레전드 투자자 AI 페르소나 기업분석</div>
+        <div class="footer-links">
+            <a href="https://github.com/zipyo/k-berkshire" target="_blank" rel="noopener">소스</a>
+        </div>
+    </footer>
+    <script>
+    (function(){
+        var active = document.querySelector('.report-nav a.active');
+        if (active && active.scrollIntoView) {
+            active.scrollIntoView({inline: 'center', block: 'nearest'});
+        }
+    })();
+    </script>
 </body>
 </html>
