@@ -39,30 +39,40 @@
 
     <main class="report-content">
         <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
-<div class="bm-summary"><div class="summary-item"><span class="value">4,839억원</span></div><div class="summary-item"><span class="value">수출비중 32%</span></div><div class="summary-item"><span class="value">LG그룹 전속 종합광고대행사(기획</span></div><div class="summary-item"><span class="value">제작</span></div><div class="summary-item"><span class="value">미디어)</span></div><div class="summary-item"><span class="value">기말 순현금 데이터 미제공</span></div></div>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 4,839억원</span></div><div class="summary-item"><span class="value">수출비중 31.5%</span></div><div class="summary-item"><span class="value">LG그룹 인하우스 광고대행사(해외 10개 법인</span></div><div class="summary-item"><span class="value">27개 지사 네트워크)</span></div><div class="summary-item"><span class="value">기말 순현금 738억원</span></div></div>
+<div class="bm-note">단일 사업부문(광고업) — 매출 pie 생략<br>
+수익유형: 제작매출액 4,047억 (83.6%) · 수입광고대행료 791억 (16.4%)<br>
+매출총이익 비중: 제작 66.3% · 대행 33.7%<br>
+부문별 영업이익 미공시</div>
 <hr>
 <h3 id="2">섹션 2. 밸류체인</h3>
 <h4 id="_1">광고업</h4>
-<div class="segment-tag">매출 4,839억원 · 100% · 2Y CAGR −6% (2023년 5,483억 → 2025년 4,839억)</div>
+<div class="segment-tag">매출 4,839억원 · 100% · 2Y CAGR 2.3% (5,304→5,547→4,839, 25년 -12.8%)</div>
 <div class="chart-container"><pre class="mermaid">
 flowchart LR
-    R1[&quot;협력업체&lt;br/&gt;외주제작·촬영&lt;br/&gt;외주비 2,486억&quot;]
-    R2[&quot;매체사&lt;br/&gt;TV·라디오·신문&lt;br/&gt;디지털 플랫폼&quot;]
+    R1[&quot;협력 제작사&lt;br/&gt;외주 용역&lt;br/&gt;2,486억&quot;]
+    R2[&quot;매체사&lt;br/&gt;TV·라디오·신문&lt;br/&gt;잡지·디지털&quot;]
+    R3[&quot;자체 역량&lt;br/&gt;DASH 플랫폼&lt;br/&gt;DASH.AI·DASH X&quot;]
 
-    P1[&quot;에이치에스애드 서울&lt;br/&gt;광고기획·제작·미디어&lt;br/&gt;매출총이익 1,383억&quot;]
-    P2[&quot;해외법인 10개국&lt;br/&gt;미주·유럽·중동&lt;br/&gt;아시아·중남미 1,533억&quot;]
+    P1[&quot;HS애드 본사&lt;br/&gt;서울 22,035㎡ 임차&lt;br/&gt;매출 3,333억&quot;]
+    P2[&quot;해외 10개 법인&lt;br/&gt;뉴욕·런던·프랑크푸르트 등&lt;br/&gt;매출 1,533억&quot;]
 
-    C1[&quot;LG그룹 계열&lt;br/&gt;LG전자·LG·LGU+&lt;br/&gt;LG에너지솔루션&quot;]
-    C2[&quot;기타 광고주&lt;br/&gt;삼성전자·농심·BGF리테일&lt;br/&gt;공공기관·관광공사&quot;]
-    M1[&quot;국내 68%&lt;br/&gt;해외 32%&quot;]
+    C1[&quot;LG그룹 계열&lt;br/&gt;LG전자·LG·LG유플러스&lt;br/&gt;LG에너지솔루션&quot;]
+    C2[&quot;외부 광고주&lt;br/&gt;농심·S-OIL·두나무&lt;br/&gt;한국관광공사·BGF&quot;]
 
-    R1 -- &quot;외주제작&quot; --&gt; P1
-    R2 -- &quot;매체집행&quot; --&gt; P1
-    R1 -- &quot;외주제작&quot; --&gt; P2
-    R2 -- &quot;매체집행&quot; --&gt; P2
-    P1 -- &quot;광고캠페인&quot; --&gt; C1
-    P1 -- &quot;광고캠페인&quot; --&gt; C2
-    P2 -- &quot;글로벌캠페인&quot; --&gt; C1
+    M1[&quot;국내 68.5%&lt;br/&gt;해외 31.5%&quot;]
+
+    R1 -- &quot;제작 외주&quot; --&gt; P1
+    R1 -- &quot;제작 외주&quot; --&gt; P2
+    R2 -- &quot;매체 집행&quot; --&gt; P1
+    R2 -- &quot;매체 집행&quot; --&gt; P2
+    R3 -- &quot;AI·디지털 툴&quot; --&gt; P1
+
+    P1 -- &quot;제작·매체대행&quot; --&gt; C1
+    P1 -- &quot;제작·매체대행&quot; --&gt; C2
+    P2 -- &quot;글로벌 캠페인&quot; --&gt; C1
+    P2 -- &quot;현지 캠페인&quot; --&gt; C2
+
     C1 &amp; C2 --&gt; M1
 
     classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
@@ -70,16 +80,117 @@ flowchart LR
     classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
     classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
 
-    class R1,R2 supply
+    class R1,R2,R3 supply
     class P1,P2 core
     class C1,C2 demand
     class M1 geo
 </pre></div>
-<div class="bm-note">외주비율 61%(외주비 2,486억 / 제작매출 4,047억). 제작 매출총이익률 38% vs 대행수수료 100%(순액기재). 해외법인 10개사(뉴욕·런던·프랑크푸르트·두바이·방콕 등) + 27개 지점·지사. DASH.AI(생성형 AI 통합 마케팅 플랫폼) 국내 광고업계 최초 상용화. 부채비율 139.6%(전기 172.6%).</div>
+<div class="bm-note">주주: LG 외 1인 35.78% · Cavendish Square Holding(WPP) 30.61% — LG그룹-WPP 합작 구조<br>
+매출총이익 구성(25년): 본사 매체집행 597억(25%) · 광고물제작 786억(33%) · 종속회사 967억(41%)<br>
+수익 인식: 매체집행은 커미션만 순액 인식, 광고물제작은 총액 인식<br>
+회수 조건: 현금 또는 3개월 이내 어음<br>
+업계 지위: 국내 광고시장 17.3조원(25년), 디지털 비중 62%로 확대 지속<br>
+차별화: 2023년 HS애드·엘베스트 흡수합병 후 Marketing Orchestration 전환, AI 플랫폼 DASH.AI 업계 최초 상용화</div>
 <hr>
-<h3 id="3-2025">섹션 3. 현금 배분 (2025)</h3>
-<div class="bm-note">현금흐름표 데이터가 제공되지 않아 다이어그램을 생성할 수 없습니다. 영업CF·CapEx·배당·재무CF 항목이 포함된 현금흐름표를 추가로 제공해 주시면 섹션 3을 완성할 수 있습니다.</p>
-<p>참고 가능 수치: 영업이익 275억 · 당기순이익 174억 · 부채 2,959억 · 자본 2,120억 (현금흐름표 항목 아님)</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
+<h3 id="3-2024">섹션 3. 현금 배분 (2024)</h3>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    A[&quot;영업CF&lt;br/&gt;&lt;b&gt;−46억&lt;/b&gt;&quot;]
+    B[&quot;CapEx&lt;br/&gt;&lt;b&gt;−48억&lt;/b&gt;&quot;]
+    C[&quot;FCF&lt;br/&gt;&lt;b&gt;−94억&lt;/b&gt;&quot;]
+    D[&quot;배당&lt;br/&gt;&lt;b&gt;−73억&lt;/b&gt;&quot;]
+    E[&quot;금융자산 순&lt;br/&gt;&lt;b&gt;−216억&lt;/b&gt;&quot;]
+    F[&quot;차입·리스 등&lt;br/&gt;&lt;b&gt;−74억&lt;/b&gt;&quot;]
+    G[&quot;환율효과&lt;br/&gt;&lt;b&gt;+24억&lt;/b&gt;&quot;]
+    H[&quot;현금 순증&lt;br/&gt;&lt;b&gt;−433억&lt;/b&gt;&quot;]
+
+    A --&gt; B --&gt; C
+    C --&gt; D &amp; E &amp; F &amp; G
+    D &amp; E &amp; F &amp; G --&gt; H
+
+    classDef inflow fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef outflow fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef key fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef result fill:#a8b8c8,stroke:#5d7a8c,color:#0f1a2e
+
+    class A outflow
+    class B outflow
+    class C key
+    class D outflow
+    class E outflow
+    class F outflow
+    class G inflow
+    class H result
+</pre></div>
+<div class="bm-note">검증 (2024): FCF −94 + 배당 −73 + 자사주순 0 + 금융자산순 −216 + 기타재무 −74 + 환율 +24 = <strong>−433</strong> ✓ (공시 −434, 반올림 차이 1억)<br>
+기말 순현금: 738억원</div>
+<h4 id="_2">현금 배분 이력</h4>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>2024</th>
+<th>2023</th>
+<th>2022</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>영업CF</td>
+<td>−46</td>
+<td>582</td>
+<td>157</td>
+</tr>
+<tr>
+<td>CapEx</td>
+<td>−48</td>
+<td>−28</td>
+<td>−64</td>
+</tr>
+<tr>
+<td><strong>FCF</strong></td>
+<td><strong>−94</strong></td>
+<td><strong>554</strong></td>
+<td><strong>93</strong></td>
+</tr>
+<tr>
+<td>배당</td>
+<td>−73</td>
+<td>−65</td>
+<td>−57</td>
+</tr>
+<tr>
+<td>금융자산 순</td>
+<td>−216</td>
+<td>135</td>
+<td>30</td>
+</tr>
+<tr>
+<td>기타재무</td>
+<td>−74</td>
+<td>−208</td>
+<td>−34</td>
+</tr>
+<tr>
+<td>환율효과</td>
+<td>24</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td><strong>현금 순증</strong></td>
+<td><strong>−433</strong></td>
+<td><strong>417</strong></td>
+<td><strong>37</strong></td>
+</tr>
+<tr>
+<td>기말 순현금</td>
+<td>738</td>
+<td>1,057</td>
+<td>619</td>
+</tr>
+</tbody>
+</table></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
     </main>
 
     <nav class="report-pager"><a class="pager-link pager-prev" href="financial.html"><span class="pager-label">&larr; 이전</span><span class="pager-title">재무</span></a><a class="pager-link pager-next" href="event-research.html"><span class="pager-label">다음 &rarr;</span><span class="pager-title">개요</span></a></nav>
