@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사업모델 - 인바디 | k-berkshire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="../index.html">홈</a> &nbsp;&rsaquo;&nbsp;
+        <a href="index.html">인바디</a> &nbsp;&rsaquo;&nbsp;
+        <span>사업모델</span>
+    </div>
+
+    <div class="report-header">
+        <h1>인바디</h1>
+        <div class="meta">사업모델 &mdash; 2026-04-12</div>
+    </div>
+
+    <nav class="report-nav">
+        <a href="financial.html">재무</a>
+        <a href="business-model.html" class="active">사업모델</a>
+        <a href="event-research.html">개요</a>
+        <span class="nav-sep"></span>
+        <a href="fisher.html">피셔</a>
+        <a href="lynch.html">린치</a>
+        <a href="buffett.html">버핏</a>
+        <a href="munger.html">멍거</a>
+        <span class="nav-sep"></span>
+        <a href="dialogue.html">버핏-멍거 토론</a>
+    </nav>
+
+    <main class="report-content">
+        <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
+<div class="bm-summary"><div class="summary-item"><span class="value">2,339억원</span></div><div class="summary-item"><span class="value">수출비중 83.3%</span></div><div class="summary-item"><span class="value">전문가용 체성분분석기 글로벌 선두(BIA 기술)</span></div><div class="summary-item"><span class="value">기말 순현금 1,587억원</span></div></div>
+<div class="chart-container chart-pie"><pre class="mermaid">
+pie showData
+    &quot;체성분분석기 1,624억&quot; : 69.4
+    &quot;컨슈머(가정용) 298억&quot; : 12.7
+    &quot;기타(상품·용역) 200억&quot; : 8.5
+    &quot;자동혈압계 103억&quot; : 4.4
+    &quot;소프트웨어 89억&quot; : 3.8
+    &quot;신장계 26억&quot; : 1.1
+</pre></div>
+<hr>
+<h3 id="2">섹션 2. 밸류체인</h3>
+<h4 id="_1">의료용기기 제조(체성분분석기 중심)</h4>
+<div class="segment-tag">매출 2,339억원 · 100% · 2Y CAGR 17.1%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;삼한정공·미래이엔티&lt;br/&gt;기구물(Case 등)&lt;br/&gt;164억 · 48%&quot;]
+    R2[&quot;WT테크놀로지·아비코&lt;br/&gt;전자/PCB 보드&lt;br/&gt;95억 · 28%&quot;]
+    R3[&quot;ANYLOAD·피스코&lt;br/&gt;로드셀·기성품&lt;br/&gt;55억 · 16%&quot;]
+    R4[&quot;삼한정공·하이린&lt;br/&gt;상품·부자재&lt;br/&gt;31억 · 8%&quot;]
+
+    P1[&quot;천안 1·2공장&lt;br/&gt;체성분분석기&lt;br/&gt;28,728대/년 · 가동률 84%&quot;]
+    P2[&quot;천안공장&lt;br/&gt;혈압계·신장계·가정용&lt;br/&gt;150,696대/년&quot;]
+    P3[&quot;중국 진산공장&lt;br/&gt;현지 생산(일부 모델)&quot;]
+
+    C1[&quot;양·한방 병원&lt;br/&gt;비만클리닉·건강검진&quot;]
+    C2[&quot;피트니스·에스테틱&lt;br/&gt;군부대·학교·기업&quot;]
+    C3[&quot;해외 현지법인 14개&lt;br/&gt;미·일·중·유럽 등&quot;]
+    C4[&quot;일반 소비자&lt;br/&gt;온라인·리테일&quot;]
+    C5[&quot;해외 대리점&lt;br/&gt;110여 개국&quot;]
+
+    M1[&quot;미국 34%&lt;br/&gt;한국 17%&lt;br/&gt;유럽 12%&lt;br/&gt;중국 8%&lt;br/&gt;기타 29%&quot;]
+
+    R1 &amp; R2 &amp; R3 &amp; R4 --&gt; P1
+    R1 &amp; R2 --&gt; P2
+    P1 -- &quot;InBody(전문가용)&quot; --&gt; C1 &amp; C2 &amp; C3 &amp; C5
+    P1 -- &quot;현지 생산&quot; --&gt; P3
+    P2 -- &quot;BPBIO·BSM&quot; --&gt; C1 &amp; C2
+    P2 -- &quot;InBodyDial·Band&quot; --&gt; C4
+    P3 --&gt; C3
+    C1 &amp; C2 &amp; C3 &amp; C4 &amp; C5 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4 supply
+    class P1,P2,P3 core
+    class C1,C2,C3,C4,C5 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">수직계열화: 천안 1·2공장 자가 보유(토지·건물 장부가 310억), 셀 생산방식. 인증: 美 FDA, 유럽 CE, 日 JPAL/MHLW, 中 CFDA. R&amp;D 매출比 5.1%(118억), 연구인력 20~30%. 직판(9.4%)+대리점(5.9%)+해외법인(73.3%)+해외대리점(10.0%). 글로벌 법인 14개(미·일·중·유럽·아시아·인도·멕시코·호주·뉴욕 BWA·영국·싱가포르·베트남·튀르키예).</div>
+<hr>
+<h3 id="3-2025">섹션 3. 현금 배분 (2025)</h3>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    A[&quot;영업CF&lt;br/&gt;&lt;b&gt;358억&lt;/b&gt;&quot;]
+    B[&quot;CapEx&lt;br/&gt;&lt;b&gt;−74억&lt;/b&gt;&quot;]
+    C[&quot;FCF&lt;br/&gt;&lt;b&gt;284억&lt;/b&gt;&quot;]
+    D[&quot;배당&lt;br/&gt;&lt;b&gt;−50억&lt;/b&gt;&quot;]
+    S[&quot;자사주 순&lt;br/&gt;&lt;b&gt;+199억&lt;/b&gt;&quot;]
+    E[&quot;금융자산 순&lt;br/&gt;&lt;b&gt;−221억&lt;/b&gt;&quot;]
+    F[&quot;차입·리스 등&lt;br/&gt;&lt;b&gt;−16억&lt;/b&gt;&quot;]
+    G[&quot;환율효과&lt;br/&gt;&lt;b&gt;+17억&lt;/b&gt;&quot;]
+    H[&quot;현금 순증&lt;br/&gt;&lt;b&gt;+213억&lt;/b&gt;&quot;]
+
+    A --&gt; B --&gt; C
+    C --&gt; D &amp; S &amp; E &amp; F &amp; G
+    D &amp; S &amp; E &amp; F &amp; G --&gt; H
+
+    classDef inflow fill:#c8923c,stroke:#a87830,color:#fff
+    classDef outflow fill:#5d7a8c,stroke:#4a6577,color:#f0f4f7
+    classDef key fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef result fill:#3d4f65,stroke:#2d3e52,color:#e8e2d8
+
+    class A inflow
+    class B outflow
+    class C key
+    class S inflow
+    class G inflow
+    class D outflow
+    class E outflow
+    class F outflow
+    class H result
+</pre></div>
+<div class="bm-note">검증 (2025): FCF 284 + 배당 −50 + 자사주순 +199 + 금융자산순 −221 + 기타재무 −16 + 환율 +17 = <strong>+213</strong> ✓<br>
+기말 순현금: 1,587억원</div>
+<h4 id="_2">현금 배분 이력</h4>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>2025</th>
+<th>2024</th>
+<th>2023</th>
+<th>2022</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>영업CF</td>
+<td>358</td>
+<td>286</td>
+<td>387</td>
+<td>304</td>
+</tr>
+<tr>
+<td>CapEx</td>
+<td>−74</td>
+<td>−76</td>
+<td>−77</td>
+<td>−60</td>
+</tr>
+<tr>
+<td><strong>FCF</strong></td>
+<td><strong>284</strong></td>
+<td><strong>210</strong></td>
+<td><strong>310</strong></td>
+<td><strong>244</strong></td>
+</tr>
+<tr>
+<td>배당</td>
+<td>−50</td>
+<td>−46</td>
+<td>−39</td>
+<td>−26</td>
+</tr>
+<tr>
+<td>자사주 순</td>
+<td>+199</td>
+<td>−75</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>금융자산 순</td>
+<td>−221</td>
+<td>+19</td>
+<td>−246</td>
+<td>−160</td>
+</tr>
+<tr>
+<td>기타재무</td>
+<td>−16</td>
+<td>−30</td>
+<td>−23</td>
+<td>−27</td>
+</tr>
+<tr>
+<td>환율효과</td>
+<td>+17</td>
+<td>+10</td>
+<td>+5</td>
+<td>−1</td>
+</tr>
+<tr>
+<td><strong>현금 순증</strong></td>
+<td><strong>+213</strong></td>
+<td><strong>+88</strong></td>
+<td><strong>+7</strong></td>
+<td><strong>+30</strong></td>
+</tr>
+<tr>
+<td>기말 순현금</td>
+<td>1,587</td>
+<td>1,185</td>
+<td>1,112</td>
+<td>925</td>
+</tr>
+</tbody>
+</table></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#3b82f6",pie2:"#f59e0b",pie3:"#10b981",pie4:"#ef4444",pie5:"#8b5cf6",pie6:"#06b6d4",pie7:"#f97316",pie8:"#ec4899"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
+    </main>
+
+    <div class="footer">k-berkshire</div>
+</body>
+</html>

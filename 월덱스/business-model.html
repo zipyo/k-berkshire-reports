@@ -36,197 +36,202 @@
     </nav>
 
     <main class="report-content">
-        <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
-<table>
-<thead>
-<tr>
-<th>제품군</th>
-<th>매출 (억원)</th>
-<th>비중</th>
-<th>수출비중</th>
-<th>2Y CAGR</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>실리콘</td>
-<td>2,101</td>
-<td>72.0%</td>
-<td>63.4%</td>
-<td>+3.7%</td>
-</tr>
-<tr>
-<td>쿼츠외</td>
-<td>817</td>
-<td>28.0%</td>
-<td>77.3%</td>
-<td>−6.2%</td>
-</tr>
-<tr>
-<td>　└ 쿼츠</td>
-<td>(523)</td>
-<td>(17.9%)</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr>
-<td>　└ 알루미나외</td>
-<td>(294)</td>
-<td>(10.1%)</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr>
-<td><strong>합계</strong></td>
-<td><strong>2,918</strong></td>
-<td><strong>100%</strong></td>
-<td><strong>67.3%</strong></td>
-<td><strong>+0.6%</strong></td>
-</tr>
-</tbody>
-</table>
+        <div class="bm-content"><h4 id="_1">실리콘 부품</h4>
+<div class="segment-tag">매출 2,101억원 · 72.0% · 2Y CAGR +3.7%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;폴리실리콘&lt;br/&gt;국제 Spot 시장&lt;br/&gt;$30.21/kg&quot;]
+    R2[&quot;WCQ (미국 자회사)&lt;br/&gt;Si Ingot 자체 생산&lt;br/&gt;95% 모회사 공급&quot;]
+
+    P1[&quot;월덱스 본사 (구미)&lt;br/&gt;Electrode·Cathode&lt;br/&gt;Shower Head·Ring&lt;br/&gt;생산능력 1,540억&quot;]
+    P2[&quot;WCQ-US&lt;br/&gt;Si Parts 가공&lt;br/&gt;CAP 190,000kg&quot;]
+
+    C1[&quot;국내 소자업체&lt;br/&gt;삼성전자·SK하이닉스&quot;]
+    C2[&quot;해외 소자업체&lt;br/&gt;Micron·Intel&lt;br/&gt;KIOXIA·TSMC&quot;]
+    M1[&quot;내수 36.6%&lt;br/&gt;수출 63.4%&quot;]
+
+    R1 -- &quot;폴리실리콘&quot; --&gt; R2
+    R2 -- &quot;Si Ingot&quot; --&gt; P1
+    R2 -- &quot;Si Ingot&quot; --&gt; P2
+    P1 -- &quot;Si Parts&quot; --&gt; C1
+    P1 -- &quot;Si Parts&quot; --&gt; C2
+    P2 -- &quot;Si Parts&quot; --&gt; C2
+    C1 &amp; C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">수직계열화: WCQ가 Si Ingot 생산(세계최고 기술력), 본사가 가공 → 소재~제품 일괄생산체제 · 본사 가동률 84.25%, WCQ-US 실리콘 33.87% · 삼성+SK하이닉스 연결매출 약 45%</div>
+<h4 id="_2">쿼츠 부품</h4>
+<div class="segment-tag">매출 523억원 · 17.9% · 2Y CAGR −6.2% (쿼츠+알루미나 합산)</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;Quartz Ingot&lt;br/&gt;Tosoh·Momentive&lt;br/&gt;Heraeus&lt;br/&gt;$13.15/mm&quot;]
+
+    P1[&quot;월덱스 본사 (구미)&lt;br/&gt;Focus Ring·Tube·Boat&lt;br/&gt;생산능력 178억&quot;]
+    P2[&quot;WCQ-US&lt;br/&gt;Quartz Parts 가공&lt;br/&gt;CAP 60,000ea&quot;]
+
+    C1[&quot;국내 소자·장비업체&lt;br/&gt;삼성·SK하이닉스&quot;]
+    C2[&quot;해외 소자업체&lt;br/&gt;TSMC·UMC·KIOXIA&lt;br/&gt;Micron·Renesas&quot;]
+    M1[&quot;내수 22.7%&lt;br/&gt;수출 77.3%&quot;]
+
+    R1 -- &quot;Quartz Ingot&quot; --&gt; P1
+    R1 -- &quot;Quartz Ingot&quot; --&gt; P2
+    P1 -- &quot;Quartz Parts&quot; --&gt; C1
+    P1 -- &quot;Quartz Parts&quot; --&gt; C2
+    P2 -- &quot;Quartz Parts&quot; --&gt; C2
+    C1 &amp; C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1 supply
+    class P1,P2 core
+    class C1,C2 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">쿼츠 잉곳은 외부 매입(국제 3대 공급사) · WCQ-US 쿼츠 가동률 70.36% · Etching 공정 외 Diffusion·LED·광섬유로 영역 확장 시도</div>
+<h4 id="_3">알루미나·파인세라믹</h4>
+<div class="segment-tag">매출 294억원 · 10.1% · 생산실적 2Y CAGR −21.7%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;알루미나(Al2O3)&lt;br/&gt;SiC·ALN 소재&lt;br/&gt;외부 매입&quot;]
+
+    P1[&quot;월덱스 본사 (구미)&lt;br/&gt;SiC Ring·Chuck·Arm&lt;br/&gt;ALN Parts&lt;br/&gt;생산능력 210억&quot;]
+
+    C1[&quot;반도체 소자업체&lt;br/&gt;고부가 Application&quot;]
+    C2[&quot;신규 방열기판&lt;br/&gt;ALN 기반&quot;]
+
+    R1 -- &quot;세라믹 소재&quot; --&gt; P1
+    P1 -- &quot;Fine Ceramic&quot; --&gt; C1
+    P1 -- &quot;ALN Parts&quot; --&gt; C2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+
+    class R1 supply
+    class P1 core
+    class C1,C2 demand
+</pre></div>
+<div class="bm-note">R&amp;D 비중 0.97% (연 24억) · ALN 방열기판 신소재 개발로 미래형 소재기업 확장 전략 · 생산실적 288억(24기)→177억(26기) 감소</div>
 <hr>
-<h3 id="2">섹션 2. 밸류체인</h3><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">파트 A: 운전자본 사이클 (CCC)</button><button class="vc-tab-btn" data-target="vc-tab-1">파트 B: 현금 배분</button></div><div class="vc-tab-content" id="vc-tab-0"><pre><code> 구매           재고 보유           판매          매출채권 회수
-  ├─────── DIO 140일 ──────┤───── DSO 96일 ─────┤
-  ├── DPO 31일 ─┤
-  │             ├──────────── CCC 205일 ─────────┤
-                                                  ▲ 현금 회수
-</code></pre>
+<h3 id="3-2025">섹션 3. 현금 배분 (2025)</h3>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    A[&quot;영업CF&lt;br/&gt;&lt;b&gt;608억&lt;/b&gt;&quot;]
+    B[&quot;CapEx&lt;br/&gt;&lt;b&gt;−109억&lt;/b&gt;&quot;]
+    C[&quot;FCF&lt;br/&gt;&lt;b&gt;499억&lt;/b&gt;&quot;]
+    D[&quot;배당&lt;br/&gt;&lt;b&gt;−10억&lt;/b&gt;&quot;]
+    E[&quot;금융자산 순&lt;br/&gt;&lt;b&gt;+1억&lt;/b&gt;&quot;]
+    F[&quot;차입·이자·리스&lt;br/&gt;&lt;b&gt;−48억&lt;/b&gt;&quot;]
+    G[&quot;환율효과&lt;br/&gt;&lt;b&gt;−10억&lt;/b&gt;&quot;]
+    H[&quot;현금 순증&lt;br/&gt;&lt;b&gt;+432억&lt;/b&gt;&quot;]
+
+    A --&gt; B --&gt; C
+    C --&gt; D &amp; E &amp; F &amp; G
+    D &amp; E &amp; F &amp; G --&gt; H
+
+    classDef inflow fill:#c8923c,stroke:#a87830,color:#fff
+    classDef outflow fill:#5d7a8c,stroke:#4a6577,color:#f0f4f7
+    classDef key fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef result fill:#3d4f65,stroke:#2d3e52,color:#e8e2d8
+
+    class A inflow
+    class B outflow
+    class C key
+    class D,F,G outflow
+    class E inflow
+    class H result
+</pre></div>
+<div class="bm-note">검증 (2025): FCF 499 + 배당 −10 + 금융자산순 +1 + 기타재무 −48 + 환율 −10 = <strong>+432</strong> ✓ (공시 431, ±1 반올림)<br>
+기말 순현금: 1,485억원</div>
+<h4 id="_4">현금 배분 이력</h4>
 <table>
 <thead>
 <tr>
-<th>지표</th>
-<th style="text-align: right;">2022</th>
-<th style="text-align: right;">2023</th>
-<th style="text-align: right;">2024</th>
-<th style="text-align: right;">2025</th>
+<th>구분</th>
+<th>2025</th>
+<th>2024</th>
+<th>2023</th>
+<th>2022</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>DIO (일)</td>
-<td style="text-align: right;">158.9</td>
-<td style="text-align: right;">133.0</td>
-<td style="text-align: right;">167.1</td>
-<td style="text-align: right;">140.1</td>
+<td>영업CF</td>
+<td>608</td>
+<td>350</td>
+<td>829</td>
+<td>223</td>
 </tr>
 <tr>
-<td>DSO (일)</td>
-<td style="text-align: right;">53.3</td>
-<td style="text-align: right;">39.0</td>
-<td style="text-align: right;">71.2</td>
-<td style="text-align: right;">96.1</td>
+<td>CapEx</td>
+<td>−109</td>
+<td>−64</td>
+<td>−111</td>
+<td>−301</td>
 </tr>
 <tr>
-<td>DPO (일)</td>
-<td style="text-align: right;">34.7</td>
-<td style="text-align: right;">26.3</td>
-<td style="text-align: right;">35.3</td>
-<td style="text-align: right;">30.7</td>
+<td><strong>FCF</strong></td>
+<td><strong>499</strong></td>
+<td><strong>286</strong></td>
+<td><strong>718</strong></td>
+<td><strong>−78</strong></td>
 </tr>
 <tr>
-<td><strong>CCC (일)</strong></td>
-<td style="text-align: right;"><strong>177.5</strong></td>
-<td style="text-align: right;"><strong>145.7</strong></td>
-<td style="text-align: right;"><strong>203.0</strong></td>
-<td style="text-align: right;"><strong>205.5</strong></td>
-</tr>
-</tbody>
-</table></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><table>
-<thead>
-<tr>
-<th>항목 (억원)</th>
-<th style="text-align: right;">2022</th>
-<th style="text-align: right;">2023</th>
-<th style="text-align: right;">2024</th>
-<th style="text-align: right;">2025</th>
-<th>비고</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>영업CF</strong></td>
-<td style="text-align: right;">223</td>
-<td style="text-align: right;">829</td>
-<td style="text-align: right;">350</td>
-<td style="text-align: right;">608</td>
-<td></td>
+<td>배당</td>
+<td>−10</td>
+<td>−10</td>
+<td>−8</td>
+<td>−10</td>
 </tr>
 <tr>
-<td>(−) CapEx</td>
-<td style="text-align: right;">301</td>
-<td style="text-align: right;">111</td>
-<td style="text-align: right;">64</td>
-<td style="text-align: right;">109</td>
-<td>유형+무형 자산 투자</td>
+<td>금융자산 순</td>
+<td>+1</td>
+<td>+13</td>
+<td>−4</td>
+<td>+1</td>
 </tr>
 <tr>
-<td><strong>= FCF</strong></td>
-<td style="text-align: right;"><strong>−78</strong></td>
-<td style="text-align: right;"><strong>718</strong></td>
-<td style="text-align: right;"><strong>286</strong></td>
-<td style="text-align: right;"><strong>499</strong></td>
-<td></td>
+<td>기타재무</td>
+<td>−48</td>
+<td>−34</td>
+<td>−25</td>
+<td>+14</td>
 </tr>
 <tr>
-<td>(−) 배당</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">10</td>
-<td></td>
+<td>환율효과</td>
+<td>−10</td>
+<td>+80</td>
+<td>−8</td>
+<td>−4</td>
 </tr>
 <tr>
-<td>(+/−) 자사주 순</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td></td>
-</tr>
-<tr>
-<td>(−) 금융자산 순투자</td>
-<td style="text-align: right;">−1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">−13</td>
-<td style="text-align: right;">−1</td>
-<td>−(투자CF + CapEx)</td>
-</tr>
-<tr>
-<td>(−) 기타재무</td>
-<td style="text-align: right;">−14</td>
-<td style="text-align: right;">25</td>
-<td style="text-align: right;">34</td>
-<td style="text-align: right;">48</td>
-<td>리스·차입 순상환 등</td>
-</tr>
-<tr>
-<td>(+) 환율효과</td>
-<td style="text-align: right;">−4</td>
-<td style="text-align: right;">−8</td>
-<td style="text-align: right;">80</td>
-<td style="text-align: right;">−10</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>= 현금 순증</strong></td>
-<td style="text-align: right;"><strong>−77</strong></td>
-<td style="text-align: right;"><strong>673</strong></td>
-<td style="text-align: right;"><strong>335</strong></td>
-<td style="text-align: right;"><strong>432</strong></td>
-<td></td>
+<td><strong>현금 순증</strong></td>
+<td><strong>+432</strong></td>
+<td><strong>+335</strong></td>
+<td><strong>+673</strong></td>
+<td><strong>−77</strong></td>
 </tr>
 <tr>
 <td>기말 순현금</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">691</td>
-<td style="text-align: right;">1,020</td>
-<td style="text-align: right;">1,485</td>
-<td>현금+금융자산−차입금</td>
+<td>1,485</td>
+<td>1,020</td>
+<td>691</td>
+<td>7</td>
 </tr>
 </tbody>
-</table>
-<div class="bm-note">검증 (2025): FCF 499 − 배당 10 + 자사주순 0 − 금융순투자 (−1) − 기타재무 48 + 환율 (−10) = <strong>432</strong> (CF표 431, 반올림 차 +1) ✓</div></div></div><script>document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#3b82f6",pie2:"#f59e0b",pie3:"#10b981",pie4:"#ef4444",pie5:"#8b5cf6",pie6:"#06b6d4",pie7:"#f97316",pie8:"#ec4899"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
+</table></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#3b82f6",pie2:"#f59e0b",pie3:"#10b981",pie4:"#ef4444",pie5:"#8b5cf6",pie6:"#06b6d4",pie7:"#f97316",pie8:"#ec4899"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
     </main>
 
     <div class="footer">k-berkshire</div>
