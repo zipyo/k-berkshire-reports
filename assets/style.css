@@ -783,9 +783,16 @@ pre.mermaid { background: transparent; color: inherit; padding: 0; margin: 0; }
 .pager-link:hover .pager-label { color: var(--amber); }
 
 @media (max-width: 640px) {
-    .report-pager { flex-direction: column; gap: 10px; }
-    .pager-next { margin-left: 0; }
-    .pager-link { padding: 12px 14px; }
+    .report-pager { gap: 8px; margin-top: 36px; padding-top: 20px; }
+    .pager-link {
+        padding: 10px 12px;
+        gap: 0;
+        font-size: 0.88em;
+    }
+    .pager-label { display: none; }
+    .pager-title { font-size: 0.9em; font-weight: 500; }
+    .pager-prev .pager-title::before { content: '← '; color: var(--text-light); margin-right: 4px; }
+    .pager-next .pager-title::after { content: ' →'; color: var(--text-light); margin-left: 4px; }
 }
 
 /* ── Dialogue: Side Marker ── */
