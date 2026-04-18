@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사업모델 - 한미반도체 | k-berkshire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="../index.html">홈</a> &nbsp;&rsaquo;&nbsp;
+        <a href="index.html">한미반도체</a> &nbsp;&rsaquo;&nbsp;
+        <span>사업모델</span>
+    </div>
+
+    <div class="report-header">
+        <h1>한미반도체</h1>
+        <div class="meta">사업모델 &mdash; 2026-04-10</div>
+    </div>
+
+    <div class="report-nav-wrap">
+        <nav class="report-nav">
+            <a href="financial.html">재무</a>
+        <a href="business-model.html" class="active">사업모델</a>
+        <a href="event-research.html">개요</a>
+        <span class="nav-sep"></span>
+        <a href="fisher.html">피셔</a>
+        <a href="lynch.html">린치</a>
+        <a href="buffett.html">버핏</a>
+        <a href="munger.html">멍거</a>
+        <span class="nav-sep"></span>
+        <a href="dialogue.html">버핏-멍거 토론</a>
+        </nav>
+    </div>
+
+    <main class="report-content">
+        <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 5,767억원</span></div><div class="summary-item"><span class="value">수출비중 80.7%</span></div><div class="summary-item"><span class="value">HBM TC 본더 글로벌 선도</span></div><div class="summary-item"><span class="value">AI 반도체 후공정 장비 수직통합제조</span></div><div class="summary-item"><span class="value">기말 순현금 +2,874억원</span></div></div>
+<div class="bm-note">단일 사업부문(반도체 장비) — 매출 pie 생략</p>
+<p>부문별 영업이익 미공시 (단일 부문 전사 영업이익률 43.6%)</div>
+<hr>
+<h3 id="2">섹션 2. 밸류체인</h3>
+<h4 id="_1">반도체 장비</h4>
+<div class="segment-tag">매출 5,767억원 · 100% · 2Y CAGR +90.4%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;Bonder Modules 外&lt;br/&gt;원재료 매입 1,532억&lt;br/&gt;84.5%&quot;]
+    R2[&quot;외주 임가공&lt;br/&gt;282억&lt;br/&gt;15.5%&quot;]
+    R3[&quot;자체 주물·설계·제작&lt;br/&gt;(Vertical Integration)&quot;]
+
+    P1[&quot;인천 가좌동 본사·연구소&lt;br/&gt;TC Bonder / 6-Side Inspection&lt;br/&gt;MSVP / EMI Shield&quot;]
+    P2[&quot;인천 7공장 (건설중)&lt;br/&gt;차세대 HBM·하이브리드 본더&lt;br/&gt;투자 578억, ~2026.11&quot;]
+
+    C1[&quot;HBM 메모리&lt;br/&gt;SK하이닉스 · Micron&quot;]
+    C2[&quot;OSAT 패키징&lt;br/&gt;ASE · Amkor · JCET&lt;br/&gt;TFME · Huatian · PTI&quot;]
+    C3[&quot;시스템반도체·기타&lt;br/&gt;Infineon · ST Micro&lt;br/&gt;Skyworks · Luxshare&lt;br/&gt;삼성전기 · LG이노텍&quot;]
+
+    M1[&quot;수출 80.7%&lt;br/&gt;내수 19.3%&quot;]
+
+    R1 -- &quot;Bonder 부속품&quot; --&gt; P1
+    R2 -- &quot;임가공&quot; --&gt; P1
+    R3 -- &quot;자체 생산&quot; --&gt; P1
+    P1 -- &quot;TC Bonder·검사장비&quot; --&gt; C1
+    P1 -- &quot;MSVP·EMI·FC Bonder&quot; --&gt; C2
+    P1 -- &quot;EMI Shield·Laser&quot; --&gt; C3
+    P2 -. &quot;2026~ WIDE TC·Hybrid&quot; .-&gt; C1
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3 supply
+    class P1,P2 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">주물~설계~제작~조립~검사~테스트 수직통합제조(VIM) 체제 · R&amp;D 인력 전체의 약 30% · 연구개발비 239억(매출대비 4.3%) · MSVP 및 EMI Shield 세계시장 점유율 1위 · 해외법인 3개(대만·베트남·싱가포르)+현지 협력사 16개 · 지적재산권 323건(특허 283) · WIDE TC 본더 출시 임박, 하이브리드 본더 병행 개발</div>
+<hr>
+<h3 id="3-2025">섹션 3. 현금 배분 (2025)</h3>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    A[&quot;영업CF&lt;br/&gt;&lt;b&gt;2,286억&lt;/b&gt;&quot;]
+    B[&quot;CapEx&lt;br/&gt;&lt;b&gt;−937억&lt;/b&gt;&quot;]
+    C[&quot;FCF&lt;br/&gt;&lt;b&gt;1,349억&lt;/b&gt;&quot;]
+    D[&quot;배당&lt;br/&gt;&lt;b&gt;−683억&lt;/b&gt;&quot;]
+    SB[&quot;자사주 순&lt;br/&gt;&lt;b&gt;−78억&lt;/b&gt;&quot;]
+    E[&quot;금융자산 순&lt;br/&gt;&lt;b&gt;+1,120억&lt;/b&gt;&quot;]
+    F[&quot;차입·이자·리스&lt;br/&gt;&lt;b&gt;−11억&lt;/b&gt;&quot;]
+    G[&quot;환율효과&lt;br/&gt;&lt;b&gt;+26억&lt;/b&gt;&quot;]
+    H[&quot;현금 순증&lt;br/&gt;&lt;b&gt;+1,723억&lt;/b&gt;&quot;]
+
+    A --&gt; B --&gt; C
+    C --&gt; D &amp; SB &amp; E &amp; F &amp; G
+    D &amp; SB &amp; E &amp; F &amp; G --&gt; H
+
+    classDef inflow fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef outflow fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef key fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef result fill:#a8b8c8,stroke:#5d7a8c,color:#0f1a2e
+
+    class A,E,G inflow
+    class B,D,SB,F outflow
+    class C key
+    class H result
+</pre></div>
+<div class="bm-note">검증 (2025): FCF 1,349 + 배당 −683 + 자사주순 −78 + 금융자산순 +1,120 + 기타재무 −11 + 환율 +26 = <strong>+1,723</strong> ✓<br>
+기말 순현금: 2,874억원</div>
+<h4 id="_2">현금 배분 이력</h4>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>2025</th>
+<th>2024</th>
+<th>2023</th>
+<th>2022</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>영업CF</td>
+<td>2,286</td>
+<td>1,414</td>
+<td>450</td>
+<td>1,095</td>
+</tr>
+<tr>
+<td>CapEx</td>
+<td>−937</td>
+<td>−538</td>
+<td>−276</td>
+<td>−93</td>
+</tr>
+<tr>
+<td><strong>FCF</strong></td>
+<td><strong>1,349</strong></td>
+<td><strong>876</strong></td>
+<td><strong>174</strong></td>
+<td><strong>1,002</strong></td>
+</tr>
+<tr>
+<td>배당</td>
+<td>−683</td>
+<td>−405</td>
+<td>−195</td>
+<td>−297</td>
+</tr>
+<tr>
+<td>자사주 순</td>
+<td>−78</td>
+<td>−1,899</td>
+<td>−229</td>
+<td>−200</td>
+</tr>
+<tr>
+<td>금융자산 순</td>
+<td>+1,120</td>
+<td>+632</td>
+<td>+1,122</td>
+<td>−88</td>
+</tr>
+<tr>
+<td>기타재무</td>
+<td>−11</td>
+<td>−13</td>
+<td>−12</td>
+<td>−11</td>
+</tr>
+<tr>
+<td>환율효과</td>
+<td>+26</td>
+<td>+52</td>
+<td>+28</td>
+<td>+7</td>
+</tr>
+<tr>
+<td><strong>현금 순증</strong></td>
+<td><strong>+1,723</strong></td>
+<td><strong>−757</strong></td>
+<td><strong>+888</strong></td>
+<td><strong>+413</strong></td>
+</tr>
+<tr>
+<td>기말 순현금</td>
+<td>2,874</td>
+<td>2,032</td>
+<td>4,296</td>
+<td>1,032</td>
+</tr>
+</tbody>
+</table></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
+    </main>
+
+    <nav class="report-pager"><a class="pager-link pager-prev" href="financial.html"><span class="pager-label">&larr; 이전</span><span class="pager-title">재무</span></a><a class="pager-link pager-next" href="event-research.html"><span class="pager-label">다음 &rarr;</span><span class="pager-title">개요</span></a></nav>
+
+    <footer class="footer">
+        <div class="footer-brand">k-berkshire</div>
+        <div class="footer-tag">레전드 투자자 AI 페르소나 기업분석</div>
+        <div class="footer-links">
+            <a href="https://github.com/zipyo/k-berkshire" target="_blank" rel="noopener">소스</a>
+        </div>
+    </footer>
+    <script>
+    (function(){
+        var active = document.querySelector('.report-nav a.active');
+        if (active && active.scrollIntoView) {
+            active.scrollIntoView({inline: 'center', block: 'nearest'});
+        }
+    })();
+    </script>
+</body>
+</html>
