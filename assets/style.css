@@ -921,28 +921,20 @@ pre.mermaid { background: transparent; color: inherit; padding: 0; margin: 0; }
 /* ── Responsive ── */
 @media (max-width: 640px) {
     body { padding: 0 14px; line-height: 1.7; }
-    /* 표 가로 스크롤 fade — 잘림 신호 */
-    .fin-tab-content,
-    .vc-tab-content,
-    .bm-content,
-    .shareholder-section {
-        position: relative;
-    }
-    .fin-tab-content::after,
-    .vc-tab-content::after,
-    .bm-content::after,
+    /* 주주현황 표 잘림 힌트 — 좁고 미묘하게 */
+    .shareholder-section { position: relative; }
     .shareholder-section::after {
         content: '';
         position: absolute;
-        top: 0;
+        top: 16px;
         right: 0;
-        bottom: 0;
-        width: 24px;
-        background: linear-gradient(to right, transparent, var(--warm-white));
+        bottom: 16px;
+        width: 14px;
+        background: linear-gradient(to right, rgba(248, 245, 240, 0), var(--cream));
         pointer-events: none;
         z-index: 1;
+        border-radius: 0 6px 6px 0;
     }
-    .shareholder-section::after { background: linear-gradient(to right, transparent, var(--cream)); }
     .site-header { padding: 36px 0 28px; }
     .site-header h1 { font-size: 1.8em; }
     .company-grid { grid-template-columns: 1fr; gap: 10px; }
