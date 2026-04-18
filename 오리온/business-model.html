@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사업모델 - 오리온 | k-berkshire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="../index.html">홈</a> &nbsp;&rsaquo;&nbsp;
+        <a href="index.html">오리온</a> &nbsp;&rsaquo;&nbsp;
+        <span>사업모델</span>
+    </div>
+
+    <div class="report-header">
+        <h1>오리온</h1>
+        <div class="meta">사업모델 &mdash; 2026-03-27</div>
+    </div>
+
+    <div class="report-nav-wrap">
+        <nav class="report-nav">
+            <a href="financial.html">재무</a>
+        <a href="business-model.html" class="active">사업모델</a>
+        <a href="event-research.html">개요</a>
+        <span class="nav-sep"></span>
+        <a href="fisher.html">피셔</a>
+        <a href="lynch.html">린치</a>
+        <a href="buffett.html">버핏</a>
+        <a href="munger.html">멍거</a>
+        <span class="nav-sep"></span>
+        <a href="dialogue.html">버핏-멍거 토론</a>
+        </nav>
+    </div>
+
+    <main class="report-content">
+        <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 33,324억원</span></div><div class="summary-item"><span class="value">해외매출 비중 약 70%</span></div><div class="summary-item"><span class="value">한국</span></div><div class="summary-item"><span class="value">중국</span></div><div class="summary-item"><span class="value">베트남</span></div><div class="summary-item"><span class="value">러시아</span></div><div class="summary-item"><span class="value">인도 5개국 생산거점 운영 글로벌 제과</span></div><div class="summary-item"><span class="value">기말 순현금 13,512억원</span></div></div>
+<div class="bm-note">단일 사업부문(제과) · 부문별 영업이익 단일 → pie 차트 생략</div>
+<hr>
+<h3 id="2">섹션 2. 밸류체인</h3>
+<h4 id="_1">제과</h4>
+<div class="segment-tag">매출 33,324억원 · 100% · 2Y CAGR +7.0% · 영업이익률 16.8%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;국내 공급처&lt;br/&gt;삼양사·롯데웰푸드·오뚜기&lt;br/&gt;유지류·당류&quot;]
+    R2[&quot;해외 공급처&lt;br/&gt;Bunge·AAK·Cargill&lt;br/&gt;카카오·유제품&quot;]
+    R3[&quot;국내 공급처&lt;br/&gt;아이씨푸드·젤텍&lt;br/&gt;서류(감자)&quot;]
+    R4[&quot;안산공장&lt;br/&gt;자체 생산 포장재&lt;br/&gt;연 254,016km&quot;]
+
+    P1[&quot;한국&lt;br/&gt;익산2·3·청주4·5&lt;br/&gt;파이·비스킷·스낵&lt;br/&gt;157천t, 가동률 66%&quot;]
+    P2[&quot;베트남&lt;br/&gt;미폭·옌퐁공장&lt;br/&gt;파이·스낵&lt;br/&gt;가동률 83%&quot;]
+    P3[&quot;중국&lt;br/&gt;랑팡·상해·광주·심양&lt;br/&gt;파이·스낵·껌&lt;br/&gt;가동률 27~73%&quot;]
+    P4[&quot;러시아&lt;br/&gt;Novo·Tver공장&lt;br/&gt;파이·비스킷·캔디&lt;br/&gt;가동률 123%&quot;]
+    P5[&quot;인도&lt;br/&gt;라자스탄공장&lt;br/&gt;초코파이 4개 라인&quot;]
+
+    C1[&quot;국내 유통&lt;br/&gt;할인점 21%·슈퍼 25%&lt;br/&gt;CVS 21%·온라인 11%&lt;br/&gt;대리점 227개&quot;]
+    C2[&quot;해외 현지유통&lt;br/&gt;기업형 채널&lt;br/&gt;간식점·이커머스&quot;]
+    C3[&quot;CIS·동남아 수출&quot;]
+
+    M1[&quot;한국 34%&lt;br/&gt;중국 55%&lt;br/&gt;베트남 16%&lt;br/&gt;러시아 10%&quot;]
+
+    R1 &amp; R2 &amp; R3 -- &quot;원재료&quot; --&gt; P1
+    R2 --&gt; P2 &amp; P3 &amp; P4 &amp; P5
+    R4 -- &quot;포장재&quot; --&gt; P1
+    P1 --&gt; C1
+    P2 &amp; P3 &amp; P4 &amp; P5 --&gt; C2
+    P4 --&gt; C3
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4 supply
+    class P1,P2,P3,P4,P5 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">수직계열화: 안산공장에서 포장재 자체 생산. 파워브랜드(초코파이·포카칩·예감·오징어땅콩·꼬북칩) 중심, 연간 1,000억 이상 메가브랜드 다수 보유. 2021년 인도 라자스탄 공장 가동, 2022년 러시아 트베르 신공장 준공. 2025년 9월 수협과 합작법인 오리온수협(지분 50%, 납입자본 300억)을 통해 수산가공식품 신사업 진출. R&amp;D 매출비중 0.54%, 연구개발팀 9개 파트 운영. 주요 원재료인 카카오(수입 kg당 15,492원, YoY +27%)·유지류(수입 4,550원, YoY +53%) 급등이 원가 부담.</div>
+<hr>
+<h3 id="3-2025">섹션 3. 현금 배분 (2025)</h3>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    A[&quot;영업CF&lt;br/&gt;&lt;b&gt;5,373억&lt;/b&gt;&quot;]
+    B[&quot;CapEx&lt;br/&gt;&lt;b&gt;−1,464억&lt;/b&gt;&quot;]
+    C[&quot;FCF&lt;br/&gt;&lt;b&gt;3,909억&lt;/b&gt;&quot;]
+    D[&quot;배당&lt;br/&gt;&lt;b&gt;−1,062억&lt;/b&gt;&quot;]
+    E[&quot;금융자산 순&lt;br/&gt;&lt;b&gt;−4,178억&lt;/b&gt;&quot;]
+    F[&quot;차입·리스 등&lt;br/&gt;&lt;b&gt;−147억&lt;/b&gt;&quot;]
+    G[&quot;환율효과&lt;br/&gt;&lt;b&gt;+79억&lt;/b&gt;&quot;]
+    H[&quot;현금 순증&lt;br/&gt;&lt;b&gt;−1,399억&lt;/b&gt;&quot;]
+
+    A --&gt; B --&gt; C
+    C --&gt; D &amp; E &amp; F &amp; G
+    D &amp; E &amp; F &amp; G --&gt; H
+
+    classDef inflow fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef outflow fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef key fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef result fill:#a8b8c8,stroke:#5d7a8c,color:#0f1a2e
+
+    class A inflow
+    class B,D,E,F outflow
+    class G inflow
+    class C key
+    class H result
+</pre></div>
+<div class="bm-note">검증 (2025): FCF 3,909 + 배당 −1,062 + 금융자산순 −4,178 + 기타재무 −147 + 환율 +79 = <strong>−1,399</strong> ✓<br>
+기말 순현금: 13,512억원 (현금 3,114 + 유동금융자산 10,060 + 장기금융자산 338 − 차입금 0)</div>
+<h4 id="_2">현금 배분 이력</h4>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>2025</th>
+<th>2024</th>
+<th>2023</th>
+<th>2022</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>영업CF</td>
+<td>5,373</td>
+<td>6,516</td>
+<td>4,370</td>
+<td>5,462</td>
+</tr>
+<tr>
+<td>CapEx</td>
+<td>−1,464</td>
+<td>−1,231</td>
+<td>−1,688</td>
+<td>−908</td>
+</tr>
+<tr>
+<td><strong>FCF</strong></td>
+<td><strong>3,909</strong></td>
+<td><strong>5,285</strong></td>
+<td><strong>2,682</strong></td>
+<td><strong>4,554</strong></td>
+</tr>
+<tr>
+<td>배당</td>
+<td>−1,062</td>
+<td>−562</td>
+<td>−376</td>
+<td>−296</td>
+</tr>
+<tr>
+<td>금융자산 순</td>
+<td>−4,178</td>
+<td>−3,818</td>
+<td>−3,717</td>
+<td>−2,013</td>
+</tr>
+<tr>
+<td>기타재무</td>
+<td>−147</td>
+<td>−139</td>
+<td>−1,004</td>
+<td>−1,475</td>
+</tr>
+<tr>
+<td>환율효과</td>
+<td>+79</td>
+<td>+88</td>
+<td>−23</td>
+<td>−176</td>
+</tr>
+<tr>
+<td><strong>현금 순증</strong></td>
+<td><strong>−1,399</strong></td>
+<td><strong>854</strong></td>
+<td><strong>−2,438</strong></td>
+<td><strong>594</strong></td>
+</tr>
+<tr>
+<td>기말 순현금</td>
+<td>13,512</td>
+<td>11,221</td>
+<td>11,344</td>
+<td>9,220</td>
+</tr>
+</tbody>
+</table></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
+    </main>
+
+    <nav class="report-pager"><a class="pager-link pager-prev" href="financial.html"><span class="pager-label">&larr; 이전</span><span class="pager-title">재무</span></a><a class="pager-link pager-next" href="event-research.html"><span class="pager-label">다음 &rarr;</span><span class="pager-title">개요</span></a></nav>
+
+    <footer class="footer">
+        <div class="footer-brand">k-berkshire</div>
+        <div class="footer-tag">레전드 투자자 AI 페르소나 기업분석</div>
+        <div class="footer-links">
+            <a href="https://github.com/zipyo/k-berkshire" target="_blank" rel="noopener">소스</a>
+        </div>
+    </footer>
+    <script>
+    (function(){
+        var active = document.querySelector('.report-nav a.active');
+        if (active && active.scrollIntoView) {
+            active.scrollIntoView({inline: 'center', block: 'nearest'});
+        }
+    })();
+    </script>
+</body>
+</html>
