@@ -36,27 +36,37 @@
     </nav>
 
     <main class="report-content">
-        <div class="bm-content"><h4 id="_1">실리콘 부품</h4>
-<div class="segment-tag">매출 2,101억원 · 72.0% · 2Y CAGR +3.7%</div>
+        <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
+<div class="bm-summary"><div class="summary-item"><span class="value">2,918억원</span></div><div class="summary-item"><span class="value">수출비중 67%</span></div><div class="summary-item"><span class="value">반도체 에칭 공정용 Si/Quartz/Ceramic 소모성 부품 국산화 전문기업</span></div><div class="summary-item"><span class="value">기말 순현금 +1,485억원</span></div></div>
+<div class="chart-container chart-pie"><pre class="mermaid">
+pie showData
+    &quot;실리콘 2,101억&quot; : 72.0
+    &quot;쿼츠 523억&quot; : 17.9
+    &quot;알루미나 외 294억&quot; : 10.1
+</pre></div>
+<hr>
+<h3 id="2">섹션 2. 밸류체인</h3><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">실리콘 부품</button><button class="vc-tab-btn" data-target="vc-tab-1">쿼츠 부품</button><button class="vc-tab-btn" data-target="vc-tab-2">파인세라믹 (알루미나·SiC·AlN)</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 2,101억원 · 72.0% · 2Y CAGR +3.7%</div>
 <div class="chart-container"><pre class="mermaid">
 flowchart LR
-    R1[&quot;폴리실리콘&lt;br/&gt;국제 Spot 시장&lt;br/&gt;$30.21/kg&quot;]
-    R2[&quot;WCQ (미국 자회사)&lt;br/&gt;Si Ingot 자체 생산&lt;br/&gt;95% 모회사 공급&quot;]
+    R1[&quot;WCQ (미국 자회사)&lt;br/&gt;Silicon Ingot&lt;br/&gt;자체 생산&quot;]
+    R2[&quot;폴리실리콘 공급사&lt;br/&gt;$30.21/kg&quot;]
 
-    P1[&quot;월덱스 본사 (구미)&lt;br/&gt;Electrode·Cathode&lt;br/&gt;Shower Head·Ring&lt;br/&gt;생산능력 1,540억&quot;]
-    P2[&quot;WCQ-US&lt;br/&gt;Si Parts 가공&lt;br/&gt;CAP 190,000kg&quot;]
+    P1[&quot;구미 본사&lt;br/&gt;Electrode·Cathode·Ring·Disk&lt;br/&gt;CAPA 1,540억원&quot;]
+    P2[&quot;WCQ-US&lt;br/&gt;Silicon Ingot·Parts&lt;br/&gt;CAPA 19만kg&quot;]
 
-    C1[&quot;국내 소자업체&lt;br/&gt;삼성전자·SK하이닉스&quot;]
-    C2[&quot;해외 소자업체&lt;br/&gt;Micron·Intel&lt;br/&gt;KIOXIA·TSMC&quot;]
-    M1[&quot;내수 36.6%&lt;br/&gt;수출 63.4%&quot;]
+    C1[&quot;국내 소자&lt;br/&gt;삼성전자·SK하이닉스&quot;]
+    C2[&quot;해외 소자&lt;br/&gt;Micron·Intel·KIOXIA&quot;]
+    C3[&quot;해외 Agent&lt;br/&gt;직납 확대 중&quot;]
+    M1[&quot;내수 37%&lt;br/&gt;수출 63%&quot;]
 
-    R1 -- &quot;폴리실리콘&quot; --&gt; R2
-    R2 -- &quot;Si Ingot&quot; --&gt; P1
-    R2 -- &quot;Si Ingot&quot; --&gt; P2
+    R1 -- &quot;Si Ingot&quot; --&gt; P1
+    R2 -- &quot;Poly-Si&quot; --&gt; R1
+    R2 -- &quot;Poly-Si&quot; --&gt; P2
+    P2 -- &quot;Ingot 95%+&quot; --&gt; P1
     P1 -- &quot;Si Parts&quot; --&gt; C1
-    P1 -- &quot;Si Parts&quot; --&gt; C2
-    P2 -- &quot;Si Parts&quot; --&gt; C2
-    C1 &amp; C2 --&gt; M1
+    P1 &amp; P2 -- &quot;Si Parts&quot; --&gt; C2
+    P1 -- &quot;Si Parts&quot; --&gt; C3
+    C1 &amp; C2 &amp; C3 --&gt; M1
 
     classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
     classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
@@ -65,28 +75,28 @@ flowchart LR
 
     class R1,R2 supply
     class P1,P2 core
-    class C1,C2 demand
+    class C1,C2,C3 demand
     class M1 geo
 </pre></div>
-<div class="bm-note">수직계열화: WCQ가 Si Ingot 생산(세계최고 기술력), 본사가 가공 → 소재~제품 일괄생산체제 · 본사 가동률 84.25%, WCQ-US 실리콘 33.87% · 삼성+SK하이닉스 연결매출 약 45%</div>
-<h4 id="_2">쿼츠 부품</h4>
-<div class="segment-tag">매출 523억원 · 17.9% · 2Y CAGR −6.2% (쿼츠+알루미나 합산)</div>
+<div class="bm-note">WCQ 실리콘 잉곳 95% 이상을 모회사에 주문생산 방식으로 공급(소재-가공 수직계열화). 국내 주요 고객 비중 약 45%. 2025년 실리콘 가동률: 본사 84.3%, WCQ-US 33.9%.</div></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><div class="segment-tag">매출 523억원 · 17.9% · 2Y CAGR −6.2%</div>
 <div class="chart-container"><pre class="mermaid">
 flowchart LR
-    R1[&quot;Quartz Ingot&lt;br/&gt;Tosoh·Momentive&lt;br/&gt;Heraeus&lt;br/&gt;$13.15/mm&quot;]
+    R1[&quot;Tosoh·Momentive·Heraeus&lt;br/&gt;Quartz Ingot&lt;br/&gt;$13.15/mm&quot;]
 
-    P1[&quot;월덱스 본사 (구미)&lt;br/&gt;Focus Ring·Tube·Boat&lt;br/&gt;생산능력 178억&quot;]
-    P2[&quot;WCQ-US&lt;br/&gt;Quartz Parts 가공&lt;br/&gt;CAP 60,000ea&quot;]
+    P1[&quot;구미 본사&lt;br/&gt;Focus Ring·Tube·Boat&lt;br/&gt;CAPA 178억원&quot;]
+    P2[&quot;WCQ-US&lt;br/&gt;Quartz Parts&lt;br/&gt;CAPA 6만EA&quot;]
+    P3[&quot;WCQ Taiwan&lt;br/&gt;판매법인 (2017~)&quot;]
 
-    C1[&quot;국내 소자·장비업체&lt;br/&gt;삼성·SK하이닉스&quot;]
-    C2[&quot;해외 소자업체&lt;br/&gt;TSMC·UMC·KIOXIA&lt;br/&gt;Micron·Renesas&quot;]
-    M1[&quot;내수 22.7%&lt;br/&gt;수출 77.3%&quot;]
+    C1[&quot;국내 소자&lt;br/&gt;삼성·SK하이닉스&quot;]
+    C2[&quot;해외 소자&lt;br/&gt;TSMC·UMC·Micron&quot;]
+    M1[&quot;내수 23%&lt;br/&gt;수출 77%&quot;]
 
     R1 -- &quot;Quartz Ingot&quot; --&gt; P1
     R1 -- &quot;Quartz Ingot&quot; --&gt; P2
-    P1 -- &quot;Quartz Parts&quot; --&gt; C1
-    P1 -- &quot;Quartz Parts&quot; --&gt; C2
-    P2 -- &quot;Quartz Parts&quot; --&gt; C2
+    P1 -- &quot;Qtz Parts&quot; --&gt; C1
+    P1 &amp; P2 -- &quot;Qtz Parts&quot; --&gt; P3
+    P3 -- &quot;판매&quot; --&gt; C2
+    P2 -- &quot;Qtz Parts&quot; --&gt; C2
     C1 &amp; C2 --&gt; M1
 
     classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
@@ -95,25 +105,21 @@ flowchart LR
     classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
 
     class R1 supply
-    class P1,P2 core
+    class P1,P2,P3 core
     class C1,C2 demand
     class M1 geo
 </pre></div>
-<div class="bm-note">쿼츠 잉곳은 외부 매입(국제 3대 공급사) · WCQ-US 쿼츠 가동률 70.36% · Etching 공정 외 Diffusion·LED·광섬유로 영역 확장 시도</div>
-<h4 id="_3">알루미나·파인세라믹</h4>
-<div class="segment-tag">매출 294억원 · 10.1% · 생산실적 2Y CAGR −21.7%</div>
+<div class="bm-note">2025년 쿼츠 가동률: 본사 84.3%, WCQ-US 70.4%. Etching 외 Diffusion·LED·Optical-fiber 영역 확장 추진.</div></div><div class="vc-tab-content" id="vc-tab-2" data-tab-defer><div class="segment-tag">매출 294억원 · 10.1% · 2Y CAGR n/a (공시 미구분)</div>
 <div class="chart-container"><pre class="mermaid">
 flowchart LR
-    R1[&quot;알루미나(Al2O3)&lt;br/&gt;SiC·ALN 소재&lt;br/&gt;외부 매입&quot;]
+    R1[&quot;세라믹 분말&lt;br/&gt;Alumina·SiC·AlN&quot;]
 
-    P1[&quot;월덱스 본사 (구미)&lt;br/&gt;SiC Ring·Chuck·Arm&lt;br/&gt;ALN Parts&lt;br/&gt;생산능력 210억&quot;]
+    P1[&quot;구미 본사&lt;br/&gt;SiC Ring·Chuck·Arm&lt;br/&gt;AlN·Alumina Parts&lt;br/&gt;CAPA 210억원&quot;]
 
-    C1[&quot;반도체 소자업체&lt;br/&gt;고부가 Application&quot;]
-    C2[&quot;신규 방열기판&lt;br/&gt;ALN 기반&quot;]
+    C1[&quot;국내외 소자·장비&lt;br/&gt;에칭·방열 응용&quot;]
 
     R1 -- &quot;세라믹 소재&quot; --&gt; P1
-    P1 -- &quot;Fine Ceramic&quot; --&gt; C1
-    P1 -- &quot;ALN Parts&quot; --&gt; C2
+    P1 -- &quot;Ceramic Parts&quot; --&gt; C1
 
     classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
     classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
@@ -121,11 +127,10 @@ flowchart LR
 
     class R1 supply
     class P1 core
-    class C1,C2 demand
+    class C1 demand
 </pre></div>
-<div class="bm-note">R&amp;D 비중 0.97% (연 24억) · ALN 방열기판 신소재 개발로 미래형 소재기업 확장 전략 · 생산실적 288억(24기)→177억(26기) 감소</div>
-<hr>
-<h3 id="3-2025">섹션 3. 현금 배분 (2025)</h3>
+<div class="bm-note">고부가 Application 중심 신제품 출시 전략. AlN 방열기판 등 신소재 포트폴리오 확장 검토. 연결 R&amp;D 비중 0.97%.</div>
+<hr></div></div><script>document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script><h3 id="3-2025">섹션 3. 현금 배분 (2025)</h3>
 <div class="chart-container"><pre class="mermaid">
 flowchart LR
     A[&quot;영업CF&lt;br/&gt;&lt;b&gt;608억&lt;/b&gt;&quot;]
@@ -135,7 +140,7 @@ flowchart LR
     E[&quot;금융자산 순&lt;br/&gt;&lt;b&gt;+1억&lt;/b&gt;&quot;]
     F[&quot;차입·이자·리스&lt;br/&gt;&lt;b&gt;−48억&lt;/b&gt;&quot;]
     G[&quot;환율효과&lt;br/&gt;&lt;b&gt;−10억&lt;/b&gt;&quot;]
-    H[&quot;현금 순증&lt;br/&gt;&lt;b&gt;+432억&lt;/b&gt;&quot;]
+    H[&quot;현금 순증&lt;br/&gt;&lt;b&gt;+431억&lt;/b&gt;&quot;]
 
     A --&gt; B --&gt; C
     C --&gt; D &amp; E &amp; F &amp; G
@@ -149,13 +154,15 @@ flowchart LR
     class A inflow
     class B outflow
     class C key
-    class D,F,G outflow
+    class D outflow
     class E inflow
+    class F outflow
+    class G outflow
     class H result
 </pre></div>
-<div class="bm-note">검증 (2025): FCF 499 + 배당 −10 + 금융자산순 +1 + 기타재무 −48 + 환율 −10 = <strong>+432</strong> ✓ (공시 431, ±1 반올림)<br>
+<div class="bm-note">검증 (2025): FCF 499 + 배당 −10 + 금융자산순 +1 + 기타재무 −48 + 환율 −10 = <strong>+432</strong> ≈ 현금순증 +431 ✓<br>
 기말 순현금: 1,485억원</div>
-<h4 id="_4">현금 배분 이력</h4>
+<h4 id="_3">현금 배분 이력</h4>
 <table>
 <thead>
 <tr>
@@ -218,9 +225,9 @@ flowchart LR
 </tr>
 <tr>
 <td><strong>현금 순증</strong></td>
-<td><strong>+432</strong></td>
+<td><strong>+431</strong></td>
 <td><strong>+335</strong></td>
-<td><strong>+673</strong></td>
+<td><strong>+672</strong></td>
 <td><strong>−77</strong></td>
 </tr>
 <tr>

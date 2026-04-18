@@ -37,198 +37,224 @@
 
     <main class="report-content">
         <div class="bm-content"><h3 id="1">섹션 1. 사업 포트폴리오</h3>
-<p>연결 기준, 제38기(2025.12)</p>
-<table>
-<thead>
-<tr>
-<th>사업부문</th>
-<th>매출 (억원)</th>
-<th>비중</th>
-<th>수출비중</th>
-<th>2Y CAGR</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>VAN/TRS (결제중계·세금환급)</td>
-<td>3,302</td>
-<td>30.2%</td>
-<td>0%</td>
-<td>7.5%</td>
-</tr>
-<tr>
-<td>PG (온라인결제)</td>
-<td>6,778</td>
-<td>61.9%</td>
-<td>0.5%</td>
-<td>14.0%</td>
-</tr>
-<tr>
-<td>결제단말기/POS</td>
-<td>864</td>
-<td>7.9%</td>
-<td>0%</td>
-<td>1.2%</td>
-</tr>
-<tr>
-<td>기타</td>
-<td>2</td>
-<td>0.0%</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td><strong>합계</strong></td>
-<td><strong>10,947</strong></td>
-<td><strong>100%</strong></td>
-<td><strong>0.3%</strong></td>
-<td><strong>10.8%</strong></td>
-</tr>
-</tbody>
-</table>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 10,947억원</span></div><div class="summary-item"><span class="value">수출비중 0.3%</span></div><div class="summary-item"><span class="value">VAN 점유율 28.4% 1위 + PG</span></div><div class="summary-item"><span class="value">TRS 통합결제 플랫폼</span></div><div class="summary-item"><span class="value">기말 순현금 +3,804억원</span></div></div>
+<div class="chart-container chart-pie"><pre class="mermaid">
+pie showData
+    &quot;PG 6,778억&quot; : 62
+    &quot;VAN·TRS 3,302억&quot; : 30
+    &quot;단말기·POS·기타 867억&quot; : 8
+</pre></div>
 <hr>
-<h3 id="2">섹션 2. 밸류체인</h3><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">파트 A: 운전자본 사이클 (CCC)</button><button class="vc-tab-btn" data-target="vc-tab-1">파트 B: 현금 배분</button></div><div class="vc-tab-content" id="vc-tab-0"><pre><code>│← DIO 4일 →│←─────────── DSO 146일 ──────────────→│
-구매          판매                                 현금 수취
-│← DPO 31일 →│
-              대금 지급
-              │←──────── CCC 119일 ────────────────→│
-                                           (2025 기준)
-</code></pre>
+<h3 id="2">섹션 2. 밸류체인</h3><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">PG (온라인 지급결제대행)</button><button class="vc-tab-btn" data-target="vc-tab-1">VAN · TRS</button><button class="vc-tab-btn" data-target="vc-tab-2">단말기·POS·기타</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 6,778억원 · 62% · 2Y CAGR +14.0%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;OEM 결제단말기&lt;br/&gt;외주 생산&quot;]
+    R2[&quot;자체 IDC·DR센터&lt;br/&gt;IBM Power10·Exadata&quot;]
+    R3[&quot;빅테크 제휴&lt;br/&gt;알리페이·위챗페이&quot;]
+
+    P1[&quot;나이스페이먼츠&lt;br/&gt;PG 결제중계&lt;br/&gt;5,038억&quot;]
+    P2[&quot;나이스정보통신&lt;br/&gt;PG 결제중계&lt;br/&gt;1,704억&quot;]
+    P3[&quot;PT.IONPAYNETWORKS&lt;br/&gt;인도네시아 PG&lt;br/&gt;36억&quot;]
+
+    C1[&quot;온라인 쇼핑몰&lt;br/&gt;이커머스 가맹점&quot;]
+    C2[&quot;구독·크로스보더&lt;br/&gt;글로벌 PSP 제휴&quot;]
+    M1[&quot;내수 99.5%&lt;br/&gt;인도네시아 0.5%&quot;]
+
+    R1 -- &quot;결제단말&quot; --&gt; P1
+    R2 -- &quot;승인·정산 인프라&quot; --&gt; P1 &amp; P2
+    R3 -- &quot;간편결제 연동&quot; --&gt; P1 &amp; P2
+    P1 -- &quot;PG 수수료&quot; --&gt; C1
+    P2 -- &quot;PG 수수료&quot; --&gt; C2
+    P3 -- &quot;현지 PG&quot; --&gt; C1
+    C1 &amp; C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3 supply
+    class P1,P2,P3 core
+    class C1,C2 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">PCI-DSS·ISMS 인증, VAN업계 유일 자체 IDC·DR 이중화. 금융위 등록 PG 190개사 중 과점 상위권. 크로스보더 결제·구독경제 대응으로 커버리지 확장 중.</div></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><div class="segment-tag">매출 3,302억원 · 30% · 2Y CAGR +7.4%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;OEM 결제단말기&lt;br/&gt;외주 생산&quot;]
+    R2[&quot;자체 IDC·DR센터&lt;br/&gt;24시간 무중단&quot;]
+    R3[&quot;VAN 대리점 네트워크&lt;br/&gt;전국 영업 인프라&quot;]
+
+    P1[&quot;VAN 승인중계&lt;br/&gt;나이스정보통신&lt;br/&gt;2,959억&quot;]
+    P2[&quot;VAN 승인중계&lt;br/&gt;나이스페이먼츠&lt;br/&gt;322억&quot;]
+    P3[&quot;TRS 내국세 환급&lt;br/&gt;공항 단독창구&quot;]
+
+    C1[&quot;카드사·PSP사&lt;br/&gt;전체 신용카드사&quot;]
+    C2[&quot;대형법인·일반가맹점&lt;br/&gt;7,494백만건 처리&quot;]
+    C3[&quot;외국인 관광객&lt;br/&gt;TRS 가맹점 4,544개&quot;]
+
+    R1 -- &quot;단말기 공급&quot; --&gt; C2
+    R2 -- &quot;승인 인프라&quot; --&gt; P1 &amp; P2
+    R3 -- &quot;가맹점 모집&quot; --&gt; P1 &amp; P3
+    P1 &amp; P2 -- &quot;VAN 수수료&quot; --&gt; C1
+    P1 -- &quot;카드 승인 중계&quot; --&gt; C2
+    P3 -- &quot;환급 대행 수수료&quot; --&gt; C3
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3 supply
+    class P1,P2,P3 core
+    class C1,C2,C3 demand
+</pre></div>
+<div class="bm-note">VAN 점유율 28.4% (2025년, 25개사 중 1위). TRS는 인천T2·김포·김해 공항 단독계약. TRS 매출 YoY +60~80% 고성장. 여신전문금융업법·조세특례제한법 규제 산업.</div></div><div class="vc-tab-content" id="vc-tab-2" data-tab-defer><div class="segment-tag">매출 867억원 · 8% · 2Y CAGR −9.0%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;OEM 제조사&lt;br/&gt;단말기 외주 생산&quot;]
+    R2[&quot;자체 R&amp;D&lt;br/&gt;IT본부·연구개발 115억&quot;]
+
+    P1[&quot;결제단말기 상품&lt;br/&gt;397억&quot;]
+    P2[&quot;오케이포스 POS&lt;br/&gt;상품·소프트웨어 646억&quot;]
+    P3[&quot;씨유엔 유지보수&lt;br/&gt;21억&quot;]
+
+    C1[&quot;VAN·PG 가맹점&lt;br/&gt;연동 판매&quot;]
+    C2[&quot;POS·키오스크&lt;br/&gt;외식·프랜차이즈&quot;]
+
+    R1 -- &quot;단말기 OEM&quot; --&gt; P1 &amp; P2
+    R2 -- &quot;안드로이드 POS·KIOSK&lt;br/&gt;음성주문·NFC&quot; --&gt; P2
+    P1 -- &quot;단말기 판매&quot; --&gt; C1
+    P2 -- &quot;POS·솔루션&quot; --&gt; C2
+    P3 -- &quot;유지보수&quot; --&gt; C1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+
+    class R1,R2 supply
+    class P1,P2,P3 core
+    class C1,C2 demand
+</pre></div>
+<div class="bm-note">특허 21건·디자인 4건·상표 13건. RF카드 인증 내재화, AI LLM 음성주문 키오스크 개발 중. 단말기 내수 감소 추세이나 PG·VAN 고객 lock-in 인프라로 기능.</div>
+<hr></div></div><script>document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script><h3 id="3-2024">섹션 3. 현금 배분 (2024)</h3>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    A[&quot;영업CF&lt;br/&gt;&lt;b&gt;137억&lt;/b&gt;&quot;]
+    B[&quot;CapEx&lt;br/&gt;&lt;b&gt;−163억&lt;/b&gt;&quot;]
+    C[&quot;FCF&lt;br/&gt;&lt;b&gt;−26억&lt;/b&gt;&quot;]
+    D[&quot;배당&lt;br/&gt;&lt;b&gt;−65억&lt;/b&gt;&quot;]
+    I[&quot;자사주 순&lt;br/&gt;&lt;b&gt;−50억&lt;/b&gt;&quot;]
+    E[&quot;금융자산 순&lt;br/&gt;&lt;b&gt;−267억&lt;/b&gt;&quot;]
+    F[&quot;차입·이자·리스&lt;br/&gt;&lt;b&gt;−66억&lt;/b&gt;&quot;]
+    G[&quot;환율효과&lt;br/&gt;&lt;b&gt;+12억&lt;/b&gt;&quot;]
+    H[&quot;현금 순증&lt;br/&gt;&lt;b&gt;−463억&lt;/b&gt;&quot;]
+
+    A --&gt; B --&gt; C
+    C --&gt; D &amp; I &amp; E &amp; F &amp; G
+    D &amp; I &amp; E &amp; F &amp; G --&gt; H
+
+    classDef inflow fill:#c8923c,stroke:#a87830,color:#fff
+    classDef outflow fill:#5d7a8c,stroke:#4a6577,color:#f0f4f7
+    classDef key fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef result fill:#3d4f65,stroke:#2d3e52,color:#e8e2d8
+
+    class A inflow
+    class B outflow
+    class C key
+    class D outflow
+    class I outflow
+    class E outflow
+    class F outflow
+    class G inflow
+    class H result
+</pre></div>
+<div class="bm-note">검증 (2024): FCF −26 + 배당 −65 + 자사주순 −50 + 금융자산순 −267 + 기타재무 −66 + 환율 +12 = <strong>−462</strong> ✓<br>
+기말 순현금: 3,804억원</div>
+<h4 id="_1">현금 배분 이력</h4>
 <table>
 <thead>
 <tr>
-<th>지표</th>
-<th>2022</th>
-<th>2023</th>
+<th>구분</th>
+<th>2025/9</th>
 <th>2024</th>
-<th>2025</th>
+<th>2023</th>
+<th>2022</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>DIO (일)</td>
-<td>10.7</td>
-<td>8.6</td>
-<td>5.7</td>
-<td>3.9</td>
-</tr>
-<tr>
-<td>DSO (일)</td>
-<td>222.8</td>
-<td>233.3</td>
-<td>195.8</td>
-<td>145.8</td>
-</tr>
-<tr>
-<td>DPO (일)</td>
-<td>34.4</td>
-<td>34.9</td>
-<td>29.5</td>
-<td>31.1</td>
-</tr>
-<tr>
-<td><strong>CCC (일)</strong></td>
-<td><strong>199.1</strong></td>
-<td><strong>207.0</strong></td>
-<td><strong>172.0</strong></td>
-<td><strong>118.6</strong></td>
-</tr>
-</tbody>
-</table></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><table>
-<thead>
-<tr>
-<th>항목 (억원)</th>
-<th>2022</th>
-<th>2023</th>
-<th>2024</th>
-<th>2025</th>
-<th>비고</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>영업CF</strong></td>
-<td>394</td>
-<td>1,440</td>
+<td>영업CF</td>
+<td>446</td>
 <td>137</td>
-<td>1,636</td>
-<td>벌어온 현금</td>
+<td>1,440</td>
+<td>394</td>
 </tr>
 <tr>
-<td>(−) CapEx</td>
-<td>131</td>
-<td>163</td>
-<td>163</td>
-<td>82</td>
-<td>유형+무형 자산 투자</td>
+<td>CapEx</td>
+<td>−59</td>
+<td>−163</td>
+<td>−163</td>
+<td>−131</td>
 </tr>
 <tr>
-<td><strong>= FCF</strong></td>
-<td>263</td>
-<td>1,277</td>
-<td>−26</td>
-<td>1,554</td>
-<td>영업CF − CapEx</td>
+<td><strong>FCF</strong></td>
+<td><strong>387</strong></td>
+<td><strong>−26</strong></td>
+<td><strong>1,277</strong></td>
+<td><strong>263</strong></td>
 </tr>
 <tr>
-<td>(−) 배당</td>
-<td>−55</td>
-<td>−60</td>
-<td>−65</td>
+<td>배당</td>
 <td>−71</td>
-<td></td>
+<td>−65</td>
+<td>−60</td>
+<td>−55</td>
 </tr>
 <tr>
-<td>(+/−) 자사주 순</td>
-<td>−25</td>
-<td>−75</td>
-<td>−50</td>
+<td>자사주 순</td>
 <td>0</td>
-<td>취득만 발생</td>
+<td>−50</td>
+<td>−75</td>
+<td>−25</td>
 </tr>
 <tr>
-<td>(+/−) 금융자산 순</td>
-<td>−331</td>
-<td>−409</td>
-<td>−267</td>
-<td>−203</td>
-<td>투자CF + CapEx</td>
-</tr>
-<tr>
-<td>(+/−) 기타재무</td>
-<td>61</td>
-<td>−87</td>
-<td>−66</td>
-<td>−154</td>
-<td>리스 상환, 차입 순변동 등</td>
-</tr>
-<tr>
-<td>(+/−) 환율효과</td>
-<td>2</td>
-<td>−1</td>
-<td>12</td>
-<td>3</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>= 현금 순증</strong></td>
-<td>−85</td>
-<td>645</td>
+<td>금융자산 순</td>
 <td>−462</td>
-<td>1,129</td>
-<td>FCF 이하 전부 합산</td>
+<td>−267</td>
+<td>−409</td>
+<td>−331</td>
+</tr>
+<tr>
+<td>기타재무</td>
+<td>−114</td>
+<td>−66</td>
+<td>−87</td>
+<td>+61</td>
+</tr>
+<tr>
+<td>환율효과</td>
+<td>−7</td>
+<td>+12</td>
+<td>−1</td>
+<td>+2</td>
+</tr>
+<tr>
+<td><strong>현금 순증</strong></td>
+<td><strong>−267</strong></td>
+<td><strong>−463</strong></td>
+<td><strong>+645</strong></td>
+<td><strong>−85</strong></td>
 </tr>
 <tr>
 <td>기말 순현금</td>
-<td>3,314</td>
-<td>4,313</td>
+<td>4,111</td>
 <td>3,804</td>
-<td>5,405</td>
-<td>현금+유동금융+장기금융−차입</td>
+<td>4,313</td>
+<td>3,314</td>
 </tr>
 </tbody>
-</table>
-<div class="bm-note">검증 (2025): FCF 1,554 + 배당 −71 + 자사주순 0 + 금융자산순 −203 + 기타재무 −154 + 환율 3 = <strong>1,129</strong> (실제 1,128, 차이 1) ✓</div></div></div><script>document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none"});btn.classList.add("active");document.getElementById(btn.dataset.target).style.display="";});});</script></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#3b82f6",pie2:"#f59e0b",pie3:"#10b981",pie4:"#ef4444",pie5:"#8b5cf6",pie6:"#06b6d4",pie7:"#f97316",pie8:"#ec4899"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
+</table></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#3b82f6",pie2:"#f59e0b",pie3:"#10b981",pie4:"#ef4444",pie5:"#8b5cf6",pie6:"#06b6d4",pie7:"#f97316",pie8:"#ec4899"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});await mermaid.run();document.querySelectorAll("[data-tab-defer]").forEach(function(el){el.style.display="none";el.removeAttribute("data-tab-defer")});</script>
     </main>
 
     <div class="footer">k-berkshire</div>
