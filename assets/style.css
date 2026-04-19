@@ -259,12 +259,71 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
     border-color: var(--navy);
 }
 
+.filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 12px;
+    flex-wrap: wrap;
+}
 .filter-count {
     font-size: 0.82em;
     color: var(--text-light);
-    margin-bottom: 16px;
     font-weight: 400;
     letter-spacing: 0.03em;
+}
+.sort-toggle {
+    display: inline-flex;
+    font-size: 0.8em;
+}
+.sort-toggle button {
+    background: transparent;
+    border: 1px solid var(--border-light);
+    color: var(--text-secondary);
+    padding: 4px 11px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    transition: background 0.15s, color 0.15s;
+}
+.sort-toggle button:first-child { border-radius: 4px 0 0 4px; }
+.sort-toggle button:last-child { border-radius: 0 4px 4px 0; border-left: none; }
+.sort-toggle button:hover {
+    background: rgba(200, 146, 60, 0.08);
+    color: var(--amber);
+}
+.sort-toggle button.active {
+    background: var(--navy);
+    color: var(--cream);
+    border-color: var(--navy);
+}
+
+.quality-filter {
+    display: inline-flex;
+    gap: 4px;
+    font-size: 0.8em;
+    flex-wrap: wrap;
+}
+.quality-filter button {
+    background: transparent;
+    border: 1px solid var(--border-light);
+    color: var(--text-secondary);
+    padding: 3px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.quality-filter button:hover {
+    background: rgba(200, 146, 60, 0.08);
+    color: var(--amber);
+}
+.quality-filter button.active {
+    background: var(--navy);
+    color: var(--cream);
+    border-color: var(--navy);
 }
 
 /* ── Empty State ── */
@@ -558,19 +617,41 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
 }
 .report-list a:hover::after { color: var(--amber); transform: translateX(3px); }
 
-/* ── Shareholder Section (Company Index) ── */
-.shareholder-section {
-    margin: 1.5em 0;
-    padding: 16px 20px;
-    background: var(--cream);
-    border: 1px solid var(--border-light);
-    border-radius: 8px;
-    font-size: 0.9em;
+/* ── Company meta (헤더 하단 공통 정보) ── */
+.company-meta {
+    margin: 8px 0 2px;
+    font-size: 0.84em;
+    color: var(--text-secondary);
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
 }
-.shareholder-section h2 { font-size: 1.1em; margin: 0 0 0.5em; padding: 0; border: none; }
-.shareholder-section table { font-size: 0.88em; }
-.shareholder-section ul { margin: 0.3em 0 0 1.2em; }
-.shareholder-section li { font-size: 0.9em; color: var(--text-secondary); }
+.company-meta span { white-space: nowrap; }
+.company-meta span + span { position: relative; padding-left: 14px; }
+.company-meta span + span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 2px;
+    background: var(--text-light);
+    border-radius: 50%;
+}
+
+/* ── Basics Page: 섹션 간 구분 ── */
+.basics-section + .basics-section {
+    margin-top: 56px;
+    padding-top: 48px;
+    border-top: 1px solid var(--border);
+}
+
+/* ── Shareholder (기초자료 페이지의 주주 섹션) ── */
+#shareholders table { font-size: 0.9em; }
+#shareholders ul { margin: 0.3em 0 0 1.2em; }
+#shareholders li { font-size: 0.9em; color: var(--text-secondary); }
 
 /* ── Footer ── */
 .footer {
@@ -607,6 +688,78 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
     letter-spacing: 0.04em;
 }
 .footer-links a:hover { color: var(--amber); }
+.footer-notice {
+    margin-top: 14px;
+    padding: 0 16px;
+    font-size: 0.78em;
+    color: var(--text-light);
+    line-height: 1.6;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ── Disclaimer Banner (메인) ── */
+.disclaimer-banner {
+    max-width: 760px;
+    margin: 0 auto 24px;
+    padding: 12px 18px;
+    border: 1px solid var(--border-light);
+    border-left: 3px solid var(--amber);
+    border-radius: 4px;
+    background: #fdfaf3;
+    font-size: 0.85em;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+}
+.disclaimer-banner strong { color: var(--navy); font-weight: 600; }
+.disclaimer-banner a { color: var(--navy); text-decoration: underline; }
+.disclaimer-banner a:hover { color: var(--amber); }
+
+/* ── About Page ── */
+.about-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 24px;
+    color: var(--text);
+    line-height: 1.75;
+    font-size: 0.96em;
+}
+.about-page h1 {
+    font-size: 1.6em;
+    color: var(--navy);
+    margin: 0 0 8px;
+    padding: 0;
+    border: none;
+    letter-spacing: -0.01em;
+}
+.about-page .lead {
+    color: var(--text-secondary);
+    font-size: 0.92em;
+    margin-bottom: 32px;
+    letter-spacing: 0.02em;
+}
+.about-page h2 {
+    font-size: 1.12em;
+    color: var(--navy);
+    margin: 36px 0 10px;
+    padding: 0 0 6px;
+    border-bottom: 1px solid var(--border-light);
+    border-left: none;
+    letter-spacing: -0.005em;
+}
+.about-page p { margin: 10px 0; }
+.about-page ul { padding-left: 20px; margin: 10px 0; }
+.about-page li { margin: 4px 0; }
+.about-page .back-link {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-size: 0.86em;
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+}
+.about-page .back-link:hover { color: var(--amber); }
 
 /* ── Business Model: Mermaid ── */
 pre.mermaid { background: transparent; color: inherit; padding: 0; margin: 0; }
@@ -853,7 +1006,7 @@ pre.mermaid { background: transparent; color: inherit; padding: 0; margin: 0; }
 }
 
 /* ── Sub Tabs (페이지 내부, underline 스타일) ── */
-.vc-tab-bar, .fin-tab-bar {
+.vc-tab-bar, .fin-tab-bar, .inv-tab-bar {
     display: flex;
     gap: 4px;
     flex-wrap: wrap;
@@ -863,7 +1016,7 @@ pre.mermaid { background: transparent; color: inherit; padding: 0; margin: 0; }
     margin: 0;
     padding: 0 4px;
 }
-.vc-tab-btn, .fin-tab-btn {
+.vc-tab-btn, .fin-tab-btn, .inv-tab-btn {
     flex: 0 0 auto;
     padding: 10px 16px;
     font-size: 0.86em;
@@ -879,31 +1032,34 @@ pre.mermaid { background: transparent; color: inherit; padding: 0; margin: 0; }
     margin-bottom: -1px;
     letter-spacing: 0.01em;
 }
-.vc-tab-btn:hover, .fin-tab-btn:hover {
+.vc-tab-btn:hover, .fin-tab-btn:hover, .inv-tab-btn:hover {
     color: var(--navy);
     border-bottom-color: var(--border);
 }
-.vc-tab-btn.active, .fin-tab-btn.active {
+.vc-tab-btn.active, .fin-tab-btn.active, .inv-tab-btn.active {
     color: var(--navy);
     border-bottom-color: var(--amber);
     font-weight: 600;
 }
-.vc-tab-content, .fin-tab-content {
+.vc-tab-content, .fin-tab-content, .inv-tab-content {
     border: none;
     border-radius: 0;
 }
-[data-tab-defer] { visibility: hidden; position: absolute; left: -9999px; }
+[data-tab-defer] { display: none; }
 
 /* ── Tabs: 개별 오버라이드 ── */
 .vc-tabs { margin: 1.2em 0; }
 .vc-tab-content { padding: 18px 0 8px; overflow-x: auto; }
 .fin-tabs { margin: 0; }
 .fin-tab-content { padding: 18px 0 8px; overflow-x: auto; }
+.inv-tabs { margin: 0; }
+.inv-tab-content { padding: 24px 0 8px; }
 
 /* ── Financial Data ── */
 .financial-data table,
 .fin-tab-content table,
 .vc-tab-content table,
+.inv-tab-content table,
 .bm-content table {
     display: table;
     width: 100%;
@@ -939,20 +1095,6 @@ pre.mermaid { background: transparent; color: inherit; padding: 0; margin: 0; }
 /* ── Responsive ── */
 @media (max-width: 640px) {
     body { padding: 0 14px; line-height: 1.7; }
-    /* 주주현황 표 잘림 힌트 — 좁고 미묘하게 */
-    .shareholder-section { position: relative; }
-    .shareholder-section::after {
-        content: '';
-        position: absolute;
-        top: 16px;
-        right: 0;
-        bottom: 16px;
-        width: 14px;
-        background: linear-gradient(to right, rgba(248, 245, 240, 0), var(--cream));
-        pointer-events: none;
-        z-index: 1;
-        border-radius: 0 6px 6px 0;
-    }
     .site-header { padding: 36px 0 28px; }
     .site-header h1 { font-size: 1.8em; }
     .company-grid { grid-template-columns: 1fr; gap: 10px; }
@@ -1003,6 +1145,6 @@ pre.mermaid { background: transparent; color: inherit; padding: 0; margin: 0; }
     .chosung-bar button { padding: 4px 7px; font-size: 0.8em; min-width: 28px; }
     .search-box { margin: 0 -14px 16px; padding: 10px 14px 12px; }
     .search-input-wrap input { padding: 12px 14px 12px 42px; }
-    .vc-tab-btn, .fin-tab-btn { padding: 9px 12px; font-size: 0.82em; }
+    .vc-tab-btn, .fin-tab-btn, .inv-tab-btn { padding: 9px 12px; font-size: 0.82em; }
     .bm-content .chart-container { padding: 16px 12px; }
 }

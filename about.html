@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개·방법론 | k-berkshire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <main class="about-page">
+        <a href="index.html" class="back-link">← 기업 목록으로</a>
+        <h1>소개·방법론</h1>
+        <p class="lead">k-berkshire는 레전드 투자자의 사고틀을 모사한 AI 페르소나가 한국 상장기업을 다각도로 분석하는 실험적 프로젝트입니다.</p>
+
+        <h2>무엇을 하는 사이트인가요?</h2>
+        <p>이 사이트는 필립 피셔, 피터 린치, 워렌 버핏, 찰리 멍거 네 투자자의 저작·서신·강연·인터뷰에 드러난 투자 철학을 프롬프트로 구조화하여, 동일한 기업에 대해 네 관점의 분석과 토론을 생성합니다. 목적은 특정 종목의 매수·매도를 권하는 것이 아니라, <strong>한 기업을 여러 투자 원칙의 렌즈로 살펴볼 때 어떤 질문과 논점이 떠오르는지</strong>를 독자에게 제공하는 것입니다.</p>
+
+        <h2>분석 파이프라인</h2>
+        <p>각 기업 리포트는 다음 단계를 거쳐 생성됩니다.</p>
+        <ul>
+            <li><strong>Step 0 · 데이터 수집</strong> — 재무제표(10년), 사업보고서, 임원·주요주주 내부자 거래</li>
+            <li><strong>Step 1 · 정보원 리서치</strong> — 최근 이슈·뉴스·공시를 웹에서 수집</li>
+            <li><strong>Step 2 · 4인 분석 (병렬)</strong> — 피셔(정성 스코어카드), 린치(분류·PEG), 버핏(경제적 해자·내재가치), 멍거(격자 사고·리스크)</li>
+            <li><strong>Step 3 · 버핏-멍거 토론</strong> — 시가총액과 내재가치를 비교해 매수·관망·회피 판정</li>
+        </ul>
+        <p>Step 0~2 단계에서는 <strong>주가와 시가총액을 의도적으로 숨겨</strong> 앵커링 편향을 방지하고, 최종 토론 단계에서만 시장가격을 공개합니다.</p>
+
+        <h2>데이터 출처</h2>
+        <ul>
+            <li><strong>재무 데이터</strong> — 금융감독원 전자공시시스템(DART) 기반 10년 재무제표 및 주요 지표</li>
+            <li><strong>사업보고서</strong> — DART 연간 사업보고서 원문</li>
+            <li><strong>내부자 거래</strong> — DART 임원·주요주주 소유보고(elestock)</li>
+            <li><strong>시장 이슈</strong> — 웹 검색을 통한 공개 정보 (뉴스·블로그·공시)</li>
+        </ul>
+
+        <h2>AI 페르소나에 대한 설명</h2>
+        <p>보고서에 등장하는 "피셔", "린치", "버핏", "멍거"는 실존 인물 본인이 아니며, 공개된 저작과 발언을 바탕으로 그들의 분석 프레임을 모사한 <strong>가상의 AI 페르소나</strong>입니다. 실제 인물의 현재 견해를 대변하지 않으며, 어떤 형태로든 그들의 공식 입장이나 투자 권고와 무관합니다.</p>
+
+        <h2>한계와 리스크</h2>
+        <ul>
+            <li><strong>환각(hallucination)</strong> — 대형언어모델 특성상 사실과 다른 수치·사건·인용이 포함될 수 있습니다. 중요한 숫자는 반드시 원본 공시로 교차 검증해야 합니다.</li>
+            <li><strong>데이터 시점</strong> — 재무제표는 연간 기준, 사업보고서는 가장 최근 확정본 기준입니다. 분기·최신 공시는 반영되지 않을 수 있습니다.</li>
+            <li><strong>정성 평가의 불확실성</strong> — 해자·경영진·산업 전망 등 정성 평가는 본질적으로 주관적이며, 페르소나별·시점별로 결론이 다를 수 있습니다.</li>
+            <li><strong>가격 추정의 단순화</strong> — 적극 매수가·매도가는 특정 모델(PEG·배수·DCF 단순화)의 산물이며, 실제 적정가를 보장하지 않습니다.</li>
+            <li><strong>생존자 편향</strong> — 분석 대상은 현재 상장 중인 기업으로, 상장폐지·회계부정 등 꼬리위험은 과소평가될 수 있습니다.</li>
+        </ul>
+
+        <h2>면책 고지</h2>
+        <p>본 사이트의 모든 분석·판정·가격 제시는 <strong>정보 제공 및 교육 목적</strong>이며, 금융투자상품의 매수·매도·보유를 권유하는 투자 자문이 아닙니다. 본 사이트 운영자는 「자본시장과 금융투자업에 관한 법률」상 투자 자문업자가 아닙니다. 본 사이트의 내용에 근거한 모든 투자 결정과 그 결과에 대한 손실·이익은 <strong>전적으로 이용자 본인의 책임</strong>이며, 운영자는 어떠한 책임도 지지 않습니다.</p>
+
+        <footer class="footer">
+            <div class="footer-brand">k-berkshire</div>
+            <div class="footer-tag">레전드 투자자 AI 페르소나 기업분석</div>
+            <div class="footer-links">
+                <a href="index.html">기업 목록</a>
+            </div>
+            <div class="footer-notice">※ 본 사이트의 분석은 AI 페르소나가 생성한 것이며, 투자 권유나 자문이 아닙니다. 투자 판단과 그에 따른 결과는 전적으로 이용자 본인의 책임입니다.</div>
+        </footer>
+    </main>
+</body>
+</html>
