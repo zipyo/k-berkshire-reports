@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,99 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 811억원</span></div><div class="summary-item"><span class="value">수출비중 27.7%</span></div><div class="summary-item"><span class="value">BGF에코머티리얼즈 계열 소재 3축(전자·자동차·반도체가스)</span></div><div class="summary-item"><span class="value">기말 순현금 −796억원</span></div></div>
+<div class="chart-container chart-donut"><div class="donut-title">매출 비중</div><div class="donut-wrap"><svg class="donut-svg" viewBox="0 0 220 220" width="220" height="220" aria-hidden="true"><path d="M 36.49 171.75 A 96 96 0 1 0 110.00 14.00 L 110.00 52.00 A 58 58 0 1 1 65.59 147.30 Z" fill="#0f1a2e" stroke="#faf9f7" stroke-width="1.5"/><path d="M 78.77 19.22 A 96 96 0 0 0 36.49 171.75 L 65.59 147.30 A 58 58 0 0 1 91.13 55.16 Z" fill="#c8923c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 110.00 14.00 A 96 96 0 0 0 78.77 19.22 L 91.13 55.16 A 58 58 0 0 1 110.00 52.00 Z" fill="#5d7a8c" stroke="#faf9f7" stroke-width="1.5"/></svg><ul class="donut-legend"><li class="donut-legend-item"><span class="donut-swatch" style="background:#0f1a2e"></span><span class="donut-name">반도체소재</span><span class="donut-amount">520억</span><span class="donut-pct">64.2%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#c8923c"></span><span class="donut-name">자동차부품소재</span><span class="donut-amount">251억</span><span class="donut-pct">31.0%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#5d7a8c"></span><span class="donut-name">전자부품소재</span><span class="donut-amount">43억</span><span class="donut-pct">5.3%</span></li></ul></div></div>
+<div class="bm-note">부문별 영업이익: 전자 −24억(적자) · 자동차 +32억 · 반도체 −49억(적자) · 연결조정 +11억 → 합계 −30억. 양수 부문이 자동차 단일이라 영업이익 pie 생략.</div>
+<hr>
+<h2 id="_2">밸류체인</h2><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">전자부품소재</button><button class="vc-tab-btn" data-target="vc-tab-1">자동차부품소재</button><button class="vc-tab-btn" data-target="vc-tab-2">반도체소재</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 43억원 · 5.3% · 2Y CAGR +3.5%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;국내 케미컬 공급사&lt;br/&gt;점착제&lt;br/&gt;14억 · 6.1%&quot;]
+    R2[&quot;필름 원단사&lt;br/&gt;코오롱·SKC 등&lt;br/&gt;PET·이형지&quot;]
+
+    P1[&quot;파주 공장&lt;br/&gt;광학필름·OCA·OCR&lt;br/&gt;3,495천㎡ (가동률 36.9%)&quot;]
+    P2[&quot;파주 공장&lt;br/&gt;Silicone Blanket&lt;br/&gt;PDMS Donor 7,689장&quot;]
+
+    C1[&quot;디스플레이 패널사&lt;br/&gt;TSP·DID 라미&quot;]
+    C2[&quot;MLCC·전극 제조사&lt;br/&gt;삼성SDI 등 S사&quot;]
+
+    R1 -- &quot;점착제&quot; --&gt; P1
+    R2 -- &quot;PET·이형지&quot; --&gt; P1 &amp; P2
+    P1 -- &quot;OCA·보호필름·DOF&quot; --&gt; C1
+    P2 -- &quot;블랑켓·연신기판&quot; --&gt; C2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2 demand
+</pre></div>
+<div class="bm-note">실리콘 블랑켓 공동개발(삼성SDI, 2007~) 레퍼런스 · 스트레처블 디스플레이 연신기판 특허 2건 출원 · R&amp;D/매출 0.61% · 광학필름 가동률 36.9%로 저조.</div></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><div class="segment-tag">매출 251억원 · 31.0% · 2Y CAGR −2.1%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;국내·해외 원단사&lt;br/&gt;HTC원단·HS원단&lt;br/&gt;73억 · 31.9%&quot;]
+    R2[&quot;이형지 공급사&lt;br/&gt;PET 필름&quot;]
+
+    P1[&quot;울산 공장&lt;br/&gt;HOOK·파스너&lt;br/&gt;95,200천EA (가동률 90.3%)&quot;]
+    P2[&quot;베이징·창저우 법인&lt;br/&gt;라미스폰지·Door Trim&lt;br/&gt;Head Liner&quot;]
+    P3[&quot;베트남 법인 (KNW Vietnam)&lt;br/&gt;자동차용 TAPE&lt;br/&gt;열선용 부직포&quot;]
+
+    C1[&quot;완성차·시트 1차벤더&lt;br/&gt;Seat Part·Head Line&quot;]
+    M1[&quot;내수 71.3%&lt;br/&gt;해외 28.7%&quot;]
+
+    R1 -- &quot;HTC·HS원단&quot; --&gt; P1 &amp; P2
+    R2 -- &quot;이형지&quot; --&gt; P3
+    P1 -- &quot;HOOK·파스너&quot; --&gt; C1
+    P2 -- &quot;내장재 라미&quot; --&gt; C1
+    P3 -- &quot;자동차용 테이프&quot; --&gt; C1
+    C1 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2,P3 core
+    class C1 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">파스너(Hook) 국산화 · 중국 2개 법인(베이징특가·창저우특가)과 베트남 법인 통한 해외생산 체제 · Dry Laminating·Punching·Quilting 등 후공정 고도화 · 부문 유일 흑자(영업이익 32억).</div></div><div class="vc-tab-content" id="vc-tab-2" data-tab-defer><div class="segment-tag">매출 520억원 · 64.2% · 2Y CAGR −10.7%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;AHF (무수불산)&lt;br/&gt;143억 · 62.1%&lt;br/&gt;※ 2026년 자체생산 구축중&quot;]
+    R2[&quot;KOH·AL(OH)₃&lt;br/&gt;국내 화학사&quot;]
+    R3[&quot;상품 매입&lt;br/&gt;선박용 단열재 원료&quot;]
+
+    P1[&quot;울산 공장&lt;br/&gt;(주)비지에프에코스페셜티&lt;br/&gt;F2·SF6 가스 1,586톤 (81.3%)&quot;]
+    P2[&quot;상품 유통&lt;br/&gt;태양광패널 세정액 원료&quot;]
+
+    C1[&quot;삼성전자·SK하이닉스&lt;br/&gt;반도체 식각·세정&lt;br/&gt;(A사 143억 · 17.6%)&quot;]
+    C2[&quot;디스플레이·GIS&lt;br/&gt;중·고전압 스위치기어&quot;]
+    C3[&quot;조선사·태양광업체&lt;br/&gt;선박 단열재·패널 세정&quot;]
+    M1[&quot;내수 70.1%&lt;br/&gt;해외 29.9%&quot;]
+
+    R1 &amp; R2 --&gt; P1
+    R3 --&gt; P2
+    P1 -- &quot;F2·SF6 특수가스&quot; --&gt; C1 &amp; C2
+    P2 -- &quot;단열재·세정원료&quot; --&gt; C3
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3 supply
+    class P1,P2 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">국내 유일 자체 SF6 생산 · F2가스 진입장벽(취급난이도·규제) · AHF 자체 제조시설 2026년 완공 목표(수직계열화) · 2025년 영업적자 −49억, 매출 2Y 역성장 −10.7% · BGF에코머티리얼즈 발행 전환사채 500억(2024.07, 풋옵션 2025.07~) 자금조달 부담.</div></div></div><script>(function(){document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none";c.removeAttribute("data-tab-defer");});btn.classList.add("active");var target=document.getElementById(btn.dataset.target);target.removeAttribute("data-tab-defer");target.style.display="";var pending=target.querySelectorAll("pre.mermaid:not([data-processed])");if(window.__bmMermaid&&pending.length>0){window.__bmMermaid.run({nodes:Array.from(pending)});}});});})();</script></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

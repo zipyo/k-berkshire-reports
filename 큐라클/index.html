@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,46 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 0.7억원</span></div><div class="summary-item"><span class="value">수출비중 0%</span></div><div class="summary-item"><span class="value">혈관내피기능장애 차단제 특화 바이오 신약개발사(솔바디스·이글스 플랫폼)</span></div><div class="summary-item"><span class="value">기말 순현금 +97억원</span></div></div>
+<div class="bm-note">단일 사업부문(신약 연구개발) — 매출 pie 생략. 2025년 매출은 레바미피드 원료의약품 첫 상품매출 7백만원으로, 실질 사업모델은 기술이전(L/O) 기반.</div>
+<hr>
+<h2 id="_2">밸류체인</h2>
+<h4 id="_3">신약 연구개발 (혈관내피기능장애 차단제)</h4>
+<div class="segment-tag">매출 0.7억원 · 100% · 2Y CAGR n/a (2023 103억 → 2024 16억 → 2025 0.7억, 떼아 용역매출 종료)</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;연세대 산학협력단&lt;br/&gt;Rivasterat·CU05&lt;br/&gt;특허 양수도&quot;]
+    R2[&quot;경북대 산학협력단&lt;br/&gt;CU01 용도특허&quot;]
+    R3[&quot;한국한의학연구원&lt;br/&gt;CU03 전용실시권&quot;]
+    R4[&quot;맵틱스&lt;br/&gt;MT-101·103·201·202&lt;br/&gt;항체 공동연구&quot;]
+    R5[&quot;CMO 위탁생산&lt;br/&gt;비임상·임상약&quot;]
+
+    P1[&quot;큐라클 종합기술원&lt;br/&gt;SOLVADYS·EAGLES&lt;br/&gt;연구인력 20명(박사 12)&quot;]
+    P2[&quot;Rivasterat(CU06)&lt;br/&gt;DME 美 2a상 완료&lt;br/&gt;2026 2b IND 예정&quot;]
+    P3[&quot;CU01&lt;br/&gt;당뇨병성 신증&lt;br/&gt;국내 2b LSO 완료&quot;]
+    P4[&quot;MT-101·103·201·202&lt;br/&gt;전임상 진행 중&quot;]
+    P5[&quot;CU71&lt;br/&gt;알츠하이머 BBB&lt;br/&gt;전임상&quot;]
+
+    C1[&quot;글로벌 빅파마&lt;br/&gt;CDA/파트너링 단계&quot;]
+    C2[&quot;국내 제약사&lt;br/&gt;원료의약품&lt;br/&gt;레바미피드&quot;]
+
+    R1 &amp; R2 &amp; R3 -- &quot;특허권&quot; --&gt; P1
+    R4 -- &quot;항체 8종&quot; --&gt; P1
+    R5 -- &quot;GMP 임상약&quot; --&gt; P1
+    P1 --&gt; P2 &amp; P3 &amp; P4 &amp; P5
+    P2 &amp; P3 &amp; P4 &amp; P5 -- &quot;L/O 추진&quot; --&gt; C1
+    P1 -- &quot;상품 중개&quot; --&gt; C2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+
+    class R1,R2,R3,R4,R5 supply
+    class P1,P2,P3,P4,P5 core
+    class C1,C2 demand
+</pre></div>
+<div class="bm-note">사업모델: 기술이전(Upfront + 마일스톤 + 로열티 8%). 2021년 떼아 L/O(US$163.5M) 2024.5 권리반환 — 수령 US$6M은 반환의무 無. 2025.3 원료의약품사업본부 신설로 상품매출 파일럿 개시. 파이프라인 17개(화학합성 8 + 생물학적제제 9), 지적재산권 특허 등록 39건·출원 38건. 연구개발비 매출 대비 151,395%(2025) — 사실상 전액 비용 처리되는 R&amp;D 투자.</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

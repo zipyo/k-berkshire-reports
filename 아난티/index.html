@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,76 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 2,581억원</span></div><div class="summary-item"><span class="value">수출비중 0%</span></div><div class="summary-item"><span class="value">6개 휴양 플랫폼(골프·호텔·리조트) 운영 + 신규 플랫폼 분양</span></div><div class="summary-item"><span class="value">기말 순현금 −5,403억원</span></div></div>
+<div class="chart-container chart-donut"><div class="donut-title">매출 비중</div><div class="donut-wrap"><svg class="donut-svg" viewBox="0 0 220 220" width="220" height="220" aria-hidden="true"><path d="M 28.94 58.56 A 96 96 0 1 0 110.00 14.00 L 110.00 52.00 A 58 58 0 1 1 61.03 78.92 Z" fill="#0f1a2e" stroke="#faf9f7" stroke-width="1.5"/><path d="M 110.00 14.00 A 96 96 0 0 0 28.94 58.56 L 61.03 78.92 A 58 58 0 0 1 110.00 52.00 Z" fill="#c8923c" stroke="#faf9f7" stroke-width="1.5"/></svg><ul class="donut-legend"><li class="donut-legend-item"><span class="donut-swatch" style="background:#0f1a2e"></span><span class="donut-name">플랫폼 운영</span><span class="donut-amount">2,167억</span><span class="donut-pct">84.0%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#c8923c"></span><span class="donut-name">플랫폼 개발(분양)</span><span class="donut-amount">414억</span><span class="donut-pct">16.0%</span></li></ul></div></div>
+<div class="chart-container chart-donut"><div class="donut-title">영업이익 비중</div><div class="donut-wrap"><svg class="donut-svg" viewBox="0 0 220 220" width="220" height="220" aria-hidden="true"><circle cx="110.0" cy="110.0" r="96" fill="#0f1a2e"/><circle cx="110.0" cy="110.0" r="58" fill="var(--warm-white,#faf9f7)"/></svg><ul class="donut-legend"><li class="donut-legend-item"><span class="donut-swatch" style="background:#0f1a2e"></span><span class="donut-name">플랫폼 운영</span><span class="donut-amount">152억</span><span class="donut-pct">100.0%</span></li></ul></div></div>
+<div class="bm-note">플랫폼 개발(분양) 영업적자 −69억 (매출비중 16% · 영업이익 기여 음수)</div>
+<hr>
+<h2 id="_2">밸류체인</h2><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">플랫폼 운영</button><button class="vc-tab-btn" data-target="vc-tab-1">플랫폼 개발(분양)</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 2,167억원 · 84.0% · 2Y CAGR +8.6%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;건설·시설 협력사&lt;br/&gt;시공·유지보수&quot;]
+    R2[&quot;F&amp;B·어메니티&lt;br/&gt;식자재·친환경 용품&quot;]
+    R3[&quot;운영 인력&lt;br/&gt;인건비 319억&quot;]
+
+    P1[&quot;아난티 남해&lt;br/&gt;골프18홀·리조트171실&quot;]
+    P2[&quot;아난티 코드&lt;br/&gt;리조트 76실&quot;]
+    P3[&quot;아난티 코브&lt;br/&gt;리조트216·호텔311실&quot;]
+    P4[&quot;아난티 앳 강남&lt;br/&gt;호텔 111실&quot;]
+    P5[&quot;빌라쥬 드 아난티&lt;br/&gt;리조트282·호텔110실&quot;]
+    P6[&quot;아난티 클럽 제주&lt;br/&gt;골프36홀·리조트52실&quot;]
+
+    C1[&quot;리조트·호텔 투숙&lt;br/&gt;1,802억 (69.8%)&quot;]
+    C2[&quot;골프 그린피·카트&lt;br/&gt;197억 (7.7%)&quot;]
+    C3[&quot;상품·F&amp;B·기타&lt;br/&gt;167억 (6.5%)&quot;]
+    M1[&quot;내수 100%&lt;br/&gt;고소득 내국인 중심&lt;br/&gt;외국인 관광객 회복&quot;]
+
+    R1 &amp; R2 &amp; R3 --&gt; P1 &amp; P2 &amp; P3 &amp; P4 &amp; P5 &amp; P6
+    P1 &amp; P6 -- &quot;골프+숙박&quot; --&gt; C2
+    P1 &amp; P2 &amp; P3 &amp; P4 &amp; P5 &amp; P6 -- &quot;객실·F&amp;B&quot; --&gt; C1
+    P3 &amp; P5 -- &quot;부대·상품&quot; --&gt; C3
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3 supply
+    class P1,P2,P3,P4,P5,P6 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">판매경로: 아난티 공식사이트(웹/앱) + 국내외 OTA · 유형자산 1.23조원(숙박시설) · 영업이익 152억 · EBITDA 488억 · 2024년 호텔 브랜드 '아난티 앳'으로 통합 · 20년 이상 레저시설 개발·운영 경험 · 진입장벽(인허가·대규모 CapEx)</div></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><div class="segment-tag">매출 414억원 · 16.0% · 2Y CAGR −76.1%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;부지·인허가&lt;br/&gt;관광단지 지정&quot;]
+    R2[&quot;시공·건설&lt;br/&gt;건설중자산 244억&quot;]
+
+    P1[&quot;제주 묘산봉&lt;br/&gt;호텔·리조트 개발 중&quot;]
+    P2[&quot;경기 청평&lt;br/&gt;레이크 드 아난티 코드&quot;]
+
+    C1[&quot;회원권 분양&lt;br/&gt;등기제·회원제&quot;]
+    C2[&quot;분양 외 기타&lt;br/&gt;48억&quot;]
+    M1[&quot;내수 100%&quot;]
+
+    R1 &amp; R2 --&gt; P1 &amp; P2
+    P1 &amp; P2 -- &quot;회원권&quot; --&gt; C1
+    P1 &amp; P2 --&gt; C2
+    C1 &amp; C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">판매경로: ㈜아난티 위탁분양 · 2023년 8,973억(빌라쥬 드 아난티 준공 인식)에서 2024년 748억, 2025년 414억으로 급감 · 영업적자 −69억 · 회원권은 장기예치보증금 형태로 부채비율 상승 요인</div></div></div><script>(function(){document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none";c.removeAttribute("data-tab-defer");});btn.classList.add("active");var target=document.getElementById(btn.dataset.target);target.removeAttribute("data-tab-defer");target.style.display="";var pending=target.querySelectorAll("pre.mermaid:not([data-processed])");if(window.__bmMermaid&&pending.length>0){window.__bmMermaid.run({nodes:Array.from(pending)});}});});})();</script></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,45 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">46억원</span></div><div class="summary-item"><span class="value">수출비중 93%</span></div><div class="summary-item"><span class="value">hyFc 플랫폼 기반 항체융합 단백질</span></div><div class="summary-item"><span class="value">DNA백신</span></div><div class="summary-item"><span class="value">bioPROTAC 신약개발 바이오벤처 (임상단계, 기술이전·마일스톤 중심)</span></div><div class="summary-item"><span class="value">기말 순현금 −238억원</span></div></div>
+<hr>
+<h2 id="_2">밸류체인</h2>
+<h4 id="_3">신약개발 (기술이전·용역)</h4>
+<div class="segment-tag">매출 46억원 · 100% · 2Y CAGR +2%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;자체 플랫폼&lt;br/&gt;hyFc 융합 단백질&lt;br/&gt;DNA 백신 / bioPROTAC&quot;]
+    R2[&quot;CDMO·CRO&lt;br/&gt;임상시료 위탁생산&lt;br/&gt;수입 시약·기기&quot;]
+    R3[&quot;이피디바이오 합병&lt;br/&gt;Nanobody / Yeast display&quot;]
+
+    P1[&quot;바이오이노베이션파크&lt;br/&gt;마곡 · 200L Pilot&lt;br/&gt;2차 R&amp;D센터 2026 완공(3,500평)&quot;]
+    P2[&quot;파이프라인&lt;br/&gt;GX-I7 / GX-188E&lt;br/&gt;GX-H9 / GX-E4 / GX-G6&lt;br/&gt;GX-BP1·BP2 (bioPROTAC)&quot;]
+
+    C1[&quot;해외 라이선시&lt;br/&gt;NeoImmuneTech(美)&lt;br/&gt;TJ Bio(中) · KGbio(印尼)&lt;br/&gt;CWB(中) · Egret(美)&quot;]
+    C2[&quot;국내 파트너&lt;br/&gt;한독 · 제넨바이오&lt;br/&gt;동아ST(FSH 로열티)&quot;]
+    C3[&quot;정부과제&lt;br/&gt;국가신약개발사업단&lt;br/&gt;산업기술진흥협회&quot;]
+    M1[&quot;미국·중국·ASEAN 93%&lt;br/&gt;국내 7%&quot;]
+
+    R1 &amp; R3 -- &quot;후보물질&quot; --&gt; P2
+    R2 -- &quot;임상시료&quot; --&gt; P2
+    P1 --&gt; P2
+    P2 -- &quot;기술이전·마일스톤&quot; --&gt; C1
+    P2 -- &quot;공동개발·로열티&quot; --&gt; C2
+    P2 -- &quot;R&amp;D 자금&quot; --&gt; C3
+    C1 &amp; C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3 supply
+    class P1,P2 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">연구인력 46명(박사 13·석사 25) · 연구개발비 270억(매출 대비 582%) · 누적 기술이전 총액 $1.8B+ (수취 $89M) · GX-E4 인도네시아(2023)·캄보디아(2024) 품목허가, 국내 2026.2Q 예상 · GX-I7 미국 임상 2상(NIT), GX-H9 중국 BLA 신청(2024.12, TJ Bio)</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

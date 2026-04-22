@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,50 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">3,289억원</span></div><div class="summary-item"><span class="value">수출비중 41%</span></div><div class="summary-item"><span class="value">색조 중심 패스트 코스메틱 전문기업(클리오·페리페라·구달)</span></div><div class="summary-item"><span class="value">기말 순현금 +1,611억원</span></div></div>
+<div class="bm-note">부문별 영업이익 미공시 (단일 화장품 사업부문)</div>
+<hr>
+<h2 id="_2">밸류체인</h2>
+<h4 id="_3">화장품</h4>
+<div class="segment-tag">매출 3,289억원 · 100% · 2Y CAGR −0.3%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;코스맥스&lt;br/&gt;OEM/ODM&lt;br/&gt;696억&quot;]
+    R2[&quot;씨앤씨인터내셔널&lt;br/&gt;OEM/ODM&lt;br/&gt;253억&quot;]
+    R3[&quot;인터코스코리아&lt;br/&gt;OEM/ODM&lt;br/&gt;114억&quot;]
+    R4[&quot;코코&lt;br/&gt;OEM/ODM&lt;br/&gt;113억&quot;]
+    R5[&quot;한국콜마&lt;br/&gt;OEM/ODM&lt;br/&gt;106억&quot;]
+
+    P1[&quot;색조 브랜드&lt;br/&gt;클리오·페리페라&lt;br/&gt;아이 954억·립 593억&quot;]
+    P2[&quot;베이스 메이크업&lt;br/&gt;킬커버 쿠션 등&lt;br/&gt;822억&quot;]
+    P3[&quot;기초 브랜드&lt;br/&gt;구달·더마토리&lt;br/&gt;832억&quot;]
+    P4[&quot;헤어·바디·건기식&lt;br/&gt;힐링버드·타입넘버&lt;br/&gt;88억&quot;]
+
+    C1[&quot;H&amp;B 스토어&lt;br/&gt;올리브영 등&quot;]
+    C2[&quot;온라인·이커머스&lt;br/&gt;자사몰·오픈마켓&quot;]
+    C3[&quot;면세점·홈쇼핑&quot;]
+    C4[&quot;해외 유통&lt;br/&gt;현지 리테일·이커머스&quot;]
+
+    M1[&quot;내수 59%&lt;br/&gt;수출 41%&quot;]
+    M2[&quot;일본 26%&lt;br/&gt;북미 18%&lt;br/&gt;동남아 19%&lt;br/&gt;중국 16%&lt;br/&gt;유럽기타 12%&lt;br/&gt;면세 9%&quot;]
+
+    R1 &amp; R2 &amp; R3 &amp; R4 &amp; R5 -- &quot;완제품&quot; --&gt; P1 &amp; P2 &amp; P3 &amp; P4
+    P1 &amp; P2 &amp; P3 &amp; P4 -- &quot;화장품&quot; --&gt; C1 &amp; C2 &amp; C3 &amp; C4
+    C1 &amp; C2 &amp; C3 --&gt; M1
+    C4 --&gt; M2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4,R5 supply
+    class P1,P2,P3,P4 core
+    class C1,C2,C3,C4 demand
+    class M1,M2 geo
+</pre></div>
+<div class="bm-note">자체 생산설비 없이 100% 외주 OEM/ODM(코스맥스·씨앤씨인터내셔널 등 상위 5사가 매입액 대부분 차지) · 시장점유율 색조 8.4%, 기초 0.7%, 헤어 0.4%(2024년 기준) · R&amp;D 비중 매출의 1.6% · 상표권 783건(국내 454·해외 329)·디자인권 35건 보유 · 2025년 홈쇼핑·면세 축소, 디지털 채널 중심 전환</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

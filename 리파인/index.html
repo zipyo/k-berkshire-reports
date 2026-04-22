@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,107 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 616억원</span></div><div class="summary-item"><span class="value">수출비중 0%</span></div><div class="summary-item"><span class="value">부동산 권리조사 RPA 플랫폼</span></div><div class="summary-item"><span class="value">기말 순현금 +1,333억원</span></div></div>
+<div class="chart-container chart-donut"><div class="donut-title">매출 비중</div><div class="donut-wrap"><svg class="donut-svg" viewBox="0 0 220 220" width="220" height="220" aria-hidden="true"><path d="M 56.04 30.60 A 96 96 0 1 0 110.00 14.00 L 110.00 52.00 A 58 58 0 1 1 77.40 62.03 Z" fill="#0f1a2e" stroke="#faf9f7" stroke-width="1.5"/><path d="M 80.91 18.51 A 96 96 0 0 0 56.04 30.60 L 77.40 62.03 A 58 58 0 0 1 92.42 54.73 Z" fill="#c8923c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 107.59 14.03 A 96 96 0 0 0 80.91 18.51 L 92.42 54.73 A 58 58 0 0 1 108.54 52.02 Z" fill="#5d7a8c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 110.00 14.00 A 96 96 0 0 0 107.59 14.03 L 108.54 52.02 A 58 58 0 0 1 110.00 52.00 Z" fill="#a8b8c8" stroke="#faf9f7" stroke-width="1.5"/></svg><ul class="donut-legend"><li class="donut-legend-item"><span class="donut-swatch" style="background:#0f1a2e"></span><span class="donut-name">전월세보증금대출</span><span class="donut-amount">557억</span><span class="donut-pct">90.5%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#c8923c"></span><span class="donut-name">담보대출</span><span class="donut-amount">28억</span><span class="donut-pct">4.6%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#5d7a8c"></span><span class="donut-name">전세보증금반환보증</span><span class="donut-amount">28억</span><span class="donut-pct">4.5%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#a8b8c8"></span><span class="donut-name">기타</span><span class="donut-amount">2억</span><span class="donut-pct">0.4%</span></li></ul></div></div>
+<div class="bm-note">부문별 영업이익 미공시</div>
+<hr>
+<h2 id="_2">밸류체인</h2><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">전월세보증금대출 서비스</button><button class="vc-tab-btn" data-target="vc-tab-1">담보대출 서비스</button><button class="vc-tab-btn" data-target="vc-tab-2">전세보증금반환보증 서비스</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 557억원 · 90.5% · 2Y CAGR −4.5%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;대법원 등기소&lt;br/&gt;부동산 등기부등본&quot;]
+    R2[&quot;국토부/지자체&lt;br/&gt;건축물대장·공시가&quot;]
+    R3[&quot;KB·한국부동산원&lt;br/&gt;시세 데이터&quot;]
+    R4[&quot;우체국&lt;br/&gt;내용증명 인프라&quot;]
+
+    P1[&quot;PTS*pro 시스템&lt;br/&gt;RPA 권리조사&lt;br/&gt;누적 690만건 학습&quot;]
+    P2[&quot;OneCode 시스템&lt;br/&gt;주소 통합체계&lt;br/&gt;AI 매칭&quot;]
+    P3[&quot;채권양도통지&lt;br/&gt;배달증명 자동발송&quot;]
+
+    C1[&quot;제1금융권 은행&lt;br/&gt;전세대출 실행&quot;]
+    C2[&quot;보증기관&lt;br/&gt;HUG·HF·SGI&quot;]
+    C3[&quot;권리보험사&lt;br/&gt;8개 국내+FA&quot;]
+    M1[&quot;국내 100%&quot;]
+
+    R1 &amp; R2 &amp; R3 -- &quot;권리정보&quot; --&gt; P1
+    P1 --&gt; P2
+    R4 -- &quot;통지망&quot; --&gt; P3
+    P1 -- &quot;권리조사료 528억&quot; --&gt; C3
+    P3 -- &quot;통지수수료 30억&quot; --&gt; C1
+    C1 &amp; C3 --&gt; C2
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4 supply
+    class P1,P2,P3 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">주요 매출처: A보험사 19.9%, B보험사 15.5%, C보험사 14.7%, D보험사 14.4% (상위 4사 64.5%). 채권양도방식 전세대출 BM 특허 보유 (2008년 취득). 전용회선 기반 전문(電文) 통신으로 고객사 직접 연결.</div></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><div class="segment-tag">매출 28억원 · 4.6% · 2Y CAGR +5.8%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;대법원 등기소&lt;br/&gt;등기부등본&quot;]
+    R2[&quot;건축물대장·시세&lt;br/&gt;공부 데이터&quot;]
+
+    P1[&quot;PTS*pro 시스템&lt;br/&gt;자동 권리조사&quot;]
+    P2[&quot;선기표후접수 BM&lt;br/&gt;Gap-Risk 헷지&quot;]
+
+    C1[&quot;금융기관&lt;br/&gt;주택담보대출 집중심사·비대면·긴급건&quot;]
+    C2[&quot;권리보험사&lt;br/&gt;저당권용 권리보험&quot;]
+    M1[&quot;국내 100%&quot;]
+
+    R1 &amp; R2 -- &quot;권리정보&quot; --&gt; P1
+    P1 --&gt; P2
+    P2 -- &quot;권리조사료 24억&quot; --&gt; C2
+    P2 -- &quot;위탁수수료 4억&quot; --&gt; C1
+    C1 &amp; C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">주요 매출처: E보험사 1.5%, F보험사 1.1%. 선기표후접수 BM 특허 보유 (2002년 서비스 개시). 대출실행 업무처리시간을 평균 3.5일에서 대폭 단축.</div></div><div class="vc-tab-content" id="vc-tab-2" data-tab-defer><div class="segment-tag">매출 28억원 · 4.5% · 2Y CAGR 0%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;등기·건축·시세&lt;br/&gt;부동산 공부&quot;]
+    R2[&quot;모바일 OCR&lt;br/&gt;임대차계약서 인식&quot;]
+
+    P1[&quot;판매지원 시스템&lt;br/&gt;비대면 가입 심사&quot;]
+    P2[&quot;통지 관련 서비스&lt;br/&gt;반환보증 위탁업무&quot;]
+
+    C1[&quot;A보증기관&lt;br/&gt;HUG 전세보증금반환보증&quot;]
+    C2[&quot;B보증기관&lt;br/&gt;HF 반환보증&quot;]
+    C3[&quot;빅테크 판매채널&lt;br/&gt;카카오페이·네이버파이낸셜&quot;]
+    M1[&quot;국내 100%&quot;]
+
+    R1 -- &quot;권리정보&quot; --&gt; P1
+    R2 -- &quot;서류 전자화&quot; --&gt; P1
+    P1 --&gt; P2
+    P2 -- &quot;위탁수수료 28억&quot; --&gt; C1 &amp; C2
+    C3 -- &quot;판매 중개&quot; --&gt; C1 &amp; C2
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">주요 매출처: A빅테크 1.3%, A보증기관 1.4%. 2013년 HUG 반환보증 상품 초기 개발 협업, 2020년 HF 상품 협업, 2019년 카카오페이·2020년 네이버파이낸셜 판매채널 확장. 신규사업으로 B2C 플랫폼 '집파인'(등기변동 알림) 및 부동산 빅데이터 센터 운영.</div></div></div><script>(function(){document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none";c.removeAttribute("data-tab-defer");});btn.classList.add("active");var target=document.getElementById(btn.dataset.target);target.removeAttribute("data-tab-defer");target.style.display="";var pending=target.querySelectorAll("pre.mermaid:not([data-processed])");if(window.__bmMermaid&&pending.length>0){window.__bmMermaid.run({nodes:Array.from(pending)});}});});})();</script></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

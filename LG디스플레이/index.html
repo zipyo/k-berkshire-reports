@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,122 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 258,101억원</span></div><div class="summary-item"><span class="value">수출비중 96.2%</span></div><div class="summary-item"><span class="value">OLED 중심 사업구조 전환 중인 디스플레이 전문기업</span></div><div class="summary-item"><span class="value">기말 순현금 −108,027억원</span></div></div>
+<div class="chart-container chart-donut"><div class="donut-title">매출 비중</div><div class="donut-wrap"><svg class="donut-svg" viewBox="0 0 220 220" width="220" height="220" aria-hidden="true"><path d="M 180.80 174.83 A 96 96 0 0 0 110.00 14.00 L 110.00 52.00 A 58 58 0 0 1 152.78 149.17 Z" fill="#0f1a2e" stroke="#faf9f7" stroke-width="1.5"/><path d="M 14.68 121.43 A 96 96 0 0 0 180.80 174.83 L 152.78 149.17 A 58 58 0 0 1 52.41 116.91 Z" fill="#c8923c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 62.17 26.76 A 96 96 0 0 0 14.68 121.43 L 52.41 116.91 A 58 58 0 0 1 81.11 59.71 Z" fill="#5d7a8c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 110.00 14.00 A 96 96 0 0 0 62.17 26.76 L 81.11 59.71 A 58 58 0 0 1 110.00 52.00 Z" fill="#a8b8c8" stroke="#faf9f7" stroke-width="1.5"/></svg><ul class="donut-legend"><li class="donut-legend-item"><span class="donut-swatch" style="background:#0f1a2e"></span><span class="donut-name">IT</span><span class="donut-amount">95,094억</span><span class="donut-pct">36.8%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#c8923c"></span><span class="donut-name">Mobile 등</span><span class="donut-amount">93,730억</span><span class="donut-pct">36.3%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#5d7a8c"></span><span class="donut-name">TV</span><span class="donut-amount">47,914억</span><span class="donut-pct">18.6%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#a8b8c8"></span><span class="donut-name">Auto</span><span class="donut-amount">21,363억</span><span class="donut-pct">8.3%</span></li></ul></div></div>
+<div class="bm-note">부문별 영업이익 미공시 (전사 영업이익 5,170억, OPM 2.0%)</div>
+<hr>
+<h2 id="_2">밸류체인</h2><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">TV</button><button class="vc-tab-btn" data-target="vc-tab-1">IT</button><button class="vc-tab-btn" data-target="vc-tab-2">Mobile 등</button><button class="vc-tab-btn" data-target="vc-tab-3">Auto</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 47,914억원 · 18.6% · 9"+ 중대형 TV 시장점유율 10.4% (전년 14.1%)</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;파주전기초자&lt;br/&gt;Glass&lt;br/&gt;(관계기업)&quot;]
+    R2[&quot;동우화인켐 등&lt;br/&gt;편광판 16.6%&quot;]
+    R3[&quot;희성전자 등&lt;br/&gt;Back-Light 8.1%&quot;]
+    R4[&quot;LX세미콘&lt;br/&gt;Drive IC 7.2%&quot;]
+
+    P1[&quot;파주 Fab&lt;br/&gt;WOLED TV 패널&lt;br/&gt;4Stack·Meta&quot;]
+    P2[&quot;광저우 LGDCO&lt;br/&gt;대형 OLED&lt;br/&gt;(中 LCD Fab 25.4월 매각)&quot;]
+
+    C1[&quot;TV 세트업체&lt;br/&gt;프리미엄·게이밍·투명&quot;]
+    M1[&quot;해외 96.2%&lt;br/&gt;국내 3.8%&quot;]
+
+    R1 &amp; R2 &amp; R3 &amp; R4 --&gt; P1 &amp; P2
+    P1 -- &quot;WOLED TV 패널&quot; --&gt; C1
+    P2 -- &quot;대형 OLED&quot; --&gt; C1
+    C1 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4 supply
+    class P1,P2 core
+    class C1 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">2013년 세계 최초 55" OLED TV 공급 · V26 DRD Platform으로 Cost 혁신 · 25.4월 LGDCN(중국 LCD 자회사) 지분 매각 완료 → LCD TV 비중 축소</div></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><div class="segment-tag">매출 95,094억원 · 36.8% · 9"+ IT 시장점유율 17.6% (전년 19.1%)</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;편광판·BLU·PCB&lt;br/&gt;Drive IC&quot;]
+    R2[&quot;자체 Oxide TFT&lt;br/&gt;LTPO 백플레인&quot;]
+
+    P1[&quot;파주 E6·P10&lt;br/&gt;Tandem OLED&lt;br/&gt;노트북·태블릿&quot;]
+    P2[&quot;구미·파주 LCD&lt;br/&gt;IPS·Oxide 모니터&lt;br/&gt;가동률 97~98%&quot;]
+
+    C1[&quot;Global IT 브랜드&lt;br/&gt;Apple·HP·Dell·Lenovo 등&quot;]
+    M1[&quot;해외 96.2%&lt;br/&gt;북미·중화권 중심&quot;]
+
+    R1 --&gt; P1 &amp; P2
+    R2 --&gt; P1
+    P1 -- &quot;Tandem OLED 패널&quot; --&gt; C1
+    P2 -- &quot;IPS·Oxide LCD&quot; --&gt; C1
+    C1 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1 core
+    class P2 core
+    class C1 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">2025년 세계 최초 LTPO/Tandem 14" 노트북 OLED, 27QHD 540Hz Gaming OLED, 1Hz 저소비전력 노트북 LCD 개발 · 면적당 판가 4Q25 $1,297 (전년 동기 $873 대비 +48%)</div></div><div class="vc-tab-content" id="vc-tab-2" data-tab-defer><div class="segment-tag">매출 93,730억원 · 36.3% · 스마트폰·워치·의료·항공용 POLED</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;편광판·Drive IC&lt;br/&gt;유기물·반도체&quot;]
+    R2[&quot;자체 6세대&lt;br/&gt;P-OLED 백플레인&quot;]
+
+    P1[&quot;파주 E6&lt;br/&gt;6세대 Plastic OLED&lt;br/&gt;스마트폰·워치&quot;]
+
+    C1[&quot;최대 고객&lt;br/&gt;매출 148,359억&lt;br/&gt;(전사 57.5%)&quot;]
+    C2[&quot;2위 고객&lt;br/&gt;매출 34,128억&lt;br/&gt;(13.2%)&quot;]
+    M1[&quot;상위 10개 고객&lt;br/&gt;전체 매출 92%&quot;]
+
+    R1 &amp; R2 --&gt; P1
+    P1 -- &quot;Plastic OLED 패널&quot; --&gt; C1 &amp; C2
+    C1 &amp; C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1 core
+    class C1,C2 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">북미 단일 대형 고객 의존도 높음 (최대 고객 매출 57.5%) · AR/VR 초소형 Display 선행 개발 진행</div></div><div class="vc-tab-content" id="vc-tab-3" data-tab-defer><div class="segment-tag">매출 21,363억원 · 8.3% · P-OLED·ATO·LTPS LCD 다변화 포트폴리오</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;편광판·Drive IC&lt;br/&gt;Oxide·LTPS 소자&quot;]
+
+    P1[&quot;파주 POLED&lt;br/&gt;차량용 Plastic OLED&lt;br/&gt;ATO&quot;]
+    P2[&quot;구미 LCD&lt;br/&gt;LTPS·Oxide&lt;br/&gt;8.5세대 확대&quot;]
+
+    C1[&quot;Global 완성차 OEM&lt;br/&gt;Pillar-to-Pillar 대시보드&quot;]
+    M1[&quot;장기 수주 기반&lt;br/&gt;프리미엄 차량 중심&quot;]
+
+    R1 --&gt; P1 &amp; P2
+    P1 -- &quot;P-OLED·ATO&quot; --&gt; C1
+    P2 -- &quot;LTPS·Oxide LCD&quot; --&gt; C1
+    C1 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1 supply
+    class P1,P2 core
+    class C1 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">2016년 업계 최초 차량 디스플레이 난연인증 획득 · 2025년 8.5세대 자동차용 38.9" Oxide 제품 개발로 6→8.5세대 확대 · 14개 난연규격 대응</div></div></div><script>(function(){document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none";c.removeAttribute("data-tab-defer");});btn.classList.add("active");var target=document.getElementById(btn.dataset.target);target.removeAttribute("data-tab-defer");target.style.display="";var pending=target.querySelectorAll("pre.mermaid:not([data-processed])");if(window.__bmMermaid&&pending.length>0){window.__bmMermaid.run({nodes:Array.from(pending)});}});});})();</script></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

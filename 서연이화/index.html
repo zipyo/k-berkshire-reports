@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,51 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 45,053억원</span></div><div class="summary-item"><span class="value">수출비중 73.3%</span></div><div class="summary-item"><span class="value">현대</span></div><div class="summary-item"><span class="value">기아 내외장부품 글로벌 Tier-1 (세계 79위)</span></div><div class="summary-item"><span class="value">기말 순현금 −6,836억원</span></div></div>
+<div class="bm-note">단일 사업부문 (자동차 내외장 부품, 매출·자산·영업손익 90% 초과)<br>
+부문별 영업이익 미공시</div>
+<hr>
+<h2 id="_2">밸류체인</h2>
+<h4 id="_3">자동차 내외장 부품</h4>
+<div class="segment-tag">매출 45,053억원 · 100% · 2Y CAGR +12.3%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;㈜덕진 外&lt;br/&gt;사출·발포 수지&quot;]
+    R2[&quot;한진피엘 外&lt;br/&gt;원단·감싸기류&quot;]
+    R3[&quot;엘에스오토모티브&lt;br/&gt;전장품&quot;]
+    R4[&quot;광명산업 外&lt;br/&gt;철판(프레스·용접)&quot;]
+
+    P1[&quot;국내 (서연이화·서연오토비전)&lt;br/&gt;Door Trim 88~91%&lt;br/&gt;Seat 85%&quot;]
+    P2[&quot;미주 공장&lt;br/&gt;Door Trim·Console·Package Tray&lt;br/&gt;가동률 81~92%&quot;]
+    P3[&quot;유럽 (슬로바키아·폴란드)&lt;br/&gt;Door Trim·Console·Pillar·T/Gate&lt;br/&gt;가동률 85~91%&quot;]
+    P4[&quot;인도 공장&lt;br/&gt;Door Trim 89%·Bumper 80%&quot;]
+    P5[&quot;중국 공장&lt;br/&gt;Door Trim·Bumper·Console&lt;br/&gt;가동률 54~85%&quot;]
+
+    C1[&quot;현대자동차&lt;br/&gt;2조 3,541억 · 52.3%&quot;]
+    C2[&quot;기아&lt;br/&gt;1조 5,187억 · 33.7%&quot;]
+    C3[&quot;포드·벤츠·폭스바겐·아우디 外&lt;br/&gt;6,325억 · 14.0%&quot;]
+
+    M1[&quot;미국 31.2%&lt;br/&gt;한국 26.7%&lt;br/&gt;유럽 15.6%&lt;br/&gt;인도 13.2%&lt;br/&gt;멕시코 7.1%&lt;br/&gt;중국 3.1%·브라질 2.1%·기타 1.0%&quot;]
+
+    R1 &amp; R2 &amp; R3 &amp; R4 --&gt; P1
+    R1 &amp; R2 --&gt; P2 &amp; P3 &amp; P4 &amp; P5
+    P1 &amp; P2 &amp; P3 &amp; P4 &amp; P5 -- &quot;Door Trim·Console&lt;br/&gt;Bumper·Seat 外&quot; --&gt; C1 &amp; C2 &amp; C3
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4 supply
+    class P1,P2,P3,P4,P5 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">8개국 33개 종속법인 글로벌 네트워크 · 현대·기아 비중 86% (집중도 높음) · 원재료 단가연동제로 원재료 가격변동 손익 영향 제한적<br>
+R&amp;D 비중 3.6% (연구인력 236명, 중앙연구소 + 중국 3개·인도 1개) · 지적재산권 2,241건 · 2025년 Global Top 100 Parts Suppliers 79위 (전년 대비 +3계단)<br>
+친환경 재활용 소재(PC·PA6·PP·ABS)·경량화·PBV·무드램프·액침 배터리 쿨링 등 미래차 부품 개발 중</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

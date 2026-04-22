@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,73 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 1,793억원</span></div><div class="summary-item"><span class="value">수출비중 24.5%</span></div><div class="summary-item"><span class="value">넥슨 계열 게임 개발사 (퍼블리셔 98% 의존, 블루아카이브·퍼스트 디센던트 중심)</span></div><div class="summary-item"><span class="value">기말 순현금 1,127억원</span></div></div>
+<div class="chart-container chart-donut"><div class="donut-title">매출 비중</div><div class="donut-wrap"><svg class="donut-svg" viewBox="0 0 220 220" width="220" height="220" aria-hidden="true"><path d="M 108.79 205.99 A 96 96 0 1 0 110.00 14.00 L 110.00 52.00 A 58 58 0 1 1 109.27 168.00 Z" fill="#0f1a2e" stroke="#faf9f7" stroke-width="1.5"/><path d="M 83.80 17.65 A 96 96 0 0 0 108.79 205.99 L 109.27 168.00 A 58 58 0 0 1 94.17 54.20 Z" fill="#c8923c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 100.37 14.48 A 96 96 0 0 0 83.80 17.65 L 94.17 54.20 A 58 58 0 0 1 104.18 52.29 Z" fill="#5d7a8c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 110.00 14.00 A 96 96 0 0 0 100.37 14.48 L 104.18 52.29 A 58 58 0 0 1 110.00 52.00 Z" fill="#a8b8c8" stroke="#faf9f7" stroke-width="1.5"/></svg><ul class="donut-legend"><li class="donut-legend-item"><span class="donut-swatch" style="background:#0f1a2e"></span><span class="donut-name">온라인 PC/콘솔</span><span class="donut-amount">900억</span><span class="donut-pct">50.2%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#c8923c"></span><span class="donut-name">모바일</span><span class="donut-amount">814억</span><span class="donut-pct">45.4%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#5d7a8c"></span><span class="donut-name">임대</span><span class="donut-amount">50억</span><span class="donut-pct">2.8%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#a8b8c8"></span><span class="donut-name">용역 기타</span><span class="donut-amount">29억</span><span class="donut-pct">1.6%</span></li></ul></div></div>
+<div class="bm-note">부문별 영업이익 미공시 (연결 영업손실 −602억, 임대 매출 비중 2.8%로 미미하여 사업보고서상 분리 공시 안 함)</div>
+<hr>
+<h2 id="_2">밸류체인</h2><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">게임사업</button><button class="vc-tab-btn" data-target="vc-tab-1">임대사업</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 1,743억원 · 97.2% · 2Y CAGR −4.7%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;자체 IP&lt;br/&gt;HIT·Blue Archive&lt;br/&gt;퍼스트 디센던트&quot;]
+    R2[&quot;라이선스 IP&lt;br/&gt;던전앤파이터 (넥슨)&lt;br/&gt;야생의 땅 듀랑고&quot;]
+    R3[&quot;개발 인력&lt;br/&gt;인건비 1,949억&lt;br/&gt;R&amp;D 839억 (46.8%)&quot;]
+
+    P1[&quot;DX/DW/RX&lt;br/&gt;LoreVault/R 스튜디오&lt;br/&gt;언리얼 엔진 4·5&quot;]
+    P2[&quot;모바일 MMORPG·RPG&lt;br/&gt;V4·Blue Archive·HIT2&quot;]
+    P3[&quot;온라인 PC/콘솔&lt;br/&gt;서든어택·퍼스트 디센던트&lt;br/&gt;루트슈터·FPS&quot;]
+
+    C1[&quot;넥슨코리아&lt;br/&gt;국내·글로벌 퍼블리셔&lt;br/&gt;매출 98.3%&quot;]
+    C2[&quot;Yostar&lt;br/&gt;일본 Blue Archive&quot;]
+    C3[&quot;Shanghai Roaming Star&lt;br/&gt;중국 Blue Archive&quot;]
+
+    M1[&quot;내수 75.5%&lt;br/&gt;수출 24.5%&lt;br/&gt;(JPY 엔화 익스포저)&quot;]
+
+    R1 &amp; R2 --&gt; P1
+    R3 --&gt; P1
+    P1 --&gt; P2 &amp; P3
+    P2 -- &quot;로열티·수익배분&quot; --&gt; C1 &amp; C2 &amp; C3
+    P3 -- &quot;로열티·수익배분&quot; --&gt; C1
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3 supply
+    class P1,P2,P3 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">최대주주 넥슨코리아 63.38% 지분 · 매출 98.3%가 퍼블리셔 경로 (사실상 넥슨 생태계 내 개발 자회사) · 2025년 7월 Blue Archive 글로벌 PC(Steam) 출시 · 신작 파이프라인: 던전앤파이터:아라드(프로젝트 DW), 프로젝트 DX(듀랑고 IP), Woochi the Wayfarer · 일본 JPY 금융자산 261억으로 환율 10% 변동 시 세후손익 20억 영향</div></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><div class="segment-tag">매출 50억원 · 2.8% · 2Y CAGR +82.6%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;판교테크노밸리&lt;br/&gt;집합건물 18,656㎡&lt;br/&gt;중앙판교개발 보유&quot;]
+
+    P1[&quot;사무실 임대&lt;br/&gt;지하1층~8층&lt;br/&gt;대지 3,188㎡&quot;]
+
+    C1[&quot;넥슨코리아&lt;br/&gt;(2025.11 계약)&quot;]
+    C2[&quot;엔진스튜디오&lt;br/&gt;(2025.11 계약)&quot;]
+    C3[&quot;넥슨유니버스&lt;br/&gt;(2025.11 계약)&quot;]
+
+    M1[&quot;내수 100%&quot;]
+
+    R1 --&gt; P1
+    P1 -- &quot;월 임대료·관리비&quot; --&gt; C1 &amp; C2 &amp; C3
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1 supply
+    class P1 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">관계회사 대상 내부 임대가 대부분 · 넥슨게임즈가 중앙판교개발에 170억원 대여 (2025.02 연장, 2026.02 만기) · 투자부동산 장부가 518억</div></div></div><script>(function(){document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none";c.removeAttribute("data-tab-defer");});btn.classList.add("active");var target=document.getElementById(btn.dataset.target);target.removeAttribute("data-tab-defer");target.style.display="";var pending=target.querySelectorAll("pre.mermaid:not([data-processed])");if(window.__bmMermaid&&pending.length>0){window.__bmMermaid.run({nodes:Array.from(pending)});}});});})();</script></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

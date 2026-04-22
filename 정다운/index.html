@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,128 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">1,609억원</span></div><div class="summary-item"><span class="value">수출비중 6.7%</span></div><div class="summary-item"><span class="value">국내 오리 도압 점유율 18%(2위) Farm to Plate 수직계열화</span></div><div class="summary-item"><span class="value">기말 순현금 +390억원</span></div></div>
+<div class="chart-container chart-donut"><div class="donut-title">매출 비중</div><div class="donut-wrap"><svg class="donut-svg" viewBox="0 0 220 220" width="220" height="220" aria-hidden="true"><path d="M 148.68 197.86 A 96 96 0 0 0 110.00 14.00 L 110.00 52.00 A 58 58 0 0 1 133.37 163.08 Z" fill="#0f1a2e" stroke="#faf9f7" stroke-width="1.5"/><path d="M 25.59 64.28 A 96 96 0 0 0 148.68 197.86 L 133.37 163.08 A 58 58 0 0 1 59.00 82.38 Z" fill="#c8923c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 57.04 29.93 A 96 96 0 0 0 25.59 64.28 L 59.00 82.38 A 58 58 0 0 1 78.00 61.62 Z" fill="#5d7a8c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 94.39 15.28 A 96 96 0 0 0 57.04 29.93 L 78.00 61.62 A 58 58 0 0 1 100.57 52.77 Z" fill="#a8b8c8" stroke="#faf9f7" stroke-width="1.5"/><path d="M 110.00 14.00 A 96 96 0 0 0 94.39 15.28 L 100.57 52.77 A 58 58 0 0 1 110.00 52.00 Z" fill="#b8a080" stroke="#faf9f7" stroke-width="1.5"/></svg><ul class="donut-legend"><li class="donut-legend-item"><span class="donut-swatch" style="background:#0f1a2e"></span><span class="donut-name">육가공</span><span class="donut-amount">698억</span><span class="donut-pct">43.4%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#c8923c"></span><span class="donut-name">신선</span><span class="donut-amount">636억</span><span class="donut-pct">39.5%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#5d7a8c"></span><span class="donut-name">HMR</span><span class="donut-amount">126억</span><span class="donut-pct">7.8%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#a8b8c8"></span><span class="donut-name">우모</span><span class="donut-amount">108억</span><span class="donut-pct">6.7%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#b8a080"></span><span class="donut-name">기타</span><span class="donut-amount">41억</span><span class="donut-pct">2.6%</span></li></ul></div></div>
+<div class="bm-note">부문별 영업이익 미공시</div>
+<hr>
+<h2 id="_2">밸류체인</h2><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">육가공</button><button class="vc-tab-btn" data-target="vc-tab-1">신선</button><button class="vc-tab-btn" data-target="vc-tab-2">HMR</button><button class="vc-tab-btn" data-target="vc-tab-3">우모</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 698억원 · 43.4% · 2Y CAGR +1.5%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;제이디팜(종속)&lt;br/&gt;생체오리 자체 생산&lt;br/&gt;95% 이상&quot;]
+    R2[&quot;국내 돈육·닭육&lt;br/&gt;부자재(포장재·첨가제)&lt;br/&gt;101억&quot;]
+
+    P1[&quot;나주 본점·지점&lt;br/&gt;도압+훈제&lt;br/&gt;도압 17,000천수/연&quot;]
+    P2[&quot;파주공장&lt;br/&gt;훈제+HMR&quot;]
+    P3[&quot;훈제 생산능력 7,800t&lt;br/&gt;가동률 70%&quot;]
+
+    C1[&quot;대형유통(이마트·SSM)&lt;br/&gt;피코크·자체 브랜드&quot;]
+    C2[&quot;급식·B2B&lt;br/&gt;푸드머스·SRC&quot;]
+    C3[&quot;대리점·도매상&lt;br/&gt;→ 소매·소비자&quot;]
+
+    R1 -- &quot;신선완포&quot; --&gt; P1
+    R1 -- &quot;신선완포&quot; --&gt; P2
+    R2 -- &quot;돈육·부자재&quot; --&gt; P1 &amp; P2
+    P1 &amp; P2 --&gt; P3
+    P3 -- &quot;훈제(슬라이스·완포·기타)&quot; --&gt; C1 &amp; C2 &amp; C3
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2,P3 core
+    class C1,C2,C3 demand
+</pre></div>
+<div class="bm-note">오메가3·허브·마늘 훈제 주력(오메가3 156억, 허브 109억, 마늘 124억). 오리 외 돈육 훈제(REAL PRICE 훈제삼겹 27억) 병행. HACCP 인증, 특허권 8건 보유</div></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><div class="segment-tag">매출 636억원 · 39.5% · 2Y CAGR −14.4%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;제이디팜 종속농장&lt;br/&gt;보성·김제·거창부화장&lt;br/&gt;위탁·직영 42일 사육&quot;]
+    R2[&quot;생체오리 매입&lt;br/&gt;715억&lt;br/&gt;6,701원/수&quot;]
+
+    P1[&quot;나주 지점&lt;br/&gt;도압 본거지&quot;]
+    P2[&quot;하동공장&lt;br/&gt;도압+신선&quot;]
+    P3[&quot;익산공장&lt;br/&gt;도압 전용&quot;]
+    P4[&quot;도압 생산실적&lt;br/&gt;10,439천수&lt;br/&gt;가동률 61%&quot;]
+
+    C1[&quot;통오리·완포 457억&lt;br/&gt;4,768톤&quot;]
+    C2[&quot;신선정육 179억&lt;br/&gt;1,727톤&quot;]
+    C3[&quot;대리점·급식·대형마트&lt;br/&gt;→ 내수 전량&quot;]
+
+    R1 -- &quot;생체오리 95%+&quot; --&gt; P1 &amp; P2 &amp; P3
+    R2 -- &quot;생체오리 5%-&quot; --&gt; P1 &amp; P2 &amp; P3
+    P1 &amp; P2 &amp; P3 --&gt; P4
+    P4 -- &quot;통오리·완포&quot; --&gt; C1
+    P4 -- &quot;슬라이스·정육&quot; --&gt; C2
+    C1 &amp; C2 --&gt; C3
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2,P3,P4 core
+    class C1,C2,C3 demand
+</pre></div>
+<div class="bm-note">업계 도압 점유율 18%(2위, 다솔 39%·사조원 11%에 이어). 출하량 증가·냉동재고 과잉으로 평균 판가 10,268→9,461원/수 하락. 식이유황·오메가3 급이 차별화</div></div><div class="vc-tab-content" id="vc-tab-2" data-tab-defer><div class="segment-tag">매출 126억원 · 7.8% · 2Y CAGR +4.7%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;자체 삼계닭·통오리&lt;br/&gt;사골육수·한방소재&quot;]
+    R2[&quot;알루미늄 파우치&lt;br/&gt;부자재&quot;]
+
+    P1[&quot;파주공장&lt;br/&gt;레토르트 라인&quot;]
+    P2[&quot;HMR 생산능력 4,300t&lt;br/&gt;가동률 97%&quot;]
+
+    C1[&quot;대형유통점&lt;br/&gt;나홀로 삼계탕 등&quot;]
+    C2[&quot;온라인몰&lt;br/&gt;1인 가구 타깃&quot;]
+
+    R1 -- &quot;원료육·육수&quot; --&gt; P1
+    R2 -- &quot;파우치&quot; --&gt; P1
+    P1 --&gt; P2
+    P2 -- &quot;레토르트 HMR&quot; --&gt; C1 &amp; C2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2 demand
+</pre></div>
+<div class="bm-note">가동률 71→97% 상승, 수량 3,062→4,291톤 증가(+37%) — 가장 빠른 성장 채널. 들깨오리탕·토종닭 곰탕·사골육수 등 신제품 확장</div></div><div class="vc-tab-content" id="vc-tab-3" data-tab-defer><div class="segment-tag">매출 108억원 · 6.7% · 2Y CAGR +17.0%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;도압 부산물&lt;br/&gt;오리털(잔여물)&lt;br/&gt;자체 수거&quot;]
+    R2[&quot;원모 국내 매입&lt;br/&gt;7.5억&quot;]
+
+    P1[&quot;나주 본점&lt;br/&gt;우모 세척·건조·쿨링&quot;]
+    P2[&quot;생산능력 6,500t&lt;br/&gt;가동률 26%&quot;]
+
+    C1[&quot;대만 중개상&quot;]
+    C2[&quot;2차 가공업체&lt;br/&gt;패딩·아웃도어·침구&quot;]
+    M1[&quot;수출 100%&quot;]
+
+    R1 -- &quot;잔여 오리털&quot; --&gt; P1
+    R2 -- &quot;원모&quot; --&gt; P1
+    P1 --&gt; P2
+    P2 -- &quot;1차 가공 원모&quot; --&gt; C1
+    C1 --&gt; C2
+    C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2 core
+    class C1,C2 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">수출 단가 4,566→6,421원/kg(+41%, 2년). 미·중 분쟁 완화 + 중국 도압 28% 감소로 견조한 상승세. 도압 부산물 활용으로 한계비용 낮은 현금원</div></div></div><script>(function(){document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none";c.removeAttribute("data-tab-defer");});btn.classList.add("active");var target=document.getElementById(btn.dataset.target);target.removeAttribute("data-tab-defer");target.style.display="";var pending=target.querySelectorAll("pre.mermaid:not([data-processed])");if(window.__bmMermaid&&pending.length>0){window.__bmMermaid.run({nodes:Array.from(pending)});}});});})();</script></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

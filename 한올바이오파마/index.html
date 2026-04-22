@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,52 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 1,552억원</span></div><div class="summary-item"><span class="value">수출비중 5.0%</span></div><div class="summary-item"><span class="value">FcRn 항체신약(바토클리맙/아이메로프루바트) 라이선스아웃 + 국내 의약품 유통</span></div><div class="summary-item"><span class="value">기말 순현금 329억원</span></div></div>
+<div class="bm-note">단일 사업부문 (의약품 제조·판매 80% 이상, 별도 구분 부문 없음)<br>
+부문별 영업이익 미공시 (연결 영업적자 −9억)</div>
+<hr>
+<h2 id="_2">밸류체인</h2>
+<h4 id="rd">의약품 + 바이오신약 R&amp;D</h4>
+<div class="segment-tag">매출 1,552억원 · 100% · 2Y CAGR +7.3% · 영업이익률 −0.6% · R&amp;D/매출 20.9%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;원료공급사&lt;br/&gt;Saccharomyces&lt;br/&gt;Boulardii 15.4%&quot;]
+    R2[&quot;원료공급사&lt;br/&gt;Metformin HCl 10.0%&lt;br/&gt;Finasteride 7.0%&quot;]
+    R3[&quot;원료공급사&lt;br/&gt;Clostridium 4.8%&lt;br/&gt;Bacillus subtilis 4.6%&quot;]
+    R4[&quot;자체 R&amp;D&lt;br/&gt;대전 중앙연구소&lt;br/&gt;수원 바이오연구소&lt;br/&gt;박사 9명 석사 24명&quot;]
+
+    P1[&quot;대전 공장&lt;br/&gt;정제·캡슐·연고·주사&lt;br/&gt;생산능력 5.05억EA&lt;br/&gt;가동률 60%&quot;]
+    P2[&quot;바이오신약 파이프라인&lt;br/&gt;바토클리맙 HL161BKN&lt;br/&gt;아이메로프루바트 HL161ANS&lt;br/&gt;탄파너셉트 HL036&lt;br/&gt;HL192 파킨슨병&quot;]
+
+    C1[&quot;제품 매출 803억&lt;br/&gt;바이오탑 235억&lt;br/&gt;알파본 66억&lt;br/&gt;헤어그로 62억&quot;]
+    C2[&quot;상품 매출 634억&lt;br/&gt;노르믹스 183억&lt;br/&gt;엘리가드 172억&lt;br/&gt;하노마린 64억&quot;]
+    C3[&quot;기술이익 계약부채 상각&lt;br/&gt;78억&lt;br/&gt;이뮤노반트/하버바이오메드&quot;]
+
+    D1[&quot;국내 병·의원·약국&lt;br/&gt;도매상 경유 간납&quot;]
+    D2[&quot;글로벌 파트너&lt;br/&gt;Roivant/Immunovant&lt;br/&gt;HarbourBioMed/CSPC&lt;br/&gt;대웅제약 공동개발&quot;]
+
+    R1 &amp; R2 &amp; R3 -- &quot;원료&quot; --&gt; P1
+    R4 -- &quot;자체개발 항체&quot; --&gt; P2
+    P1 -- &quot;완제의약품&quot; --&gt; C1
+    P1 -- &quot;CSO 유통&quot; --&gt; C2
+    P2 -- &quot;L/O 마일스톤&quot; --&gt; C3
+    C1 &amp; C2 --&gt; D1
+    C3 --&gt; D2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4 supply
+    class P1,P2 core
+    class C1,C2,C3 demand
+    class D1,D2 geo
+</pre></div>
+<div class="bm-note">라이선스아웃 총계약금액: Roivant $502.5M (바토클리맙/아이메로프루바트, 북미·유럽), HarbourBioMed $81M (중국)<br>
+주요 마일스톤: 2025.3 바토클리맙 MG 임상3상 탑라인 성공, 2026 상반기 TED 임상3상 탑라인, 2026 VELOS-4 탑라인<br>
+대웅제약(외3인) 지분 31.24% · 국민연금 10.05% · 연구개발비 325억 (판관비 193억 + 무형자산화 128억)</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

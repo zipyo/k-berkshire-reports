@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,99 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 287억원</span></div><div class="summary-item"><span class="value">수출비중 0.5%</span></div><div class="summary-item"><span class="value">휴대폰 공인인증서 보관서비스(유비키) 국내 독점 + SKT 기반 신규 부가서비스 확장</span></div><div class="summary-item"><span class="value">기말 순현금 791억원</span></div></div>
+<div class="chart-container chart-donut"><div class="donut-title">매출 비중</div><div class="donut-wrap"><svg class="donut-svg" viewBox="0 0 220 220" width="220" height="220" aria-hidden="true"><path d="M 97.97 205.24 A 96 96 0 1 0 110.00 14.00 L 110.00 52.00 A 58 58 0 1 1 102.73 167.54 Z" fill="#0f1a2e" stroke="#faf9f7" stroke-width="1.5"/><path d="M 87.88 16.58 A 96 96 0 0 0 97.97 205.24 L 102.73 167.54 A 58 58 0 0 1 96.64 53.56 Z" fill="#c8923c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 103.97 14.19 A 96 96 0 0 0 87.88 16.58 L 96.64 53.56 A 58 58 0 0 1 106.36 52.11 Z" fill="#5d7a8c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 110.00 14.00 A 96 96 0 0 0 103.97 14.19 L 106.36 52.11 A 58 58 0 0 1 110.00 52.00 Z" fill="#a8b8c8" stroke="#faf9f7" stroke-width="1.5"/></svg><ul class="donut-legend"><li class="donut-legend-item"><span class="donut-swatch" style="background:#0f1a2e"></span><span class="donut-name">기타서비스</span><span class="donut-amount">149억</span><span class="donut-pct">52.0%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#c8923c"></span><span class="donut-name">휴대폰인증서</span><span class="donut-amount">127억</span><span class="donut-pct">44.3%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#5d7a8c"></span><span class="donut-name">게임</span><span class="donut-amount">7.8억</span><span class="donut-pct">2.7%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#a8b8c8"></span><span class="donut-name">기타</span><span class="donut-amount">2.9억</span><span class="donut-pct">1.0%</span></li></ul></div></div>
+<div class="bm-note">부문별 영업이익 미공시</div>
+<hr>
+<h2 id="_2">밸류체인</h2><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">모바일 — 휴대폰인증서 보관서비스 (유비키)</button><button class="vc-tab-btn" data-target="vc-tab-1">모바일 — 기타서비스 (SKT 부가서비스 포트폴리오)</button><button class="vc-tab-btn" data-target="vc-tab-2">게임</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 127억원 · 44.3% · 2Y CAGR −12.8%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;자체 R&amp;D&lt;br/&gt;연구개발비 34억&lt;br/&gt;매출 11.7%&quot;]
+    R2[&quot;특허 16건&lt;br/&gt;유비키 원천기술&quot;]
+    R3[&quot;보안SW 제휴사&lt;br/&gt;전자서명·키보드보안&lt;br/&gt;모듈 연동&quot;]
+
+    P1[&quot;휴대폰인증서&lt;br/&gt;보관서비스 '유비키'&lt;br/&gt;월 900원 부가서비스&quot;]
+    P2[&quot;간편인증 연동&lt;br/&gt;PASS·카카오·삼성패스&quot;]
+
+    C1[&quot;SKT·KT·LG U+&lt;br/&gt;3사 부가서비스&lt;br/&gt;요금 청구·CS&quot;]
+    C2[&quot;은행 4,351M&lt;br/&gt;카드 437M&lt;br/&gt;PG 239M&lt;br/&gt;기타 7,701M&quot;]
+    M1[&quot;내수 99.5%&lt;br/&gt;수출 0.5%&quot;]
+
+    R1 &amp; R2 --&gt; P1
+    R3 --&gt; P1
+    R1 --&gt; P2
+    P1 &amp; P2 -- &quot;공인/간편인증&quot; --&gt; C1
+    C1 -- &quot;부가서비스 제휴&quot; --&gt; C2
+    C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3 supply
+    class P1,P2 core
+    class C1,C2 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">국내 휴대폰인증서 보관서비스 시장 독점 사업자(시장 개척자) · 이통 3사 월정액 900원 균일 · 공동인증서 갱신기(연말연초) 가입 집중 · 공동인증서 의존도 축소로 2Y CAGR −12.8%</div></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><div class="segment-tag">매출 149억원 · 52.0% · 2Y CAGR +127% (급성장)</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;자체 R&amp;D&lt;br/&gt;AI·STT·NLP·BERT&lt;br/&gt;위치정보·블랙박스&quot;]
+    R2[&quot;SKT 빌레터 MCP&lt;br/&gt;부가서비스 연동시스템&quot;]
+    R3[&quot;이통 3사 데이터&lt;br/&gt;위치·명의·통신이력&quot;]
+
+    P1[&quot;빌레터 모아보기&lt;br/&gt;주식레터·부동산레터&quot;]
+    P2[&quot;안심위치·T스코어&lt;br/&gt;통신비안심&quot;]
+    P3[&quot;블랙박스 분석&lt;br/&gt;보이스피싱AI&lt;br/&gt;자녀케어&quot;]
+
+    C1[&quot;SKT·KT·LG U+&lt;br/&gt;부가서비스&lt;br/&gt;가입자 유치&quot;]
+    M1[&quot;내수 100%&quot;]
+
+    R1 &amp; R2 --&gt; P1
+    R1 &amp; R3 --&gt; P2
+    R1 --&gt; P3
+    P1 &amp; P2 &amp; P3 -- &quot;월정액 부가서비스&quot; --&gt; C1
+    C1 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3 supply
+    class P1,P2,P3 core
+    class C1 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">통신사 부가서비스 다각화 포트폴리오 — 유비키 감소를 상쇄하며 2년 새 2.9억→149억 · SKT 빌레터 MCP 개편과 신규 AI 서비스(보이스피싱AI·자녀케어)가 성장 드라이버</div></div><div class="vc-tab-content" id="vc-tab-2" data-tab-defer><div class="segment-tag">매출 7.8억원 · 2.7% · 2Y CAGR −38.3%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;자체 개발&lt;br/&gt;서버엔진·네트워크&lt;br/&gt;동기화·보안기술&quot;]
+
+    P1[&quot;제4구역&lt;br/&gt;온라인 대전격투&quot;]
+    P2[&quot;LOSTCITY : ZERO&lt;br/&gt;MMORPG&lt;br/&gt;최대 1만명 동접&quot;]
+
+    C1[&quot;국내 오픈마켓&lt;br/&gt;Google Play 등&quot;]
+    C2[&quot;해외 퍼블리셔&lt;br/&gt;라이선스 계약&quot;]
+    M1[&quot;내수 629M (81%)&lt;br/&gt;수출 146M (19%)&quot;]
+
+    R1 --&gt; P1 &amp; P2
+    P1 &amp; P2 -- &quot;부분유료화·라이선스&quot; --&gt; C1 &amp; C2
+    C1 &amp; C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1 supply
+    class P1,P2 core
+    class C1,C2 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">모바일 본업 대비 비중 미미 · 제4구역 태국 퍼블리싱 경험 + LOSTCITY 자체 엔진 보유 · 수익 기여도는 낮고 2년 연속 역성장</div></div></div><script>(function(){document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none";c.removeAttribute("data-tab-defer");});btn.classList.add("active");var target=document.getElementById(btn.dataset.target);target.removeAttribute("data-tab-defer");target.style.display="";var pending=target.querySelectorAll("pre.mermaid:not([data-processed])");if(window.__bmMermaid&&pending.length>0){window.__bmMermaid.run({nodes:Array.from(pending)});}});});})();</script></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

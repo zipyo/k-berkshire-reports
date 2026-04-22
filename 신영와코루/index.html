@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,52 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 1,967억원</span></div><div class="summary-item"><span class="value">수출비중 0.01%</span></div><div class="summary-item"><span class="value">여성내의 백화점 M/S 54% (비너스·와코루)</span></div><div class="summary-item"><span class="value">기말 순현금 1,144억원</span></div></div>
+<div class="bm-note">단일 사업부문 (여성내의류 96.8% + 임대수익 3.0% + 여성스타킹 상품 0.2%)<br>
+부문별 영업이익 미공시</div>
+<hr>
+<h2 id="_2">밸류체인</h2>
+<h4 id="_3">여성내의류</h4>
+<div class="segment-tag">매출 1,852억원 (연결 기준, 58기) · 비중 100% · 2Y CAGR −1.2%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;신영섬유 외&lt;br/&gt;원단·레이스&lt;br/&gt;121억&quot;]
+    R2[&quot;(주)씨즌패브릭 외&lt;br/&gt;브라몰드 등 부재료&lt;br/&gt;15억&quot;]
+    R3[&quot;풍영산업 외&lt;br/&gt;외주 임가공&lt;br/&gt;64억&quot;]
+    R4[&quot;신영스타킹 외&lt;br/&gt;스타킹 상품&lt;br/&gt;2억&quot;]
+
+    P1[&quot;본사 외 공장 (국내·중국)&lt;br/&gt;여성내의류 7,212천매&lt;br/&gt;가동률 95.2%&quot;]
+    P2[&quot;R&amp;D·디자인연구소&lt;br/&gt;3D 바디스캐너·CRM&lt;br/&gt;R&amp;D 0.9%&quot;]
+
+    C1[&quot;백화점 29.3%&lt;br/&gt;직매장·법인점 28.4%&quot;]
+    C2[&quot;홈쇼핑 15.2%&lt;br/&gt;일반점 12.0%&quot;]
+    C3[&quot;인터넷·신유통 13.2%&lt;br/&gt;도매점 1.9%&quot;]
+    C4[&quot;임대수익&lt;br/&gt;55억&quot;]
+
+    M1[&quot;국내 99.99%&lt;br/&gt;해외 0.01%&quot;]
+
+    R1 -- &quot;원단·레이스&quot; --&gt; P1
+    R2 -- &quot;부재료&quot; --&gt; P1
+    R3 -- &quot;임가공&quot; --&gt; P1
+    R4 -- &quot;상품 매입&quot; --&gt; C1
+    P2 -- &quot;설계·피팅&quot; --&gt; P1
+    P1 -- &quot;비너스·와코루·솔브&quot; --&gt; C1
+    P1 -- &quot;마더피아·아르보·리맘마&quot; --&gt; C2
+    P1 -- &quot;아네타 등&quot; --&gt; C3
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4 supply
+    class P1,P2 core
+    class C1,C2,C3,C4 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">비너스 K-BPI 27년 연속 1위 · 백화점 여성내의 M/S 54% · 다브랜드(비너스·와코루·솔브·아르보·마더피아·리맘마·아네타·비너스맨) · 수직계열 미흡(원단·부재료·임가공 외주) · 투자부동산 955억(임대) 보유</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

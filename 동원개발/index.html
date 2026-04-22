@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,48 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">3,873억원</span></div><div class="summary-item"><span class="value">수출비중 0%</span></div><div class="summary-item"><span class="value">부산</span></div><div class="summary-item"><span class="value">경남 기반 주택 시공능력 32위</span></div><div class="summary-item"><span class="value">기말 순현금 +3,016억원</span></div></div>
+<div class="chart-container chart-donut"><div class="donut-title">매출 비중</div><div class="donut-wrap"><svg class="donut-svg" viewBox="0 0 220 220" width="220" height="220" aria-hidden="true"><path d="M 36.47 48.28 A 96 96 0 1 0 110.00 14.00 L 110.00 52.00 A 58 58 0 1 1 65.58 72.71 Z" fill="#0f1a2e" stroke="#faf9f7" stroke-width="1.5"/><path d="M 105.78 14.09 A 96 96 0 0 0 36.47 48.28 L 65.58 72.71 A 58 58 0 0 1 107.45 52.06 Z" fill="#c8923c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 107.59 14.03 A 96 96 0 0 0 105.78 14.09 L 107.45 52.06 A 58 58 0 0 1 108.54 52.02 Z" fill="#5d7a8c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 110.00 14.00 A 96 96 0 0 0 107.59 14.03 L 108.54 52.02 A 58 58 0 0 1 110.00 52.00 Z" fill="#a8b8c8" stroke="#faf9f7" stroke-width="1.5"/></svg><ul class="donut-legend"><li class="donut-legend-item"><span class="donut-swatch" style="background:#0f1a2e"></span><span class="donut-name">도급건축</span><span class="donut-amount">3,338억</span><span class="donut-pct">86.2%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#c8923c"></span><span class="donut-name">도급토목</span><span class="donut-amount">511억</span><span class="donut-pct">13.2%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#5d7a8c"></span><span class="donut-name">자체공사</span><span class="donut-amount">10억</span><span class="donut-pct">0.3%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#a8b8c8"></span><span class="donut-name">임대</span><span class="donut-amount">14억</span><span class="donut-pct">0.4%</span></li></ul></div></div>
+<div class="bm-note">부문별 영업이익 미공시</div>
+<hr>
+<h2 id="_2">밸류체인</h2>
+<h4 id="_3">건설 (주택·토목 종합)</h4>
+<div class="segment-tag">매출 3,873억원 · 100% · 2Y CAGR −27.5%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;레미콘 협력사&lt;br/&gt;레미콘&lt;br/&gt;219억 (34.0%)&quot;]
+    R2[&quot;철강 협력사&lt;br/&gt;철근&lt;br/&gt;112억 (17.4%)&quot;]
+    R3[&quot;기타 자재·협력사&lt;br/&gt;기타 자재&lt;br/&gt;313억 (48.6%)&quot;]
+
+    P1[&quot;본사 (부산)&lt;br/&gt;도급 건축&lt;br/&gt;40건 진행&quot;]
+    P2[&quot;본사 (부산)&lt;br/&gt;도급 토목&lt;br/&gt;30건 진행&quot;]
+    P3[&quot;자체 분양사업&lt;br/&gt;영업용 부동산&lt;br/&gt;장부 227억&quot;]
+
+    C1[&quot;민간 발주&lt;br/&gt;재건축·재개발·주택조합&quot;]
+    C2[&quot;관급 발주&lt;br/&gt;LH·지자체·SOC&quot;]
+    C3[&quot;자체 분양·임대&lt;br/&gt;실수요자&quot;]
+    M1[&quot;부산·경남 주력&lt;br/&gt;수도권 확대&lt;br/&gt;전국 영업&quot;]
+
+    R1 &amp; R2 &amp; R3 -- &quot;건설 자재&quot; --&gt; P1
+    R1 &amp; R2 &amp; R3 -- &quot;건설 자재&quot; --&gt; P2
+    P1 -- &quot;비스타동원·동원로얄듀크&quot; --&gt; C1
+    P1 -- &quot;공공주택·행복주택&quot; --&gt; C2
+    P2 -- &quot;도로·조경·단지조성&quot; --&gt; C2
+    P3 -- &quot;분양·임대&quot; --&gt; C3
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3 supply
+    class P1,P2,P3 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">시공능력평가 토건 1조 4,574억(부산 1위·전국 32위) · 1975년 창업 이래 누적 86,000여 세대 공급 · 수주잔액 2조 821억(평택브레인시티·사상공원·개금2·울산 우정지구 등) · R&amp;D 비중 0.03% · 외환·해외 노출 최소</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

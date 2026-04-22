@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,45 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 45,322억원</span></div><div class="summary-item"><span class="value">수출비중 83.8%</span></div><div class="summary-item"><span class="value">국내외 8개 공장 글로벌 타이어 제조사, 현대</span></div><div class="summary-item"><span class="value">기아</span></div><div class="summary-item"><span class="value">VW</span></div><div class="summary-item"><span class="value">벤츠 OE 공급 + RE 유통</span></div><div class="summary-item"><span class="value">기말 순현금 −17,011억원</span></div></div>
+<div class="bm-note">단일 사업부문(타이어 99.9%, 비타이어 0.1%) — 매출/영업이익 pie 생략</div>
+<hr>
+<h2 id="_2">밸류체인</h2>
+<h4 id="_3">타이어</h4>
+<div class="segment-tag">매출 45,322억원 · 99.9% · 2Y CAGR +12.9%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;SOUTHLAND·SRITRANG&lt;br/&gt;천연고무&lt;br/&gt;4,617억 (27.8%)&quot;]
+    R2[&quot;금호석유화학·LG화학&lt;br/&gt;합성고무&lt;br/&gt;4,102억 (24.7%)&quot;]
+    R3[&quot;효성·코오롱&lt;br/&gt;타이어코드지&lt;br/&gt;2,454억 (14.8%)&quot;]
+    R4[&quot;BCK·OCI·OEC&lt;br/&gt;카본블랙&lt;br/&gt;2,025억 (12.2%)&quot;]
+    R5[&quot;효성·홍덕·DAYE&lt;br/&gt;비드와이어·기타&lt;br/&gt;3,415억 (20.6%)&quot;]
+
+    P1[&quot;국내 3공장&lt;br/&gt;광주·곡성·평택&lt;br/&gt;26,921천본·가동률 92.3%&quot;]
+    P2[&quot;해외 5공장&lt;br/&gt;남경·천진·장춘·미국·베트남&lt;br/&gt;37,993천본·가동률 100.3%&quot;]
+
+    C1[&quot;OE 신차용&lt;br/&gt;현대차·기아·폭스바겐·아우디·벤츠&lt;br/&gt;현금 70% / 어음 30%&quot;]
+    C2[&quot;RE 교체용&lt;br/&gt;타이어프로·KTS 대리점&lt;br/&gt;현금 97% / 어음 3%&quot;]
+    C3[&quot;해외 판매법인·지사&lt;br/&gt;11개 법인 + 13개 지사&lt;br/&gt;L/C 15% / T/T 15% / D/A 70%&quot;]
+
+    M1[&quot;북미 30.7%&lt;br/&gt;유럽 26.6%&lt;br/&gt;아시아 17.3%&lt;br/&gt;한국 16.2%&lt;br/&gt;중남미 4.2%·기타 5.0%&quot;]
+
+    R1 &amp; R2 &amp; R3 &amp; R4 &amp; R5 --&gt; P1 &amp; P2
+    P1 &amp; P2 -- &quot;Kumho·Marshal 타이어&quot; --&gt; C1 &amp; C2 &amp; C3
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4,R5 supply
+    class P1,P2 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">총 생산능력 64,914천본(2025), 평균 가동률 97.3%, 해외 비중 58.5%. 국내 RE·OE 시장점유율 금호+한국+넥센 합산 약 90%(3사 과점). R&amp;D 5개 거점(용인 KRDC·광주 KPC·미국 KATC·독일 KETC·중국 KCTC), 연구개발비 1,619억(매출 대비 3.44%). 유형자산 장부금액 2조 5,690억, 시설투자 2,022억(2025). 원재료 투입액 16,613억(매출원가의 약 53%).</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

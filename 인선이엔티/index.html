@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,112 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">1,872억원</span></div><div class="summary-item"><span class="value">수출비중 3.5%</span></div><div class="summary-item"><span class="value">건설폐기물 중간처리 국내 1위(M/S ~15%)</span></div><div class="summary-item"><span class="value">매립</span></div><div class="summary-item"><span class="value">자동차재활용 수직계열 환경기업</span></div><div class="summary-item"><span class="value">기말 순현금 −292억원</span></div></div>
+<div class="chart-container chart-donut"><div class="donut-title">매출 비중</div><div class="donut-wrap"><svg class="donut-svg" viewBox="0 0 220 220" width="220" height="220" aria-hidden="true"><path d="M 21.90 148.13 A 96 96 0 1 0 110.00 14.00 L 110.00 52.00 A 58 58 0 1 1 56.77 133.03 Z" fill="#0f1a2e" stroke="#faf9f7" stroke-width="1.5"/><path d="M 77.48 19.68 A 96 96 0 0 0 21.90 148.13 L 56.77 133.03 A 58 58 0 0 1 90.35 55.43 Z" fill="#c8923c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 110.00 14.00 A 96 96 0 0 0 77.48 19.68 L 90.35 55.43 A 58 58 0 0 1 110.00 52.00 Z" fill="#5d7a8c" stroke="#faf9f7" stroke-width="1.5"/></svg><ul class="donut-legend"><li class="donut-legend-item"><span class="donut-swatch" style="background:#0f1a2e"></span><span class="donut-name">건설폐기물</span><span class="donut-amount">1,283억</span><span class="donut-pct">68.5%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#c8923c"></span><span class="donut-name">자동차재활용</span><span class="donut-amount">486억</span><span class="donut-pct">26.0%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#5d7a8c"></span><span class="donut-name">폐기물매립</span><span class="donut-amount">102억</span><span class="donut-pct">5.5%</span></li></ul></div></div>
+<div class="bm-note">부문별 영업이익 미공시</div>
+<hr>
+<h2 id="_2">밸류체인</h2><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">건설폐기물 중간처리·순환골재</button><button class="vc-tab-btn" data-target="vc-tab-1">폐기물 최종처분(매립)</button><button class="vc-tab-btn" data-target="vc-tab-2">자동차재활용 (인선모터스)</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 1,283억원 · 68.5% · 2Y CAGR −2.1%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;건설현장&lt;br/&gt;폐콘크리트·폐아스콘&lt;br/&gt;폐목재·혼합폐기물&quot;]
+    R2[&quot;자체 수집운반&lt;br/&gt;차량 + 외부차량&quot;]
+
+    P1[&quot;본사(고양)·세종·이천지점&lt;br/&gt;인선기업(금산)·파주비앤알&lt;br/&gt;영흥산업환경(천안)&quot;]
+    P2[&quot;순환골재 플랜트&lt;br/&gt;파쇄·선별·박리 특허&lt;br/&gt;가동률 76.7% / 생산률 52.9%&quot;]
+    P3[&quot;소각시설(영흥)&lt;br/&gt;192톤/일 (증설 후)&lt;br/&gt;가동률 102.7%&quot;]
+
+    C1[&quot;대형 건설사&lt;br/&gt;(민수 용역)&quot;]
+    C2[&quot;지자체·조달청&lt;br/&gt;(관급 입찰·수의)&quot;]
+    C3[&quot;도로공사·되메우기&lt;br/&gt;매립복토용&quot;]
+    C4[&quot;스팀 공급처&quot;]
+    M1[&quot;수도권 47%&lt;br/&gt;근거리 수주 원칙&quot;]
+
+    R1 -- &quot;반입폐기물&quot; --&gt; R2
+    R2 -- &quot;톤당 39,728원&quot; --&gt; P1
+    P1 -- &quot;분리·파쇄물&quot; --&gt; P2
+    P1 -- &quot;가연성 폐기물&quot; --&gt; P3
+    P2 -- &quot;용역 수수료&quot; --&gt; C1 &amp; C2
+    P2 -- &quot;순환골재 판매&quot; --&gt; C3
+    P3 -- &quot;스팀&quot; --&gt; C4
+    C1 &amp; C2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2,P3 core
+    class C1,C2,C3,C4 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">국내 건설폐기물 수집운반·중간처리 M/S 1위 (2024년 처리량 260.8만톤, 업계 593개사 중 선도). 2003년 콘크리트용 순환골재 플랜트 국내 최초 준공. 처리단가 하락세 (46,343원 → 39,728원/톤, 건설경기 둔화).</div></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><div class="segment-tag">매출 102억원 · 5.5% · 2Y CAGR −21.3%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;소각 후 잔재물&lt;br/&gt;폐석면·지정폐기물&lt;br/&gt;불연성 사업장폐기물&quot;]
+
+    P1[&quot;광양 매립장&lt;br/&gt;지정폐기물 240,045㎥&quot;]
+    P2[&quot;사천 매립장&lt;br/&gt;일반폐기물 1,119,827㎥&lt;br/&gt;2025.10 증설 79,404㎥&quot;]
+
+    C1[&quot;소각업체&lt;br/&gt;잔재물 반입&quot;]
+    C2[&quot;교육기관&lt;br/&gt;폐석면&quot;]
+    C3[&quot;지자체·사업장&quot;]
+    M1[&quot;경남 (사천)&lt;br/&gt;전남 (광양)&lt;br/&gt;전국 M/S ~2.2%&quot;]
+
+    R1 -- &quot;매립 대상 폐기물&quot; --&gt; P1 &amp; P2
+    P1 -- &quot;톤당 70,524원&quot; --&gt; C2 &amp; C3
+    P2 -- &quot;톤당 70,524원&quot; --&gt; C1 &amp; C3
+    P1 &amp; P2 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1 supply
+    class P1,P2 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">광양 매립률 66.4% (기매립 902,971㎥). 신규 매립장 허가 어려움 → 전국 약 10년 내 가용공간 소진 전망. 매립단가 하락(111천원→70천원) 및 사용량 축소로 매출 급감. 2025.10 사천 매립고 승고 인허가 완료.</div></div><div class="vc-tab-content" id="vc-tab-2" data-tab-defer><div class="segment-tag">매출 486억원 · 26.0% · 2Y CAGR −16.9%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;폐차·중고차 매입&lt;br/&gt;연 3만대 이상&lt;br/&gt;수도권 M/S ~48%&quot;]
+    R2[&quot;타 폐차장 폐압&lt;br/&gt;이천 슈레더 투입분&quot;]
+
+    P1[&quot;일산 자원순환센터&lt;br/&gt;해체라인 5기&lt;br/&gt;재활용률 95%&quot;]
+    P2[&quot;이천 파쇄재활용&lt;br/&gt;슈레더 100톤/hr&lt;br/&gt;연 24만톤&quot;]
+    P3[&quot;폐배터리 회수&lt;br/&gt;니켈·코발트·망간·리튬&lt;br/&gt;95% 재활용&quot;]
+
+    C1[&quot;자원재활용 업체&lt;br/&gt;엔진·고철·비철·알루미늄&quot;]
+    C2[&quot;정비업체·보험수리&lt;br/&gt;중고부품&quot;]
+    C3[&quot;특수강·주물업체&lt;br/&gt;철스크랩 (생철 430원/kg)&quot;]
+    C4[&quot;해외 수입바이어&lt;br/&gt;중고차·중고부품&quot;]
+    C5[&quot;배터리 제조사&lt;br/&gt;소재 원료&quot;]
+    M1[&quot;내수 96.5%&lt;br/&gt;수출 3.5%&lt;br/&gt;중동·아프리카·중앙아시아&quot;]
+
+    R1 -- &quot;폐차 입고&quot; --&gt; P1
+    R1 &amp; R2 -- &quot;폐압&quot; --&gt; P2
+    P1 -- &quot;자원&quot; --&gt; C1
+    P1 -- &quot;중고부품&quot; --&gt; C2
+    P1 -- &quot;수출용 차량·부품&quot; --&gt; C4
+    P1 -- &quot;사용후 배터리&quot; --&gt; P3
+    P2 -- &quot;철스크랩&quot; --&gt; C3
+    P3 -- &quot;재생 금속&quot; --&gt; C5
+    C2 &amp; C4 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2,P3 core
+    class C1,C2,C3,C4,C5 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">인선모터스 2025년 순손실 −16.6억 (지분법손실 −259억이 연결 순손실 주 원인). 조기폐차 1등급, 국내 최대 규모 해체센터 (연 3만대+) 및 슈레더(연 24만톤). 폐배터리 회수체계 민간 구축사업 참여.</div></div></div><script>(function(){document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none";c.removeAttribute("data-tab-defer");});btn.classList.add("active");var target=document.getElementById(btn.dataset.target);target.removeAttribute("data-tab-defer");target.style.display="";var pending=target.querySelectorAll("pre.mermaid:not([data-processed])");if(window.__bmMermaid&&pending.length>0){window.__bmMermaid.run({nodes:Array.from(pending)});}});});})();</script></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

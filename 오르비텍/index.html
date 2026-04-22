@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,99 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 579억원</span></div><div class="summary-item"><span class="value">수출비중 14.3%</span></div><div class="summary-item"><span class="value">원전 방사선관리</span></div><div class="summary-item"><span class="value">ISI 용역 + B737 Bulkhead 정밀부품 제조</span></div><div class="summary-item"><span class="value">기말 순현금 −213억원</span></div></div>
+<div class="chart-container chart-donut"><div class="donut-title">매출 비중</div><div class="donut-wrap"><svg class="donut-svg" viewBox="0 0 220 220" width="220" height="220" aria-hidden="true"><path d="M 132.43 203.34 A 96 96 0 0 0 110.00 14.00 L 110.00 52.00 A 58 58 0 0 1 123.55 166.39 Z" fill="#0f1a2e" stroke="#faf9f7" stroke-width="1.5"/><path d="M 31.23 55.12 A 96 96 0 0 0 132.43 203.34 L 123.55 166.39 A 58 58 0 0 1 62.41 76.84 Z" fill="#c8923c" stroke="#faf9f7" stroke-width="1.5"/><path d="M 110.00 14.00 A 96 96 0 0 0 31.23 55.12 L 62.41 76.84 A 58 58 0 0 1 110.00 52.00 Z" fill="#5d7a8c" stroke="#faf9f7" stroke-width="1.5"/></svg><ul class="donut-legend"><li class="donut-legend-item"><span class="donut-swatch" style="background:#0f1a2e"></span><span class="donut-name">원자력</span><span class="donut-amount">267억</span><span class="donut-pct">46.2%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#c8923c"></span><span class="donut-name">항공</span><span class="donut-amount">223억</span><span class="donut-pct">38.4%</span></li><li class="donut-legend-item"><span class="donut-swatch" style="background:#5d7a8c"></span><span class="donut-name">ISI</span><span class="donut-amount">89억</span><span class="donut-pct">15.3%</span></li></ul></div></div>
+<div class="bm-note">원자력 영업적자 −20억, ISI 영업적자 −32억, 항공 영업적자 −88억 (2025년 전 부문 적자, 연결 영업이익 −140억)</div>
+<hr>
+<h2 id="_2">밸류체인</h2><div class="vc-tabs"><div class="vc-tab-bar"><button class="vc-tab-btn active" data-target="vc-tab-0">원자력</button><button class="vc-tab-btn" data-target="vc-tab-1">ISI</button><button class="vc-tab-btn" data-target="vc-tab-2">항공</button></div><div class="vc-tab-content" id="vc-tab-0"><div class="segment-tag">매출 267억원 · 46.2% · 2Y CAGR −0.7%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;자체 기술&lt;br/&gt;기업부설연구소&lt;br/&gt;특허 55건+&quot;]
+    R2[&quot;KOLAS 인정&lt;br/&gt;방사선(801)&lt;br/&gt;방사능(802)&quot;]
+
+    P1[&quot;방사선관리&lt;br/&gt;H.P 191억&quot;]
+    P2[&quot;규제해제·자체처분&lt;br/&gt;56억&quot;]
+    P3[&quot;TLD 개인선량&lt;br/&gt;20억&quot;]
+    P4[&quot;분석센터 (울산)&lt;br/&gt;방사능 분석&quot;]
+
+    C1[&quot;한국수력원자력&lt;br/&gt;153억 · 26.4%&quot;]
+    C2[&quot;핵연료·원자력연구원&lt;br/&gt;민간 기타 115억&quot;]
+
+    R1 &amp; R2 -- &quot;기술·인력&quot; --&gt; P1 &amp; P2 &amp; P3 &amp; P4
+    P1 &amp; P2 &amp; P3 &amp; P4 --&gt; C1 &amp; C2
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2,P3,P4 core
+    class C1,C2 demand
+</pre></div>
+<div class="bm-note">한수원 Q등급 7개·A등급 2개 보유 · 시장점유율 11.5% (방사선관리, 2025) · UAE BNPP 수행 이력 · 고리1호기 해체(2025.6 승인) 수주 대비 · 방사선관리 수주잔고 351억</div></div><div class="vc-tab-content" id="vc-tab-1" data-tab-defer><div class="segment-tag">매출 89억원 · 15.3% · 2Y CAGR −2.4% · 영업적자 원가율 107.9%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;세안기술·ARDEN&lt;br/&gt;외주 26억&quot;]
+    R2[&quot;유자격 기술인력&lt;br/&gt;Level I/II/III 63명&lt;br/&gt;ECT QDA 21명&quot;]
+
+    P1[&quot;증기발생기 전열관&lt;br/&gt;가동중검사&quot;]
+    P2[&quot;배관·기기·구조물&lt;br/&gt;가동중검사&quot;]
+    P3[&quot;SG 2차측 세정·&lt;br/&gt;이물질 검사&quot;]
+
+    C1[&quot;한국수력원자력&lt;br/&gt;61억 · 10.6%&quot;]
+    C2[&quot;한전KPS&lt;br/&gt;4억 · 0.7%&quot;]
+    C3[&quot;기타 민간&lt;br/&gt;24억&quot;]
+
+    R1 -- &quot;외주검사&quot; --&gt; P1 &amp; P2
+    R2 -- &quot;숙련 검사&quot; --&gt; P1 &amp; P2 &amp; P3
+    P1 &amp; P2 &amp; P3 --&gt; C1 &amp; C2 &amp; C3
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2 supply
+    class P1,P2,P3 core
+    class C1,C2,C3 demand
+</pre></div>
+<div class="bm-note">2차 평가팀 25% 외주비 구조 · ISI 시장점유율 6.8% (2025, 전년 15.1%에서 급락) · 한수원 ISI 수주잔고 49억</div></div><div class="vc-tab-content" id="vc-tab-2" data-tab-defer><div class="segment-tag">매출 223억원 · 38.4% · 2Y CAGR −5.5% · 수출 83억 (내수 140억)</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;TMX·UAC 등 (수입)&lt;br/&gt;AL/TI Plate 104억&quot;]
+    R2[&quot;아스트·세아항공소재&lt;br/&gt;국내 AL/TI 2억&quot;]
+    R3[&quot;Spirit·BDSI&lt;br/&gt;H/W 0.5억&quot;]
+
+    P1[&quot;함안공장&lt;br/&gt;Bulkhead 조립&lt;br/&gt;가동률 106%&quot;]
+    P2[&quot;함안공장&lt;br/&gt;Rear Spar·SMP1·&lt;br/&gt;LCC·R-Fitting&quot;]
+    P3[&quot;함안공장&lt;br/&gt;기계가공 (3·5축)&lt;br/&gt;가동률 77%&quot;]
+
+    C1[&quot;㈜아스트&lt;br/&gt;133억 · 23.0%&quot;]
+    C2[&quot;Spirit AeroSystems&lt;br/&gt;80억 · 13.8%&quot;]
+    C3[&quot;KAI (KF-21 보라매)&lt;br/&gt;신규 수주&quot;]
+
+    M1[&quot;내수 62.8%&lt;br/&gt;미국 37.2%&quot;]
+
+    R1 &amp; R2 -- &quot;원재료&quot; --&gt; P1 &amp; P2 &amp; P3
+    R3 -- &quot;H/W&quot; --&gt; P1
+    P1 -- &quot;B737 BKHD&quot; --&gt; C1
+    P2 -- &quot;B737·747·767·&lt;br/&gt;777·787 정밀부품&quot; --&gt; C2
+    P3 -- &quot;KF-21 기계가공&quot; --&gt; C3
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3 supply
+    class P1,P2,P3 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">KS Q 9100(2025~2028)·NADCAP Shot Peening 인증 · Spirit 장기공급계약 수주잔고 251억 (~2028.12) · 원가율 139.6%로 대규모 적자 · R-Fitting 가동률 49%·SMP1 52%로 라인 불균형</div></div></div><script>(function(){document.querySelectorAll(".vc-tab-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".vc-tab-btn").forEach(function(b){b.classList.remove("active")});document.querySelectorAll(".vc-tab-content").forEach(function(c){c.style.display="none";c.removeAttribute("data-tab-defer");});btn.classList.add("active");var target=document.getElementById(btn.dataset.target);target.removeAttribute("data-tab-defer");target.style.display="";var pending=target.querySelectorAll("pre.mermaid:not([data-processed])");if(window.__bmMermaid&&pending.length>0){window.__bmMermaid.run({nodes:Array.from(pending)});}});});})();</script></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">

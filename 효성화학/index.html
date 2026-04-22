@@ -29,6 +29,7 @@
         <nav class="report-nav">
             <a href="index.html" class="active">사업 모델</a>
             <a href="event-research.html">주주 및 경영진</a>
+            <a href="cash-allocation.html">현금 배분</a>
             <a href="financial.html">재무</a>
             <a href="investors.html">페르소나 분석</a>
             <a href="dialogue.html">가상 토론</a>
@@ -36,7 +37,53 @@
     </div>
 
     <main class="report-content">
-        <p class="empty">사업모델 자료가 없습니다.</p>
+        <div class="bm-content"><h2 id="_1">사업 포트폴리오</h2>
+<div class="bm-summary"><div class="summary-item"><span class="value">매출 23,407억원</span></div><div class="summary-item"><span class="value">수출비중 73.6%(별도)</span></div><div class="summary-item"><span class="value">단일 화학부문(PP·필름) 중심, 베트남 수직계열 PP+중국 나일론필름 축, 2025년 TPA 가동중단</span></div><div class="summary-item"><span class="value">특수가스(9,200억) 및 온산탱크(1,500억) 매각으로 사업재편</span></div><div class="summary-item"><span class="value">기말 순현금 −15,081억원(2025.9)</span></div></div>
+<div class="bm-note">단일 사업부문 — 매출 pie 생략<br>
+부문별 영업이익 단일 (전사 영업손실 −1,705억, 2024 기준)</div>
+<hr>
+<h2 id="_2">밸류체인</h2>
+<h4 id="ppnylon-filmpet-filmtac-film">화학 (PP·Nylon Film·PET Film·TAC Film)</h4>
+<div class="segment-tag">매출 23,407억원 · 100% · 2Y CAGR +3.3%</div>
+<div class="chart-container"><pre class="mermaid">
+flowchart LR
+    R1[&quot;SK어드밴스드·S-OIL&lt;br/&gt;Marubeni·Apex&lt;br/&gt;프로필렌&quot;]
+    R2[&quot;SK지오센트릭·S-OIL&lt;br/&gt;PX&quot;]
+    R3[&quot;Hyosung Int'l&lt;br/&gt;Trade (Jiaxing)&lt;br/&gt;Nylon Chip&quot;]
+    R4[&quot;효성티앤씨&lt;br/&gt;도레이첨단소재&lt;br/&gt;PET Chip&quot;]
+    R5[&quot;베트남 Vina 자체 생산&lt;br/&gt;프로판→프로필렌&lt;br/&gt;수직계열화&quot;]
+
+    P1[&quot;용연·구미·옥산&lt;br/&gt;PP·PET Film·TAC Film&lt;br/&gt;CAPA 3.27조원&quot;]
+    P2[&quot;Vina Chemicals (베트남)&lt;br/&gt;PP + LPG 유통&lt;br/&gt;Ba Ria Vung Tau&quot;]
+    P3[&quot;Film Quzhou (중국)&lt;br/&gt;Nylon Film 3.6만톤&lt;br/&gt;'23.12 가동&quot;]
+
+    C1[&quot;산업재 가공&lt;br/&gt;KARTON SPA&lt;br/&gt;KALDE KLIMA&lt;br/&gt;A.J PLAST·Toray&quot;]
+    C2[&quot;관계·그룹사&lt;br/&gt;효성티앤씨·HYOSUNG JAPAN&lt;br/&gt;HYOSUNG Chemical(취저우 55.8%)&quot;]
+    C3[&quot;베트남 LPG 유통&lt;br/&gt;GAS SOUTH 15.3%&lt;br/&gt;ANPHA 11.3%&quot;]
+    M1[&quot;수출 73.6%&lt;br/&gt;내수 26.4%&lt;br/&gt;(별도 기준)&quot;]
+
+    R1 &amp; R5 -- &quot;프로필렌&quot; --&gt; P1
+    R1 &amp; R5 -- &quot;프로필렌&quot; --&gt; P2
+    R2 -- &quot;PX&quot; --&gt; P1
+    R3 -- &quot;Nylon Chip&quot; --&gt; P1
+    R3 -- &quot;Nylon Chip&quot; --&gt; P3
+    R4 -- &quot;PET Chip&quot; --&gt; P1
+    P1 -- &quot;PP·Film&quot; --&gt; C1 &amp; C2
+    P2 -- &quot;PP·LPG&quot; --&gt; C1 &amp; C3
+    P3 -- &quot;Nylon Film&quot; --&gt; C2
+    C1 &amp; C2 &amp; C3 --&gt; M1
+
+    classDef supply fill:#f5e1c0,stroke:#b8862d,color:#3d2e0a
+    classDef core fill:#0f1a2e,stroke:#243650,color:#f8f5f0
+    classDef demand fill:#c9d6e3,stroke:#4a6a8a,color:#1a2940
+    classDef geo fill:#e8ddd0,stroke:#b8862d,color:#3d2e0a
+
+    class R1,R2,R3,R4,R5 supply
+    class P1,P2,P3 core
+    class C1,C2,C3 demand
+    class M1 geo
+</pre></div>
+<div class="bm-note">가동률 75.3%(2025, 전년 76.6%·'23년 85.6% 대비 하락) · R&amp;D/매출 0.72% · 나일론필름 국내 M/S 1위 · 베트남 Vina는 프로판→프로필렌→PP + LPG 저장(Cavern)까지 수직계열 · 브랜드 TOPILENE(PP)·Filmore(Film)·POKETONE(폴리케톤) · 2025년 TPA 가동종료, 특수가스(9,200억) 효성네오켐 양도, 온산탱크터미널(1,500억) ㈜효성 양도 · PRS 계약으로 Vina 지분가치 헤지(264.5백만USD)</div></div><script type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";mermaid.initialize({startOnLoad:false,theme:"default",themeVariables:{fontSize:"16px",fontFamily:"Pretendard Variable,Pretendard,sans-serif",lineColor:"#b8a08a",pie1:"#0f1a2e",pie2:"#c8923c",pie3:"#5d7a8c",pie4:"#e8ddd0",pie5:"#243650",pie6:"#b8862d",pie7:"#a8b8c8",pie8:"#f5e1c0",pieStrokeColor:"#faf9f7",pieStrokeWidth:"2px",pieOuterStrokeColor:"#ddd6cb",pieOuterStrokeWidth:"1px",pieTitleTextSize:"14px",pieSectionTextSize:"13px",pieLegendTextSize:"13px"},flowchart:{htmlLabels:true,curve:"basis",nodeSpacing:30,rankSpacing:65,padding:16}});window.__bmMermaid=mermaid;const nodes=Array.from(document.querySelectorAll("pre.mermaid")).filter(p=>!p.closest("[data-tab-defer]"));if(nodes.length>0)await mermaid.run({nodes:nodes});</script>
     </main>
 
     <footer class="footer">
