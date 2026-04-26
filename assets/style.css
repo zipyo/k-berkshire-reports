@@ -717,6 +717,22 @@ pre code { background: none; border: none; padding: 0; color: inherit; }
 .disclaimer-banner a { color: var(--navy); text-decoration: underline; }
 .disclaimer-banner a:hover { color: var(--amber); }
 
+/* ── Page Disclaimer (기업 페이지 상단 slim 버전) ── */
+.page-disclaimer {
+    margin: 14px 0 0;
+    padding: 8px 14px;
+    border-left: 3px solid var(--amber);
+    background: #fdfaf3;
+    font-size: 0.8em;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    border-radius: 0 4px 4px 0;
+    letter-spacing: 0.02em;
+}
+.page-disclaimer strong { color: var(--navy); font-weight: 600; }
+.page-disclaimer a { color: var(--navy); text-decoration: underline; }
+.page-disclaimer a:hover { color: var(--amber); }
+
 /* ── About Page ── */
 .about-page {
     max-width: 760px;
